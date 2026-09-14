@@ -1,0 +1,2204 @@
+{
+  "project": {
+    "name": "ImunoScan",
+    "legal_entity": "Scan Diagnóstica Ltda",
+    "document_type": "product_content_database",
+    "version": "2.0-auditado",
+    "language": "pt-BR",
+    "target_audience": "B2B - Bancos de sangue, hemocentros, hospitais, laboratórios de análises clínicas, centros de pesquisa e biotecnologia",
+    "validation_status": "auditado; pendente de validação comercial/regulatória atual",
+    "validation_note": "Dados específicos das bulas de 2016 são evidência histórica; não comprovam disponibilidade ou vigência atual."
+  },
+  "research": {
+    "methodology": "Triangulação entre evidências documentais primárias (bulas oficiais versão 01/2016 e sitemaps/inventários de backup), literatura técnico-científica de medicina transfusional e biologia celular/molecular, e análise de benchmarks comerciais líderes (Bio-Rad, Grifols, Immucor/Werfen, Diagast, STEMCELL Technologies, Miltenyi Biotec, BD Biosciences).",
+    "benchmarks": [
+      {
+        "id": "BM-01",
+        "name": "Bio-Rad Laboratories",
+        "segment": "Imuno-hematologia e Pesquisa",
+        "country": "Global"
+      },
+      {
+        "id": "BM-02",
+        "name": "Grifols Immunohematology",
+        "segment": "Imuno-hematologia e Banco de Sangue",
+        "country": "Espanha / Global"
+      },
+      {
+        "id": "BM-03",
+        "name": "Werfen / Immucor",
+        "segment": "Medicina Transfusional",
+        "country": "EUA / Global"
+      },
+      {
+        "id": "BM-04",
+        "name": "Diagast",
+        "segment": "Reagentes Eritrocitários Monoclonais",
+        "country": "França"
+      },
+      {
+        "id": "BM-05",
+        "name": "STEMCELL Technologies",
+        "segment": "Células-Tronco, Meios Especializados e Separação Celular",
+        "country": "Canadá"
+      },
+      {
+        "id": "BM-06",
+        "name": "Miltenyi Biotec",
+        "segment": "Separação Magnética (MACS) e Citometria",
+        "country": "Alemanha"
+      },
+      {
+        "id": "BM-07",
+        "name": "BD Biosciences",
+        "segment": "Citometria de Fluxo e Imunologia",
+        "country": "EUA / Global"
+      },
+      {
+        "id": "BM-08",
+        "name": "Salimetrics",
+        "segment": "Salivary Bioscience e Biomarcadores",
+        "country": "EUA"
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "SRC-BULA-01",
+        "organization": "Scan Diagnóstica Ltda (ImunoScan)",
+        "title": "Conjunto de Bulas Técnicas de Imuno-hematologia - Versão 01/2016",
+        "url": "Arquivo Interno / Anvisa",
+        "source_type": "official_primary_evidence",
+        "supports": [
+          "linhas INVITROCLONE, INVITROCELL, INVITROCYTE, INVITROLIQ, ImunoScan LISS, ImunoScan PEG",
+          "códigos IH",
+          "apresentações",
+          "registros MS/ANVISA"
+        ]
+      },
+      {
+        "source_id": "SRC-TECH-AABB",
+        "organization": "AABB (Association for the Advancement of Blood & Biotherapies)",
+        "title": "Technical Manual of the American Association of Blood Banks (19th/20th Ed.)",
+        "url": "https://www.aabb.org",
+        "source_type": "technical_literature",
+        "supports": [
+          "princípios de hemaglutinação",
+          "prova direta e reversa ABO",
+          "variantes RhD e fenotipagem Rh",
+          "sistemas Kell, Kidd, Duffy, MNS",
+          "LISS e PEG",
+          "teste de antiglobulina humana"
+        ]
+      },
+      {
+        "source_id": "SRC-REG-MS",
+        "organization": "Ministério da Saúde do Brasil / ANVISA",
+        "title": "Portaria de Consolidação nº 5/2017 - Anexo IV (Regulamento Técnico de Procedimentos Hemoterápicos) e RDC 306/2004",
+        "url": "https://bvsms.saude.gov.br",
+        "source_type": "regulatory_standard",
+        "supports": [
+          "rotinas sorológicas obrigatórias pré-transfusionais",
+          "testes em doadores e receptores",
+          "critérios de liberação de sangue"
+        ]
+      },
+      {
+        "source_id": "SRC-STEMCELL",
+        "organization": "STEMCELL Technologies Inc.",
+        "title": "Cell Isolation and Culture Protocols & Technologies",
+        "url": "https://www.stemcell.com",
+        "source_type": "benchmark_manufacturer",
+        "supports": [
+          "separação celular magnética",
+          "meios semissólidos MethoCult e ClonaCell",
+          "cultura de células-tronco e hibridomas"
+        ]
+      },
+      {
+        "source_id": "SRC-SALIMETRICS",
+        "organization": "Salimetrics LLC",
+        "title": "Salivary Biomarker Collection & Analysis Guidelines",
+        "url": "https://salimetrics.com",
+        "source_type": "benchmark_manufacturer",
+        "supports": [
+          "dispositivos de coleta salivar não invasiva",
+          "biomarcadores salivares (cortisol, alfa-amilase, IgA)"
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "id": "PAGE-HUB-DIAGNOSTICO",
+      "parent_id": null,
+      "title": "Diagnóstico & Imuno-hematologia",
+      "slug": "diagnostico-imuno-hematologia",
+      "page_type": "macro_categoria",
+      "public_content": {
+        "title": "Diagnóstico Laboratorial & Imuno-hematologia Transfusional",
+        "subtitle": "Reagentes e soluções para fenotipagem eritrocitária, prova reversa, triagem de anticorpos e compatibilidade pré-transfusional.",
+        "short_description": "Reagentes monoclonais e policlonais, painéis de hemácias-teste e potencializadores destinados às rotinas em bancos de sangue e laboratórios clínicos.",
+        "introduction": "A medicina transfusional e a imuno-hematologia diagnóstica exigem máxima especificidade e reprodutibilidade sorológica. Os reagentes e soluções deste segmento atendem às diretrizes da ANVISA e aos padrões internacionais de hemoterapia, mitigando riscos de reações transfusionais e garantindo a segurança de doadores e pacientes.",
+        "sections": [
+          {
+            "id": "SEC-DIAG-01",
+            "title": "A Importância da Precisão Imuno-hematológica",
+            "content": "A integridade da cadeia hemoterápica depende da caracterização correta de antígenos e anticorpos eritrocitários. A combinação de reagentes monoclonais potentes, hemácias fenotipadas conservadas em formulações estabilizantes e soluções potencializadoras permite resolver discrepâncias ABO/Rh, identificar anticorpos clinicamente significativos e viabilizar transfusões seguras mesmo em receptores aloimunizados crônicos.",
+            "format": "text"
+          },
+          {
+            "id": "SEC-DIAG-02",
+            "title": "Subáreas do Portfólio",
+            "content": "O portfólio contempla reagentes para Tipagem Sanguínea direta e estendida, Hemácias-Teste para prova reversa e pesquisa de anticorpos irregulares, Antiglobulina Humana poliespecífica, Controles de qualidade de bancada e Soluções Potencializadoras (LISS e PEG).",
+            "format": "cards"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Qual a diferença de aplicação entre as técnicas em tubo e em gel-centrifugação?",
+            "answer": "A técnica convencional em tubo utiliza hemácias a 3-5% e avalia a aglutinação após centrifugação rápida, sendo altamente versátil. A técnica em gel-centrifugação (coluna) utiliza suspensões celulares a 0,8%, oferecendo padronização volumétrica rigorosa, leitura estável e possibilidade de arquivamento visual do resultado."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação para o laboratório",
+          "secondary": "Consultar assessoria técnica"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Tipagem ABO/Rh",
+          "Fenotipagem estendida",
+          "Triagem de anticorpos irregulares (PAI)",
+          "Identificação de anticorpos (IAI)",
+          "Controle de qualidade transfusional"
+        ],
+        "methodologies": [
+          "Aglutinação em tubo",
+          "Aglutinação em microplaca",
+          "Gel-centrifugação (coluna)"
+        ],
+        "product_types": [
+          "Anticorpos monoclonais",
+          "Soros policlonais",
+          "Hemácias suspensas",
+          "Soluções aditivas"
+        ],
+        "related_pages": [
+          "PAGE-CAT-TIPAGEM",
+          "PAGE-CAT-HEMACIAS",
+          "PAGE-CAT-AGH",
+          "PAGE-CAT-POTENCIALIZADORES",
+          "PAGE-CAT-CONTROLES"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB",
+        "SRC-REG-MS"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-CAT-TIPAGEM",
+      "parent_id": "PAGE-HUB-DIAGNOSTICO",
+      "title": "Tipagem Sanguínea",
+      "slug": "tipagem-sanguinea",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Reagentes para Tipagem Sanguínea e Fenotipagem Eritrocitária",
+        "subtitle": "Determinação fenotípica direta dos principais sistemas antigênicos eritrocitários com alta afinidade e títulos rigorosamente calibrados.",
+        "short_description": "Linha completa de anticorpos monoclonais e policlonais para a caracterização do sistema ABO, antígenos do sistema Rh e sistemas eritrocitários adicionais.",
+        "introduction": "A tipagem globular direta identifica a presença ou ausência de antígenos específicos na membrana das hemácias do paciente ou doador através do fenômeno de hemaglutinação. O emprego de anticorpos monoclonais de clones murinos selecionados assegura ausência de reatividade inespecífica e máxima capacidade aglutinante.",
+        "sections": [
+          {
+            "id": "SEC-TIP-01",
+            "title": "Arquitetura da Tipagem Eritrocitária",
+            "content": "A rotina imuno-hematológica básica inicia-se com a determinação dos antígenos A e B, seguida pela pesquisa do antígeno D (Rh1). A fenotipagem estendida envolve os antígenos Rh secundários (C, c, E, e, Cw) e antígenos de alta e baixa frequência dos sistemas Kell, Kidd, Duffy e MNS, indispensáveis na prevenção da aloimunização em transfusões de repetição.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cotação",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Tipagem direta ABO",
+          "Tipagem RhD e variantes",
+          "Fenotipagem Rh e outros sistemas"
+        ],
+        "methodologies": [
+          "Tubo",
+          "Lâmina",
+          "Microplaca",
+          "Gel-centrifugação"
+        ],
+        "product_types": [
+          "Anticorpos monoclonais IgM",
+          "Anticorpos monoclonais IgG",
+          "Soros policlonais IgG"
+        ],
+        "related_pages": [
+          "PAGE-SUBCAT-ABO",
+          "PAGE-SUBCAT-RH",
+          "PAGE-SUBCAT-OUTROS-SISTEMAS"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-SUBCAT-ABO",
+      "parent_id": "PAGE-CAT-TIPAGEM",
+      "title": "Sistema ABO",
+      "slug": "sistema-abo",
+      "page_type": "subcategoria",
+      "public_content": {
+        "title": "Reagentes para o Sistema ABO",
+        "subtitle": "Anticorpos monoclonais para a determinação dos antígenos eritrocitários A e B na rotina pré-transfusional.",
+        "short_description": "Reagentes Anti-A, Anti-B e Anti-AB formulados com clones monoclonais IgM que proporcionam aglutinação direta, límpida e instantânea.",
+        "introduction": "O sistema ABO é o mais relevante na medicina transfusional, dado que todos os indivíduos imunocompetentes produzem anticorpos naturais regulares direcionados aos antígenos que não possuem. A compatibilidade ABO é mandatória para prevenir acidentes hemolíticos intravasculares graves.",
+        "sections": [
+          {
+            "id": "SEC-ABO-GEN-01",
+            "title": "Princípio da Tipagem Direta ABO",
+            "content": "A tipagem direta fundamenta-se na mistura de hemácias do paciente com anticorpos conhecidos (Anti-A, Anti-B, Anti-AB). A presença do antígeno promove a formação de pontes cruzadas entre as hemácias (aglutinação direta macroscópica). O reagente Anti-AB é especialmente valioso na detecção de subgrupos fracos de A (como A3, Ax) e confirmação cruzada.",
+            "format": "text"
+          },
+          {
+            "id": "SEC-ABO-GEN-02",
+            "title": "Critérios Técnicos de Qualidade",
+            "content": "Reagentes monoclonais modernos de classe IgM não requerem adição de macromoléculas potencializadoras, operam eficientemente em temperatura ambiente (18°C a 25°C) e devem apresentar avidez elevada (tempo de aglutinação inferior a 15 segundos em tubo).",
+            "format": "cards"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Por que a tipagem ABO só é conclusiva após a prova reversa?",
+            "answer": "Porque indivíduos saudáveis possuem anticorpos regulares recíprocos no soro/plasma contra os antígenos ausentes em suas hemácias. A confirmação da concordância entre a tipagem globular direta (pesquisa de antígenos) e a prova reversa (pesquisa de anticorpos) é norma regulatória obrigatória."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação dos reagentes ABO",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Tipagem direta doador e receptor",
+          "Confirmação de subgrupos ABO"
+        ],
+        "methodologies": [
+          "Tubo",
+          "Lâmina",
+          "Microplaca"
+        ],
+        "product_types": [
+          "Reagente Anti-A",
+          "Reagente Anti-B",
+          "Reagente Anti-AB"
+        ],
+        "related_pages": [
+          "PAGE-SUBCAT-REVERSA",
+          "PAGE-SUBCAT-RH"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB",
+        "SRC-REG-MS"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-SUBCAT-RH",
+      "parent_id": "PAGE-CAT-TIPAGEM",
+      "title": "Sistema Rh",
+      "slug": "sistema-rh",
+      "page_type": "subcategoria",
+      "public_content": {
+        "title": "Reagentes para o Sistema Rh e Variantes",
+        "subtitle": "Soluções de alta especificidade para a tipagem do antígeno D e caracterização fenotípica Rh estendida (C, c, E, e, Cw).",
+        "short_description": "Reagentes monoclonais formulados para discriminação precisa de D-positivo, D-negativo, variantes D-fraco e pesquisa de antígenos RhCE.",
+        "introduction": "O sistema Rh é o mais complexo e polimórfico sistema antigênico de membrana eritrocitária humana. O antígeno D (RH1) possui a maior imunogenicidade clínica após os antígenos ABO, sendo crucial para a profilaxia da Doença Hemolítica Perinatal (DHPN) e segurança da transfusão.",
+        "sections": [
+          {
+            "id": "SEC-RH-01",
+            "title": "Determinação do Fator RhD e Detecção de Variantes",
+            "content": "Reagentes Anti-D modernos combinam clones monoclonais IgM e IgG (ou clones IgM com formulações otimizadas) capazes de aglutinar hemácias com antígeno D normal em fase direta (tubo ou lâmina) e viabilizar a pesquisa de variantes D-fraco e D-parcial na fase antiglobulina humana (Coombs indireto). Clones específicos são selecionados para não aglutinar o D-parcial Categoria DVI na prova direta, assegurando que doadores sejam classificados como D-positivos (ao testar na fase indireta) e receptores sejam conduzidos de forma protetiva como D-negativos.",
+            "format": "text"
+          },
+          {
+            "id": "SEC-RH-02",
+            "title": "Fenotipagem RhCE e Cw",
+            "content": "A fenotipagem dos alelos codominantes C/c e E/e, além do antígeno variante Cw (RH8), é indispensável em pacientes politransfundidos (ex: hemoglobinopatias, anemia falciforme) para prevenir a aloimunização secundária contra antígenos de alta imunogenicidade.",
+            "format": "cards"
+          }
+        ],
+        "faq": [
+          {
+            "question": "O que é o reagente Rh-hr Control e quando deve ser utilizado?",
+            "answer": "O controle Rh-hr é uma solução sem anticorpos, mas formulada com o mesmo diluente proteico e estabilizantes do reagente Anti-D. É utilizado em paralelo para descartar falsos-positivos decorrentes de autoaglutinação, rouleaux intenso ou revestimento espontâneo de imunoglobulinas na hemácia do paciente."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação da linha Rh",
+          "secondary": "Tirar dúvidas técnicas"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Tipagem RhD de rotina",
+          "Investigação de D fraco e D parcial",
+          "Fenotipagem estendida RhCE"
+        ],
+        "methodologies": [
+          "Tubo",
+          "Lâmina",
+          "Microplaca",
+          "Teste Indireto de Antiglobulina"
+        ],
+        "product_types": [
+          "Anti-D IgM+IgG",
+          "Anti-C",
+          "Anti-c",
+          "Anti-E",
+          "Anti-e",
+          "Anti-CDE",
+          "Anti-Cw",
+          "Controle Rh-hr"
+        ],
+        "related_pages": [
+          "PAGE-CAT-TIPAGEM",
+          "PAGE-CAT-AGH",
+          "PAGE-CAT-CONTROLES"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCLONE-ANTI-D",
+        "PROD-INVITROCLONE-ANTI-CCEE",
+        "PROD-INVITROCLONE-ANTI-CDE",
+        "PROD-INVITROCLONE-ANTI-CW",
+        "PROD-INVITROCLONE-RH-HR-CONTROL"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-SUBCAT-OUTROS-SISTEMAS",
+      "parent_id": "PAGE-CAT-TIPAGEM",
+      "title": "Outros Sistemas Eritrocitários (Kell, Kidd, Duffy, MNS)",
+      "slug": "outros-sistemas-eritrocitarios",
+      "page_type": "subcategoria",
+      "public_content": {
+        "title": "Reagentes para Fenotipagem Estendida: Kell, Kidd, Duffy e MNS",
+        "subtitle": "Anticorpos de alta afinidade para a identificação de antígenos de significado clínico transfusional e obstétrico.",
+        "short_description": "Linhas de reagentes monoclonais e policlonais antiglobulina-reativos para tipagem dos antígenos K, k, Jka, Jkb, Fya, Fyb, S e s.",
+        "introduction": "A aloimunização contra antígenos não-ABO/Rh representa um dos principais desafios transfusionais modernos. Anticorpos contra os antígenos Kell, Kidd e Duffy frequentemente causam reações hemolíticas tardias e doença hemolítica neonatal, tornando a tipagem prévia de hemocomponentes um requisito mandatório para pacientes crônicos.",
+        "sections": [
+          {
+            "id": "SEC-OUTROS-01",
+            "title": "Particularidades Metodológicas dos Sistemas Raros",
+            "content": "Enquanto reagentes monoclonais IgM (como Anti-Jka, Anti-Jkb, Anti-K, Anti-S, Anti-s) promovem aglutinação direta em tubo, determinados antígenos como Duffy (Fya, Fyb) e variantes de Kell (k/KEL2) utilizam historicamente reagentes policlonais IgG humanos ou monoclonais IgG que exigem incubação a 37°C e revelação através da fase de Antiglobulina Humana (teste de Coombs indireto).",
+            "format": "text"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Por que os anticorpos do sistema Kidd são conhecidos por reações transfusionais tardias perigosas?",
+            "answer": "Os anticorpos Anti-Jka e Anti-Jkb apresentam uma característica clínica conhecida: seus títulos plasmáticos caem rapidamente com o tempo, tornando-se indetectáveis na triagem de rotina. Após nova transfusão com hemácias carreadoras do antígeno, ocorre resposta anamnéstica violenta e hemólise tardia intravascular grave mediada por complemento."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação para fenotipagem estendida",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Fenotipagem de doadores e receptores",
+          "Investigação de anticorpos irregulares",
+          "Compatibilidade em anemias falciformes"
+        ],
+        "methodologies": [
+          "Aglutinação direta em tubo",
+          "Teste indireto de antiglobulina (Coombs)"
+        ],
+        "product_types": [
+          "Anticorpos monoclonais IgM",
+          "Soros policlonais humanos IgG"
+        ],
+        "related_pages": [
+          "PAGE-CAT-TIPAGEM",
+          "PAGE-CAT-AGH"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCLONE-ANTI-K",
+        "PROD-INVITROCLONE-ANTI-JK",
+        "PROD-INVITROCLONE-ANTI-S-S",
+        "PROD-INVITROLIQ-ANTI-K",
+        "PROD-INVITROLIQ-ANTI-FYA-FYB"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-CAT-HEMACIAS",
+      "parent_id": "PAGE-HUB-DIAGNOSTICO",
+      "title": "Hemácias-Teste",
+      "slug": "hemacias-teste",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Hemácias-Teste Reagentes para Rotina Transfusional",
+        "subtitle": "Suspensões padronizadas de eritrócitos humanos fenotipados para prova reversa ABO, triagem (PAI) e identificação (IAI) de anticorpos.",
+        "short_description": "Painéis celulares desenvolvidos nas concentrações de 0,8% (para gel-centrifugação) e 3% (para tubos e microplacas), formulados em solução preservante para máxima conservação antigênica.",
+        "introduction": "As hemácias-teste são reagentes biológicos compostos por suspensões de glóbulos vermelhos humanos de doadores rigorosamente fenotipados. Constituem a ferramenta analítica fundamental para detectar anticorpos circulantes no soro ou plasma de doadores e receptores de sangue.",
+        "sections": [
+          {
+            "id": "SEC-HEM-01",
+            "title": "Metodologias e Concentrações de Trabalho",
+            "content": "As hemácias-teste são disponibilizadas em duas faixas metodológicas: 0,8% de hematócrito para tecnologia em gel-centrifugação (série INVITROCELL), otimizadas para colunas de filtração neutras ou com antiglobulina; e 3% de hematócrito (série INVITROCYTE), calibradas para testes manuais em tubo de ensaio e automação em microplacas.",
+            "format": "table"
+          },
+          {
+            "id": "SEC-HEM-02",
+            "title": "Aplicações Primárias",
+            "content": "Abrange desde a Prova Reversa ABO (confirmação sérica mandatória), Triagem de Anticorpos Irregulares (PAI) em doadores e pacientes através de células individuais ou pool, Identificação de Anticorpos Irregulares (IAI) com painéis estendidos de até 11 células (com e sem tratamento enzimático por papaína), até o Controle de Coombs.",
+            "format": "cards"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cronograma de remessas periódicas",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Prova reversa ABO",
+          "PAI (Triagem)",
+          "IAI (Identificação)",
+          "Controle de qualidade do TAI"
+        ],
+        "methodologies": [
+          "Gel-centrifugação (0,8%)",
+          "Tubo convencional (3%)",
+          "Microplaca (1,5% - 3%)"
+        ],
+        "product_types": [
+          "Células únicas A1, A2, B, O",
+          "Pool de doadores",
+          "Painéis estendidos 11 células"
+        ],
+        "related_pages": [
+          "PAGE-SUBCAT-REVERSA",
+          "PAGE-SUBCAT-PAI-IAI",
+          "PAGE-CAT-CONTROLES"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCELL-REVERSE",
+        "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
+        "PROD-INVITROCYTE-REVERSE",
+        "PROD-INVITROCYTE-SCAN-SCREEN-IDENT",
+        "PROD-INVITROCYTE-COOMBS-CONTROL"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB",
+        "SRC-REG-MS"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-SUBCAT-REVERSA",
+      "parent_id": "PAGE-CAT-HEMACIAS",
+      "title": "Prova Reversa ABO",
+      "slug": "prova-reversa-abo",
+      "page_type": "aplicacao",
+      "public_content": {
+        "title": "Hemácias-Teste para Prova Reversa ABO",
+        "subtitle": "Confirmação sérica dos anticorpos naturais regulares do sistema ABO.",
+        "short_description": "Células humanas fenotipadas conhecidas dos grupos A1, A2, B e O para detecção de isoaglutininas naturais Anti-A e Anti-B.",
+        "introduction": "A prova reversa (ou sérica) é a contraprova indispensável da tipagem globular. Testa o soro ou plasma do indivíduo contra hemácias com antígenos definidos, permitindo verificar a concordância antes de qualquer liberação de hemocomponente.",
+        "sections": [
+          {
+            "id": "SEC-REV-01",
+            "title": "Interpretação e Discrepâncias",
+            "content": "A divergência entre prova direta e reversa sinaliza problemas pré-analíticos, imunodeficiências (títulos baixos de anticorpos em idosos ou neonatos), presença de crioaglutininas, rouleaux ou anticorpos irregulares contra antígenos expressos nas hemácias-teste (como Anti-M ou Anti-P1). A inclusão de hemácias A2 e O permite discriminar subgrupos de A com anticorpos Anti-A1 e afastar interferências inespecíficas.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cotação",
+          "secondary": "Falar com assessor técnico"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Rotina imuno-hematológica",
+          "Resolução de discrepâncias ABO"
+        ],
+        "methodologies": [
+          "Gel 0,8%",
+          "Tubo 3%",
+          "Microplaca"
+        ],
+        "product_types": [
+          "Kits 2 frascos (A1, B)",
+          "Kits 3 frascos (A1, B, O)",
+          "Kits 4 frascos (A1, A2, B, O)"
+        ],
+        "related_pages": [
+          "PAGE-SUBCAT-ABO",
+          "PAGE-CAT-HEMACIAS"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCELL-REVERSE",
+        "PROD-INVITROCYTE-REVERSE"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-SUBCAT-PAI-IAI",
+      "parent_id": "PAGE-CAT-HEMACIAS",
+      "title": "Pesquisa e Identificação de Anticorpos Irregulares (PAI / IAI)",
+      "slug": "pesquisa-identificacao-anticorpos",
+      "page_type": "aplicacao",
+      "public_content": {
+        "title": "Triagem e Identificação de Anticorpos Irregulares Antieritrocitários",
+        "subtitle": "Painéis celulares abrangentes para detecção de aloanticorpos e autoanticorpos eritrocitários clinicamente significativos.",
+        "short_description": "Conjuntos celulares fenotipados para expressão homozigota dos principais antígenos, disponíveis em apresentações individuais, pools e versões tratadas por enzimas proteolíticas.",
+        "introduction": "A Pesquisa de Anticorpos Irregulares (PAI) e a Identificação de Anticorpos Irregulares (IAI) constituem os pilares da segurança transfusional e obstétrica. Detectam anticorpos imunes formados após gestações prévias ou transfusões incompatíveis, prevenindo hemólise imediata ou tardia.",
+        "sections": [
+          {
+            "id": "SEC-PAI-01",
+            "title": "Matriz Antigênica e Homozigose",
+            "content": "Para assegurar a sensibilidade contra anticorpos que exibem dosagem gênica (efeito de dosagem), as hemácias dos painéis de triagem (2 ou 3 células) e identificação (11 células) são selecionadas expressando antígenos dos sistemas Rh, Duffy, Kidd e MNS preferencialmente em homozigose (ex: Jk(a+b-), Fy(a+b-)).",
+            "format": "text"
+          },
+          {
+            "id": "SEC-PAI-02",
+            "title": "Papel do Painel Tratado com Enzima (Papaína)",
+            "content": "O uso paralelo de painéis tratados com enzimas proteolíticas (como papaína) cliva sialomucinas de superfície (destruindo antígenos M, N, S, s, Fya e Fyb) enquanto amplia a exposição estérica de antígenos Rh e Kidd, auxiliando de forma decisiva na resolução de misturas complexas de múltiplos anticorpos.",
+            "format": "cards"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cronograma de painéis",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Triagem de doadores de sangue",
+          "Rotina pré-transfusional de pacientes",
+          "Acompanhamento pré-natal de gestantes"
+        ],
+        "methodologies": [
+          "Gel-centrifugação com AGH",
+          "Teste de Coombs indireto em tubo com LISS/PEG"
+        ],
+        "product_types": [
+          "Scan (2 células)",
+          "Screen (3 células)",
+          "Pool de hemácias",
+          "Painel de Identificação (11 células)",
+          "Painel Enzimático Papaína (Ident 11P)"
+        ],
+        "related_pages": [
+          "PAGE-CAT-HEMACIAS",
+          "PAGE-CAT-AGH",
+          "PAGE-CAT-POTENCIALIZADORES"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
+        "PROD-INVITROCYTE-SCAN-SCREEN-IDENT"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-CAT-AGH",
+      "parent_id": "PAGE-HUB-DIAGNOSTICO",
+      "title": "Antiglobulina Humana (Soro de Coombs)",
+      "slug": "antiglobulina-humana",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Reagente de Antiglobulina Humana (Soro de Coombs)",
+        "subtitle": "Detecção de anticorpos incompletos não aglutinantes (IgG) e frações ativadas do sistema complemento ligadas às hemácias.",
+        "short_description": "Formulações poliespecíficas e monoespecíficas calibradas para Teste Direto de Antiglobulina (TAD) e Teste Indireto de Antiglobulina (TAI).",
+        "introduction": "Os anticorpos eritrocitários da classe IgG (imunes) são monoméricos e frequentemente incapazes de superar a barreira de potencial elétrico zeta das hemácias em suspensão salina para produzir aglutinação direta. O reagente de Antiglobulina Humana (AGH) funciona como uma ponte molecular, ligando as regiões Fc das imunoglobulinas ou fragmentos de complemento fixados nas membranas, gerando aglutinação visível.",
+        "sections": [
+          {
+            "id": "SEC-AGH-01",
+            "title": "Poliespecífico vs. Monoespecífico",
+            "content": "O soro poliespecífico contém anticorpos anti-IgG humana e anti-complemento (especialmente anti-C3d), sendo ideal para triagem ampla em TAD (anemias hemolíticas autoimunes, DHPN, reações transfusionais) e provas de compatibilidade. Reagentes monoespecíficos contêm apenas anti-IgG ou anti-C3d/C3b, discriminando a natureza imunológica exata da sensibilização celular.",
+            "format": "text"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Por que a lavagem adequada das hemácias é crítica no teste em tubo com AGH?",
+            "answer": "Qualquer traço residual de imunoglobulinas livres não lavadas no tubo neutraliza o reagente de antiglobulina, impedindo que ele se ligue aos anticorpos fixados nas hemácias e causando resultados falso-negativos graves. O uso de hemácias-controle de Coombs valida se a lavagem foi eficiente e o reagente estava ativo."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação de AGH",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Teste Direto de Antiglobulina (TAD)",
+          "Teste Indireto de Antiglobulina (TAI)",
+          "Prova de compatibilidade maior",
+          "Pesquisa de D-fraco"
+        ],
+        "methodologies": [
+          "Tubo de ensaio",
+          "Cartões de gel AGH"
+        ],
+        "product_types": [
+          "AGH Poliespecífico (Anti-IgG + Anti-C3d)",
+          "AGH Monoespecífico Anti-IgG"
+        ],
+        "related_pages": [
+          "PAGE-CAT-TIPAGEM",
+          "PAGE-CAT-CONTROLES",
+          "PAGE-CAT-POTENCIALIZADORES"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCLONE-AGH"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-CAT-POTENCIALIZADORES",
+      "parent_id": "PAGE-HUB-DIAGNOSTICO",
+      "title": "Potencializadores & Soluções",
+      "slug": "potencializadores-solucoes",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Soluções Potencializadoras de Reação Imunológica",
+        "subtitle": "Soluções aditivas de baixa força iônica (LISS) e polietilenoglicol (PEG) para aceleração da captação de anticorpos e aumento da sensibilidade diagnóstica.",
+        "short_description": "Meios formulados para reduzir o tempo de incubação e elevar a detectabilidade de anticorpos eritrocitários de baixa afinidade ou títulos limítrofes.",
+        "introduction": "A interação entre antígenos eritrocitários e anticorpos séricos é influenciada por forças eletrostáticas, constante dielétrica do meio e nuvem iônica ao redor da célula. O uso de aditivos potencializadores permite aos laboratórios diminuir o tempo de incubação de 45-60 minutos para 10-15 minutos com ganhos expressivos de sensibilidade analítica.",
+        "sections": [
+          {
+            "id": "SEC-POT-01",
+            "title": "LISS: Mecanismo de Ação e Vantagens",
+            "content": "A Solução de Baixa Força Iônica (Low Ionic Strength Solution - LISS) diminui a concentração de íons sódio e cloreto livres, atenuando a barreira eletrostática que separa os epítopos carregados positivamente das paratopos dos anticorpos carregados negativamente. Isso acelera drasticamente a fase primária de associação antígeno-anticorpo sem induzir ligação inespecífica.",
+            "format": "text"
+          },
+          {
+            "id": "SEC-POT-02",
+            "title": "PEG: Exclusão Estérica e Alta Sensibilidade",
+            "content": "O Polietilenoglicol (PEG) atua promovendo a exclusão estérica de moléculas de água livres no meio reacional, concentrando os anticorpos ao redor da superfície eritrocitária. É a ferramenta de escolha para detecção de anticorpos clinicamente significativos fracamente reativos no teste indireto de antiglobulina, além de ser empregado em técnicas especializadas de adsorção autóloga e alogênica.",
+            "format": "cards"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Pode-se centrifugar as hemácias imediatamente após incubação com PEG?",
+            "answer": "Não. O PEG induz agregação proteica inespecífica se centrifugado antes da lavagem. As hemácias incubadas com PEG devem ser lavadas repetidamente com salina antes da adição do reagente de Antiglobulina Humana (preferencialmente anti-IgG monoespecífico)."
+          }
+        ],
+        "cta": {
+          "primary": "Solicitar cotação de LISS e PEG",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Potencialização de TAI",
+          "Provas de compatibilidade cruzada",
+          "Adsorção de anticorpos",
+          "Rotina transfusional rápida"
+        ],
+        "methodologies": [
+          "Tubo manual convencional"
+        ],
+        "product_types": [
+          "Solução LISS isotônica",
+          "Solução PEG-LISS a 20%"
+        ],
+        "related_pages": [
+          "PAGE-CAT-AGH",
+          "PAGE-CAT-HEMACIAS"
+        ]
+      },
+      "products": [
+        "PROD-IMUNOSCAN-LISS",
+        "PROD-IMUNOSCAN-PEG"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-CAT-CONTROLES",
+      "parent_id": "PAGE-HUB-DIAGNOSTICO",
+      "title": "Controles de Qualidade Imuno-hematológicos",
+      "slug": "controles-imuno-hematologia",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Controles de Qualidade Internos e Reagentes Validador",
+        "subtitle": "Controles para verificação metodológica para testes antiglobulínicos e tipagens em conformidade com as BPL.",
+        "short_description": "Células sensibilizadas (Controle de Coombs) e controles negativos de diluente proteico para assegurar ausência de falso-negativos e falso-positivos.",
+        "introduction": "O controle de qualidade interno é exigência regulatória para a acreditação laboratorial e liberação de laudos transfusionais. Os reagentes de controle atestam se as etapas críticas de lavagem, integridade do reagente e ausência de interferências de matriz foram plenamente satisfeitas.",
+        "sections": [
+          {
+            "id": "SEC-CTRL-01",
+            "title": "Hemácias Controle de Coombs",
+            "content": "Consiste em hemácias humanas do grupo O sensibilizadas in vitro com imunoglobulina humana IgG. Quando adicionadas a qualquer teste antiglobulínico com resultado negativo, devem invariavelmente aglutinar, confirmando que o reagente de AGH estava presente, ativo e não foi inativado por proteínas residuais mal lavadas.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cotação de reagentes de controle",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Validação de resultados negativos em TAI/TAD",
+          "Controle de especificidade Rh"
+        ],
+        "methodologies": [
+          "Tubo de ensaio"
+        ],
+        "product_types": [
+          "Células sensibilizadas com IgG",
+          "Controle negativo de diluente proteico"
+        ],
+        "related_pages": [
+          "PAGE-CAT-AGH",
+          "PAGE-SUBCAT-RH"
+        ]
+      },
+      "products": [
+        "PROD-INVITROCYTE-COOMBS-CONTROL",
+        "PROD-INVITROCLONE-RH-HR-CONTROL"
+      ],
+      "source_ids": [
+        "SRC-BULA-01",
+        "SRC-TECH-AABB",
+        "SRC-REG-MS"
+      ],
+      "pending_imunoscan": []
+    },
+    {
+      "id": "PAGE-HUB-LIFESCIENCES",
+      "parent_id": null,
+      "title": "Pesquisa & Life Sciences",
+      "slug": "pesquisa-life-sciences",
+      "page_type": "macro_categoria",
+      "public_content": {
+        "title": "Pesquisa Científica & Ciências da Vida",
+        "subtitle": "Áreas e tecnologias de interesse para centros de pesquisa, universidades e indústria farmacêutica.",
+        "short_description": "Portfólio temático para suporte à investigação científica em biologia celular, citometria, células-tronco, triagem de compostos, biologia molecular e genética.",
+        "introduction": "Esta seção reúne conteúdos técnicos sobre áreas historicamente associadas à atuação da ImunoScan. Marcas, produtos e serviços atualmente oferecidos dependem de confirmação comercial.",
+        "sections": [
+          {
+            "id": "SEC-LS-01",
+            "title": "Pilares de Atuação em Ciências da Vida",
+            "content": "Compreende nove verticais estratégicas: Separação e Análise Celular, Citometria de Fluxo, Células-Tronco e Cultura Celular, Bioprocesso, Bibliotecas de Compostos (Small Molecules), Citogenética e Microarrays de CGH, Biologia Molecular, Análise Salivar e Imunologia para Pesquisa.",
+            "format": "cards"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Falar com consultor científico",
+          "secondary": "Solicitar cotação institucional"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Pesquisa translacional",
+          "Cultura e clonagem celular",
+          "Screening de fármacos",
+          "Caracterização genética",
+          "Biomarcadores"
+        ],
+        "methodologies": [
+          "Citometria",
+          "Imunomagnética",
+          "PCR/qPCR",
+          "Microarrays",
+          "Cultura celular semissólida e 2D/3D",
+          "ELISA"
+        ],
+        "product_types": [
+          "Meios de cultura",
+          "Anticorpos conjugados",
+          "Enzimas",
+          "Bibliotecas químicas",
+          "Dispositivos de coleta"
+        ],
+        "related_pages": [
+          "PAGE-CAT-SEPARACAO-ANALISE",
+          "PAGE-CAT-CITOMETRIA",
+          "PAGE-CAT-STEM-CELLS",
+          "PAGE-CAT-BIOPROCESSO",
+          "PAGE-CAT-SMALL-MOLECULES",
+          "PAGE-CAT-CGH",
+          "PAGE-CAT-BIOMOL",
+          "PAGE-CAT-SALIVAR",
+          "PAGE-CAT-IMUNOPESQUISA"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL",
+        "SRC-SALIMETRICS"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "Quais são os acordos e contratos vigentes de representação comercial para as marcas identificadas (ex: STEMCELL, Salimetrics, Merck)?",
+          "reason": "O site antigo continha logos dessas empresas, mas a formalização atual da representação e exclusividade necessita de validação antes de afirmações públicas no catálogo.",
+          "priority": "high"
+        },
+        {
+          "question": "A ImunoScan oferece atualmente suporte à importação via agências de fomento científico?",
+          "reason": "A V1 afirmava esse serviço sem evidência primária suficiente.",
+          "priority": "high"
+        }
+      ]
+    },
+    {
+      "id": "PAGE-CAT-SEPARACAO-ANALISE",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Separação & Análise Celular",
+      "slug": "separacao-analise-celular",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Separação e Fracionamento Celular",
+        "subtitle": "Tecnologias para enriquecimento, purificação e caracterização de subpopulações celulares com alta viabilidade e pureza.",
+        "short_description": "Insumos para isolamento por seleção imunomagnética (positiva e negativa), gradientes de densidade para PBMC e filtros de dissociação tecidual.",
+        "introduction": "A separação de subpopulações celulares intactas (linfócitos T, B, células NK, monócitos, células-tronco hematopoieticas) é pré-requisito mandatório para estudos funcionais imunológicos, ensaios de citotoxicidade e terapias celulares avançadas.",
+        "sections": [
+          {
+            "id": "SEC-SEP-01",
+            "title": "Tecnologias e Abordagens de Isolamento",
+            "content": "As metodologias subdividem-se em isolamento físico por gradiente de densidade (obtenção de células mononucleares periféricas) e seleção de base imunológica mediada por microesferas magnéticas conjugadas a anticorpos monoclonais. Na seleção positiva, a população-alvo é rotulada e retida; na seleção negativa (depleção), todas as células indesejadas são imunomarcadas e retidas, deixando as células-alvo purificadas 'virgens' de ligação de anticorpos em suspensão.",
+            "format": "cards"
+          },
+          {
+            "id": "SEC-SEP-02",
+            "title": "Tipos de Insumos da Categoria",
+            "content": "A categoria contempla: microesferas imunomagnéticas, colunas e ímãs de separação, meios de densidade hidrofílicos padronizados para PBMC, corantes de viabilidade vital (como Azul de Tripan) e filtros celulares (cell strainers) para homogeneização de tecidos primários.",
+            "format": "text"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Quando é preferível utilizar a seleção negativa em vez da positiva?",
+            "answer": "A seleção negativa é recomendada quando a ativação celular ou a ocupação de receptores de superfície precisa ser estritamente evitada, como em ensaios de diferenciação funcional e proliferação de receptores TCR de linfócitos T."
+          }
+        ],
+        "cta": {
+          "primary": "Consultar insumos de separação celular",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Isolamento de PBMC",
+          "Purificação de subpopulações imunes",
+          "Preparação celular pré-citometria",
+          "Terapia celular"
+        ],
+        "methodologies": [
+          "Separação magnética",
+          "Gradiente de densidade",
+          "Filtração celular"
+        ],
+        "product_types": [
+          "Beads magnéticas",
+          "Meios de densidade",
+          "Cell strainers",
+          "Tampões de lavagem"
+        ],
+        "related_pages": [
+          "PAGE-CAT-CITOMETRIA",
+          "PAGE-CAT-STEM-CELLS"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL"
+      ],
+      "pending_imunoscan": [],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-CITOMETRIA",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Citometria de Fluxo",
+      "slug": "citometria-de-fluxo",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Reagentes e Soluções para Citometria de Fluxo",
+        "subtitle": "Anticorpos conjugados a fluorocromos, esferas de calibração e tampões especializados para imunofenotipagem multiparamétrica.",
+        "short_description": "Insumos desenvolvidos para garantir estabilidade de sinal, compensação espectral precisa e conservação morfológica em ensaios de fluxo celular.",
+        "introduction": "A citometria de fluxo é uma técnica biofísica fundamental que permite a análise simultânea e multiparamétrica de milhares de células por segundo em suspensão, quantificando marcadores de superfície, moléculas intracelulares e características de dispersão de luz.",
+        "sections": [
+          {
+            "id": "SEC-CIT-01",
+            "title": "Soluções Metodológicas do Segmento",
+            "content": "Compreende anticorpos monoclonais conjugados a fluoróforos tradicionais (FITC, PE, APC, PerCP) e tandem dyes avançados, painéis prontos para imunofenotipagem, reagentes de lise de hemácias (com e sem fixação), tampões de permeabilização intracelular e esferas (beads) para alinhamento óptico e contagem volumétrica absoluta.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Consultar anticorpos para citometria",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Imunofenotipagem",
+          "Ciclo celular e apoptose",
+          "Quantificação de citocinas intracelulares",
+          "Validação de pureza celular"
+        ],
+        "methodologies": [
+          "Citometria de fluxo multiparamétrica"
+        ],
+        "product_types": [
+          "Anticorpos conjugados",
+          "Tampões de permeabilização",
+          "Beads de calibração",
+          "Corantes de viabilidade fluorescente"
+        ],
+        "related_pages": [
+          "PAGE-CAT-SEPARACAO-ANALISE",
+          "PAGE-CAT-IMUNOPESQUISA"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL"
+      ],
+      "pending_imunoscan": [],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-STEM-CELLS",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Células-Tronco & Cultura Celular",
+      "slug": "celulas-tronco-cultura-celular",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Meios Especializados para Células-Tronco e Clonagem Celular",
+        "subtitle": "Formulações semissólidas e meios nutritivos especializados para clonagem de hibridomas e expansão de células-tronco.",
+        "short_description": "Soluções pioneiras para ensaios coloniogênicos (CFC), clonagem celular em etapa única e diferenciação de linhagens mesenquimais e pluripotentes.",
+        "introduction": "A biologia de células-tronco e a produção de anticorpos exigem ambientes de cultivo estritamente controlados, livres de variações lote a lote. Linhas especializadas de meios semissólidos à base de metilcelulose permitem o isolamento clonal sem a necessidade de diluição limitante trabalhosa.",
+        "sections": [
+          {
+            "id": "SEC-STEM-01",
+            "title": "Ensaios Clorogênicos e Meios Semissólidos",
+            "content": "Tecnologias consolidadas internacionalmente como MethoCult™ (padrão-ouro em ensaios clonogênicos de progenitores hematopoieticos) e ClonaCell™ (meios semissólidos que permitem selecionar e clonar hibridomas e mielomas produtores de anticorpos em uma única etapa física) aumentam radicalmente o rendimento de linhagens monoclonais de interesse.",
+            "format": "cards"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cotação de meios de cultura",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Clonagem de hibridomas",
+          "Ensaio de unidades formadoras de colônia (CFU)",
+          "Cultura de células-tronco mesenquimais e iPS"
+        ],
+        "methodologies": [
+          "Cultura semissólida",
+          "Cultura líquida estéril"
+        ],
+        "product_types": [
+          "Meios à base de metilcelulose",
+          "Suplementos de diferenciação",
+          "Fatores de crescimento recombinantes"
+        ],
+        "related_pages": [
+          "PAGE-CAT-BIOPROCESSO",
+          "PAGE-CAT-SEPARACAO-ANALISE"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "A empresa comercializa ativamente os produtos das marcas MethoCult e ClonaCell?",
+          "reason": "Evidenciados no backup de imagens históricas; requer confirmação contratual atual.",
+          "priority": "high"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-BIOPROCESSO",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Bioprocesso",
+      "slug": "bioprocesso",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Soluções e Insumos para Bioprocesso",
+        "subtitle": "Nutrientes, tampões e consumíveis de filtração para suporte a etapas de upstream e downstream industrial e laboratorial.",
+        "short_description": "Insumos para expansão celular de alta densidade em biorreatores, meios de cultivo definidos quimicamente e soluções para purificação proteica.",
+        "introduction": "As etapas de bioprocessamento exigem insumos com grau analítico rigoroso, livres de contaminantes de origem animal (Animal-Free) e aptos à escalabilidade em biorreatores de pesquisa ou produção biológica.",
+        "sections": [
+          {
+            "id": "SEC-BIO-01",
+            "title": "Escopo da Linha",
+            "content": "Compreende meios para fermentação e cultura de alta densidade, suplementos livres de soro, antibióticos de grau farmacêutico para seleção gênica, módulos de filtração esterilizante por membrana e reagentes para criopreservação celular em larga escala.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Consultar insumos de bioprocesso",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Upstream celular",
+          "Clarificação e filtração",
+          "Expansão de biomassa"
+        ],
+        "methodologies": [
+          "Fermentação",
+          "Biorreatores",
+          "Filtração tangencial e frontal"
+        ],
+        "product_types": [
+          "Meios quimicamente definidos",
+          "Sistemas de filtração",
+          "Crioprotetores"
+        ],
+        "related_pages": [
+          "PAGE-CAT-STEM-CELLS",
+          "PAGE-CAT-BIOMOL"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL"
+      ],
+      "pending_imunoscan": [],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-SMALL-MOLECULES",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Biblioteca de Compostos & Small Molecules",
+      "slug": "biblioteca-compostos-small-molecules",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Bibliotecas Químicas & Pequenas Moléculas (Small Molecules)",
+        "subtitle": "Coleções químicas de compostos biologicamente ativos e moduladores de vias de sinalização para triagem farmacológica.",
+        "short_description": "Compostos químicos de alta pureza para High-Throughput Screening (HTS), modulação epigenética, inibição de quinases e estudos toxicológicos.",
+        "introduction": "As bibliotecas de pequenas moléculas são ferramentas fundamentais para descoberta de alvos terapêuticos e elucidação de cascatas de transdução de sinal. Fornecidas em placas multipoços prontas para uso ou alíquotas liofilizadas, possibilitam triagens biológicas rápidas e automatizadas.",
+        "sections": [
+          {
+            "id": "SEC-SM-01",
+            "title": "Aplicações em Triagem e Descoberta",
+            "content": "Aplica-se em modelos de screening de novos fármacos, ensaios fenotípicos in vitro, estudos de reprogramação celular (indução de células-tronco pluripotentes induzidas por moléculas sintéticas) e estudos toxicológicos preditivos.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Consultar acervo de compostos",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "High-Throughput Screening (HTS)",
+          "Descoberta de fármacos",
+          "Modulação de sinalização celular"
+        ],
+        "methodologies": [
+          "Ensaios fenotípicos",
+          "Inibição enzimática",
+          "Microplacas"
+        ],
+        "product_types": [
+          "Bibliotecas em DMSO",
+          "Inibidores específicos liofilizados",
+          "Compostos de referência"
+        ],
+        "related_pages": [
+          "PAGE-CAT-STEM-CELLS",
+          "PAGE-CAT-BIOMOL"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-STEMCELL"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "Quais bibliotecas de compostos específicas (ex: Axxora, Merck) estão disponíveis no portfólio ativo?",
+          "reason": "Categoria inferida de ativos do site estático histórico sem lista de SKUs associada.",
+          "priority": "medium"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-CGH",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "CGH & Citogenética",
+      "slug": "cgh-citogenetica",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Microarrays de CGH & Citogenética Molecular",
+        "subtitle": "Plataformas de Hibridização Genômica Comparativa para detecção de variações no número de cópias (CNVs) de alta resolução.",
+        "short_description": "Reagentes de marcação de DNA, sondas específicas e lâminas de microarrays para diagnóstico de microdeleções, aberrações cromossômicas e oncogenética.",
+        "introduction": "A Hibridização Genômica Comparativa por Microarrays (array-CGH) revolucionou a citogenética clínica e experimental ao permitir mapear ganhos e perdas cromossômicas submicroscópicas com resolução milhares de vezes superior ao cariótipo clássico de bandas G.",
+        "sections": [
+          {
+            "id": "SEC-CGH-01",
+            "title": "Fluxo Metodológico do Ensaio de CGH",
+            "content": "Envolve a extração do DNA genômico da amostra-teste e de uma referência normal, seguida por marcação diferencial com fluoróforos distintos (ex: Cy3 e Cy5), coinoculação e hibridização competitiva sobre uma lâmina contendo milhares de sondas genômicas imobilizadas, revelando alterações de dosagem cromossômica após escaneamento fluorescente de alta resolução.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Consultar soluções de citogenética",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Detecção de anomalias congênitas",
+          "Oncogenética",
+          "Pesquisa cromossômica"
+        ],
+        "methodologies": [
+          "Array-CGH",
+          "FISH (Hibridização In Situ Fluorescente)"
+        ],
+        "product_types": [
+          "Microarrays genômicos",
+          "Kits de marcação fluorescente de DNA",
+          "Tampões de hibridização"
+        ],
+        "related_pages": [
+          "PAGE-CAT-BIOMOL"
+        ]
+      },
+      "products": [],
+      "source_ids": [],
+      "pending_imunoscan": [
+        {
+          "question": "Validar fontes e escopo comercial atual de 'CGH & Citogenética'.",
+          "reason": "A V1 usava bula de imuno-hematologia como fonte, inadequada para esta categoria.",
+          "priority": "medium"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-BIOMOL",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Biologia Molecular",
+      "slug": "biologia-molecular",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Reagentes e Soluções para Biologia Molecular",
+        "subtitle": "Kits de extração de ácidos nucleicos, enzimas de amplificação e reagentes de PCR/qPCR para rotinas diagnósticas e científicas.",
+        "short_description": "Enzimas de alta fidelidade, master mixes para PCR quantitativo, marcadores de peso molecular e consumíveis para eletroforese.",
+        "introduction": "O portfólio de Biologia Molecular apoia as etapas fundamentais da análise genômica: da extração e purificação de DNA/RNA com alto rendimento e pureza à amplificação por PCR convencional e quantitativo em tempo real.",
+        "sections": [
+          {
+            "id": "SEC-BM-01",
+            "title": "Componentes da Linha Molecular",
+            "content": "Agrupa sistemas de purificação em coluna de sílica ou esferas magnéticas, DNA polimerases de alta fidelidade, tampões e nucleotídeos (dNTPs), agarose de alta resolução e marcadores de pares de bases calibrados.",
+            "format": "cards"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Solicitar cotação de biologia molecular",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Genotipagem",
+          "Expressão gênica",
+          "Diagnóstico molecular"
+        ],
+        "methodologies": [
+          "PCR / qPCR",
+          "Eletroforese em gel de agarose",
+          "Extração de ácidos nucleicos"
+        ],
+        "product_types": [
+          "Kits de extração",
+          "Master Mixes Taq/Pfu",
+          "Ladders de DNA"
+        ],
+        "related_pages": [
+          "PAGE-CAT-CGH",
+          "PAGE-CAT-SALIVAR"
+        ]
+      },
+      "products": [],
+      "source_ids": [],
+      "pending_imunoscan": [
+        {
+          "question": "Validar fontes e escopo comercial atual de 'Biologia Molecular'.",
+          "reason": "A V1 usava bula de imuno-hematologia como fonte, inadequada para esta categoria.",
+          "priority": "medium"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-SALIVAR",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Análise Salivar",
+      "slug": "analise-salivar",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Biossorologia Salivar e Coleta Não Invasiva",
+        "subtitle": "Dispositivos certificados para coleta, estabilização e dosagem quantitativa de biomarcadores na saliva humana.",
+        "short_description": "Sistemas de amostragem padronizada e kits diagnósticos para quantificação de hormônios (cortisol, melatonina, testosterona), citocinas e anticorpos salivares.",
+        "introduction": "A saliva representa uma matriz de biópsia líquida não invasiva de crescente importância na pesquisa clínica, endocrinologia, psicologia comportamental e medicina esportiva. A integridade dos resultados depende da utilização de dispositivos de coleta que não adsorvam analitos de interesse e estabilizem a amostra contra degradação enzimática imediata.",
+        "sections": [
+          {
+            "id": "SEC-SAL-01",
+            "title": "Dispositivos de Amostragem Não Invasiva",
+            "content": "A amostragem salivar correta requer dispositivos específicos para cada perfil de paciente e biomarcador: swabs sintéticos orais (salivettes) livres de interferência eletrostática para esteroides livres, dispositivos pediátricos dedicados e kits ELISA ultra-sensíveis especialmente desenvolvidos para matriz salivar complexa.",
+            "format": "text"
+          }
+        ],
+        "faq": [
+          {
+            "question": "Por que o algodão comum não deve ser utilizado na coleta salivar de hormônios?",
+            "answer": "O algodão tradicional retém e adsorve hidrocarbonetos e esteroides lipofílicos (como progesterona e cortisol) por interações estéricas inespecíficas, causando subestimação acentuada nas dosagens. Utilizam-se polímeros inertes sintéticos desenvolvidos especificamente para biópsia salivar."
+          }
+        ],
+        "cta": {
+          "primary": "Consultar dispositivos e ensaios salivares",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Medicina do estresse (cortisol)",
+          "Pesquisa do sono (melatonina)",
+          "Medicina esportiva",
+          "Psiconeuroimunologia"
+        ],
+        "methodologies": [
+          "Coleta por swab sintético",
+          "ELISA salivar de alta sensibilidade"
+        ],
+        "product_types": [
+          "Dispositivos de amostragem",
+          "Kits ELISA salivares",
+          "Tubos de estabilização"
+        ],
+        "related_pages": [
+          "PAGE-CAT-IMUNOPESQUISA",
+          "PAGE-CAT-BIOMOL"
+        ]
+      },
+      "products": [],
+      "source_ids": [
+        "SRC-SALIMETRICS"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "Os kits e dispositivos da Salimetrics continuam integrando o catálogo ativo da empresa?",
+          "reason": "Presença confirmada nos arquivos visuais do backup histórico; status comercial atual pendente de validação formal.",
+          "priority": "high"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    },
+    {
+      "id": "PAGE-CAT-IMUNOPESQUISA",
+      "parent_id": "PAGE-HUB-LIFESCIENCES",
+      "title": "Imunologia para Pesquisa",
+      "slug": "imunologia-pesquisa",
+      "page_type": "categoria",
+      "public_content": {
+        "title": "Reagentes e Ensaios Imunológicos para Pesquisa",
+        "subtitle": "Anticorpos primários, secundários purificados por afinidade e kits ELISA para quantificação de biomarcadores.",
+        "short_description": "Ferramentas imunoquímicas para Western Blot, Imunorreatividade Tecidual (IHC), Imunofluorescência e ensaios colorimétricos e quimioluminescentes.",
+        "introduction": "A elucidação de processos fisiopatológicos demanda reagentes imunológicos com especificidade rigorosa contra seus epítopos. Esta linha contempla reagentes complementares para quantificação de citocinas inflamatórias, marcadores tumorais e proteínas solúveis em modelos de estudo in vitro e in vivo.",
+        "sections": [
+          {
+            "id": "SEC-IMU-01",
+            "title": "Classes de Reagentes Disponíveis",
+            "content": "Kits de ensaio imunoenzimático (ELISA) do tipo sanduíche e competitivo, anticorpos secundários conjugados a peroxidase (HRP) e fosfatase alcalina (AP), reagentes de bloqueio de ligação inespecífica e substratos cromogênicos de alta sensibilidade.",
+            "format": "text"
+          }
+        ],
+        "faq": [],
+        "cta": {
+          "primary": "Consultar anticorpos e kits ELISA",
+          "secondary": "Falar com especialista"
+        }
+      },
+      "technical_data": {
+        "applications": [
+          "Quantificação de proteínas solúveis",
+          "Western Blot",
+          "Imunofluorescência",
+          "Pesquisa imunológica"
+        ],
+        "methodologies": [
+          "ELISA",
+          "Western Blotting",
+          "Imuno-histoquímica"
+        ],
+        "product_types": [
+          "Kits ELISA prontos",
+          "Anticorpos primários e secundários",
+          "Substratos cromogênicos"
+        ],
+        "related_pages": [
+          "PAGE-CAT-CITOMETRIA",
+          "PAGE-CAT-SALIVAR"
+        ]
+      },
+      "products": [],
+      "source_ids": [],
+      "pending_imunoscan": [
+        {
+          "question": "Validar fontes e escopo comercial atual de 'Imunologia para Pesquisa'.",
+          "reason": "A V1 usava bula de imuno-hematologia como fonte, inadequada para esta categoria.",
+          "priority": "medium"
+        }
+      ],
+      "publication_scope": "conteúdo técnico genérico; catálogo comercial pendente"
+    }
+  ],
+  "products": [
+    {
+      "id": "PROD-INVITROCLONE-ANTI-D",
+      "name": "INVITROCLONE Anti-D (RH1) IgM+IgG",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Reagente monoclonal misto (IgM+IgG) para tipagem RhD e pesquisa de variantes D-fraco e D-parcial.",
+        "description": "O INVITROCLONE Anti-D (RH1) é um reagente pronto para uso composto por uma mistura balanceada de anticorpos monoclonais humanos/murinos de classe IgM e IgG. Permite a determinação imediata do antígeno D eritrocitário por aglutinação direta em lâmina, tubo ou microplaca (graças à fração IgM), além de permitir a elucidação de antígenos com expressão fraca (D fraco) e parciais através da fase indireta de antiglobulina humana (graças à fração IgG). Não aglutina a variante Categoria DVI na prova direta, oferecendo apoio à classificação pré-transfusional na classificação pré-transfusional de doadores e receptores.",
+        "applications": [
+          "Tipagem do antígeno D em doadores e receptores",
+          "Pesquisa e confirmação de fenótipos D-fraco e D-parcial",
+          "Controle obstétrico para prevenção da DHPN"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.20.02",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "Clones monoclonais IgM e IgG purificados em meio proteico tamponado com conservante",
+        "methodology": [
+          "Aglutinação em tubo",
+          "Lâmina",
+          "Microplaca",
+          "Fase indireta de antiglobulina"
+        ],
+        "storage": "2°C a 8°C. Não congelar.",
+        "anvisa": "Registro MS nº 80020120006"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso / Bula Oficial INVITROCLONE Anti-D",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_D.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-CCEE",
+      "name": "INVITROCLONE Anti-CcEe (RhCE Monoclonais)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Reagentes monoclonais IgM para fenotipagem estendida dos antígenos Rh (Anti-C, Anti-c, Anti-E, Anti-e).",
+        "description": "Linha de reagentes de base monoclonal de classe IgM para identificação individual dos antígenos C (RH2), c (RH4), E (RH3) e e (RH5). Desenvolvidos para produzir aglutinação direta, límpida e reprodutível em meio salino sem necessidade de macromoléculas adicionais, viabilizando a determinação exata do provável genótipo Rh de doadores e pacientes que necessitam de sangue fenocompatibilizado.",
+        "applications": [
+          "Fenotipagem Rh estendida",
+          "Seleção de hemocomponentes para receptores aloimunizados",
+          "Resolução de fenótipos transfusionais complexos"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.20.03 (Anti-C), IH.001.20.04 (Anti-c), IH.001.20.05 (Anti-E), IH.001.20.06 (Anti-e)",
+        "presentation": "1x10 ml e 10x10 ml (por antígeno específico)",
+        "concentration": "Anticorpos monoclonais IgM selecionados",
+        "methodology": [
+          "Aglutinação direta em tubo",
+          "Lâmina",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C. Não congelar.",
+        "anvisa": "Registro MS nº 80020120006"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso / Bula Oficial INVITROCLONE RhCE",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_RhCE.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-CDE",
+      "name": "INVITROCLONE Anti-CDE",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Reagente monoclonal combinado para confirmação fenotípica de doadores D-negativos portadores de antígenos C e/ou E.",
+        "description": "Composto por uma formulação sinérgica de anticorpos monoclonais contra os três principais antígenos imunogênicos do sistema Rh (D, C e E). Utilizado primariamente na triagem e confirmação laboratorial de doadores de sangue inicialmente classificados como D-negativos, assegurando que unidades carreadoras de C ou E não sejam transfundidas inadvertidamente em indivíduos D-negativos com risco de aloimunização.",
+        "applications": [
+          "Triagem confirmatória de doadores de sangue D-negativos",
+          "Investigação rápida de antígenos Rh maiores"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.20.07 (1x10 ml) e IH.001.20.07-10 (10x10 ml)",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "Mistura balanceada de clones monoclonais IgM anti-D, anti-C e anti-E",
+        "methodology": [
+          "Tubo",
+          "Lâmina",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120006"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE Anti-CDE",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_CDE.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-CW",
+      "name": "INVITROCLONE Anti-Cw (RH8)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Anticorpo monoclonal IgM para determinação do antígeno variante Cw (RH8).",
+        "description": "Reagente monoclonal de classe IgM calibrado para identificar com alta especificidade o antígeno de baixa incidência Cw (RH8), variante associada ao lócus RhCc. É ferramenta mandatória na investigação de aloanticorpos irregulares imprevistos e na seleção de concentrados de hemácias compatíveis para pacientes sensibilizados.",
+        "applications": [
+          "Tipagem do antígeno variante Cw",
+          "Elucidação de anticorpos Anti-Cw identificados em PAI/IAI"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.20.08 (1x5 ml) e IH.001.20.08-10 (10x5 ml)",
+        "presentation": "1x5 ml e 10x5 ml",
+        "concentration": "Clone monoclonal murino IgM Anti-Cw",
+        "methodology": [
+          "Tubo de ensaio",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120006"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE Anti-Cw",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_Cw.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-RH-HR-CONTROL",
+      "name": "INVITROCLONE Rh-hr Control",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Controles",
+      "public_content": {
+        "short_description": "Solução de controle negativo proteico para validação de tipagens do sistema Rh.",
+        "description": "Formulação estéril contendo o mesmo veículo diluente, concentração proteica e preservantes utilizados nos reagentes monoclonais INVITROCLONE da linha Rh, desprovido de qualquer anticorpo específico. Utilizado para controlar se aglutinações observadas na tipagem Rhdecorrem de anticorpos reais ou de fenômenos interferentes da amostra (como autoimunidade, crioglobulinas ou rouleaux acentuado).",
+        "applications": [
+          "Controle negativo pareado em tipagens RhD e fenotipagens Rh",
+          "Validação de amostras com suspeita de falso-positivos"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.20.10 (1x10 ml) e IH.001.20.10-10 (10x10 ml)",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "Matriz proteica equivalente sem anticorpos ativos",
+        "methodology": [
+          "Tubo",
+          "Lâmina",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120002"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso Rh-hr Control",
+          "type": "Bula Técnica",
+          "filename": "Bula_Rh_hr_Control.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-K",
+      "name": "INVITROCLONE Anti-K (KEL1)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Anticorpo monoclonal IgM para tipagem do antígeno K (Kell/KEL1).",
+        "description": "Reagente de destinado para a pesquisa rápida direta do antígeno K (KEL1) do sistema Kell. Dada a expressiva imunogenicidade do antígeno K (segundo apenas ao D), a fenotipagem profilática de doadores de sangue e mulheres em idade fértil constitui prática transfusional essencial.",
+        "applications": [
+          "Fenotipagem do antígeno Kell em doadores e pacientes",
+          "Prevenção de aloimunização anti-Kell e DHPN"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.30.01",
+        "presentation": "1x5 ml",
+        "concentration": "Clone monoclonal IgM murino anti-K",
+        "methodology": [
+          "Aglutinação direta em tubo",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120005"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE Anti-K",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_K.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-JK",
+      "name": "INVITROCLONE Anti-Jka & Anti-Jkb (Sistema Kidd)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Reagentes monoclonais IgM para fenotipagem dos antígenos Kidd (Jk1 e Jk2).",
+        "description": "Reagentes específicos monoclonais de classe IgM destinados à detecção direta em tubo dos antígenos codominantes Jka (JK1) e Jkb (JK2). Permitem a identificação de fenótipos homozigotos e heterozigotos, cruciais na condução clínica de pacientes com histórico transfusional prévio.",
+        "applications": [
+          "Tipagem de antígenos do sistema Kidd",
+          "Seleção de sangue compatível em pacientes aloimunizados"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.30.02 (Anti-Jka) e IH.001.30.03 (Anti-Jkb)",
+        "presentation": "1x2 ml (cada apresentação)",
+        "concentration": "Anticorpos monoclonais IgM específicos",
+        "methodology": [
+          "Aglutinação em tubo"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120005"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE Anti-Jka/Jkb",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_Jk.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-ANTI-S-S",
+      "name": "INVITROCLONE Anti-S & Anti-s (Sistema MNS)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Reagentes monoclonais para pesquisa dos antígenos S (MNS3) e s (MNS4).",
+        "description": "Anticorpos monoclonais formulados para a detecção fenotípica dos antígenos de alta e moderada frequência S e s do sistema MNS. Auxiliam na elucidação diagnóstica de anticorpos complexos e no fornecimento de bolsas fenocompatibilizadas.",
+        "applications": [
+          "Fenotipagem eritrocitária estendida do sistema MNS"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.30.09 (Anti-S) e IH.001.30.10 (Anti-s)",
+        "presentation": "1x2 ml (cada apresentação)",
+        "concentration": "Clones monoclonais específicos",
+        "methodology": [
+          "Tubo de ensaio"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120005"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE Anti-S/s",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_Anti_S_s.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROLIQ-ANTI-K",
+      "name": "INVITROLIQ Anti-k (KEL2 / Cellano)",
+      "family": "INVITROLIQ",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Soro-teste policlonal humano IgG para determinação do antígeno de alta frequência k (Cellano).",
+        "description": "Reagente biológico de base policlonal humana contendo anticorpos imunes da classe IgG contra o antígeno k (KEL2). Por atuar na fase de Antiglobulina Humana (Coombs indireto), viabiliza a pesquisa e confirmação fenotípica do antígeno recíproco Cellano, presente em mais de 99% da população mundial.",
+        "applications": [
+          "Fenotipagem do antígeno k",
+          "Investigação de doadores raros KEL:-2 (K+k-)"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.40.01",
+        "presentation": "1x5 ml",
+        "concentration": "Soro policlonal humano IgG selecionado e purificado",
+        "methodology": [
+          "Teste Indireto de Antiglobulina (tubo)"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120005"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROLIQ Anti-k",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROLIQ_Anti_k.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROLIQ-ANTI-FYA-FYB",
+      "name": "INVITROLIQ Anti-Fya & Anti-Fyb (Sistema Duffy)",
+      "family": "INVITROLIQ",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Soros policlonais humanos IgG para fenotipagem dos antígenos Duffy (FY1 e FY2).",
+        "description": "Reagentes policlonais humanos da classe IgG rigorosamente controlados para tipagem dos antígenos eritrocitários Fya (FY1) e Fyb (FY2). Requerem a utilização da técnica indireta de antiglobulina humana para a revelação precisa de aglutinação, fundamentais para triagem e compatibilização em pacientes transfundidos crônicos.",
+        "applications": [
+          "Fenotipagem de rotina e confirmatória do sistema Duffy",
+          "Investigação diagnóstica de aloanticorpos Anti-Fya/Anti-Fyb"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.40.04 (Anti-Fya) e IH.001.40.05 (Anti-Fyb)",
+        "presentation": "1x2 ml (cada apresentação)",
+        "concentration": "Soro policlonal humano IgG específico com conservante",
+        "methodology": [
+          "Teste Indireto de Antiglobulina (tubo)"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120005"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROLIQ Duffy",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROLIQ_Duffy.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "Correção de grafia da bula histórica: o rótulo do Anti-Fyb consta como FY1 na bula 2016. Deve ser retificado para FY2 na nova documentação?",
+          "reason": "Erro tipográfico na bula histórica de 2016.",
+          "priority": "medium"
+        }
+      ],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCLONE-AGH",
+      "name": "INVITROCLONE AGH-Serum (Poliespecífico)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Antiglobulina Humana",
+      "public_content": {
+        "short_description": "Soro antiglobulina humana poliespecífico (Anti-IgG de coelho + Anti-C3d monoclonal clone BRIC-8).",
+        "description": "Reagente para a realização do Teste Direto de Antiglobulina (TAD) e Indireto (TAI). Combina anticorpos de coelho de afinidade específicos contra a cadeia pesada da IgG humana com o anticorpo monoclonal murino purificado anti-C3d (clone BRIC-8), destinado à detecção tanto de hemácias sensibilizadas por anticorpos imunes quanto de ativações da cascata do complemento in vivo e in vitro.",
+        "applications": [
+          "Teste Direto de Antiglobulina (TAD)",
+          "Teste Indireto de Antiglobulina (TAI)",
+          "Prova de compatibilidade pré-transfusional cruzada maior",
+          "Pesquisa de variantes do antígeno RhD"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.001.50.01 (1x10 ml) e IH.001.50.01-10 (10x10 ml)",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "Mistura calibrada de Anti-IgG de coelho e clone monoclonal murino Anti-C3d BRIC-8 em meio verde para identificação visual",
+        "methodology": [
+          "Tubo de ensaio convencional"
+        ],
+        "storage": "2°C a 8°C. Manter ao abrigo da luz.",
+        "anvisa": "Registro MS nº 80020120002"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCLONE AGH-Serum",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCLONE_AGH.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCELL-REVERSE",
+      "name": "INVITROCELL Reverse ABO (0,8%)",
+      "family": "INVITROCELL",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Prova Reversa ABO",
+      "public_content": {
+        "short_description": "Hemácias-teste humanas a 0,8% para realização de prova reversa ABO em gel-centrifugação.",
+        "description": "Suspensões padronizadas a 0,8% de hemácias humanas do grupo A1, A2, B e O conservadas em meio nutritivo estabilizante de formulação tamponada. Especialmente calibradas para a dispensação direta sem diluição prévia em cartões de gel-centrifugação em colunas neutras para a confirmação das isoaglutininas naturais plasmáticas.",
+        "applications": [
+          "Prova reversa ABO de rotina em cartões de gel",
+          "Resolução de discrepâncias sorológicas ABO"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.002.10-1 (4x10 ml A1-A2-B-O), IH.002.10-3 (3x10 ml A1-B-O), IH.002.10-5 (2x10 ml A1-B)",
+        "presentation": "Kits com 2x10 ml, 3x10 ml ou 4x10 ml",
+        "concentration": "Suspensão celular tamponada a 0,8% ± 0,1% de hematócrito",
+        "methodology": [
+          "Gel-centrifugação (colunas neutras)"
+        ],
+        "storage": "2°C a 8°C. Uso restrito até a data de expiração do lote celular.",
+        "anvisa": "Registro MS nº 80020120003"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCELL Reverse ABO",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCELL_Reverse.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
+      "name": "INVITROCELL Scan, Screen & Ident (0,8%)",
+      "family": "INVITROCELL",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Painéis celulares a 0,8% para pesquisa (PAI) e identificação (IAI) de anticorpos em gel-centrifugação.",
+        "description": "Painéis estendidos de hemácias humanas a 0,8% fenotipadas para os principais antígenos clinicamente significativos (sistemas Rh, Kell, Kidd, Duffy, MNS, P, Lewis, Lutheran). Disponíveis em configurações de 2 células (Scan), 3 células (Screen), Pool de triagem e painéis de identificação completa de 11 células convencionais e tratadas por papaína (Ident 11 e Ident 11P). Acompanham mapa antigênico lote-específico detalhando o perfil fenotípico de cada doador.",
+        "applications": [
+          "Pesquisa de anticorpos irregulares (PAI)",
+          "Identificação de aloanticorpos e misturas imunes (IAI)",
+          "Controle pré-transfusional em gel"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.002.20-1 (Scan 2x10 ml), IH.002.30-1 (Screen 3x10 ml), IH.002.40-1 (Screen P 3x10 ml), IH.002.50-1 (Pool 1x10 ml), IH.002.60-1 (Ident 11x4 ml), IH.002.70-1 (Ident 11P 11x4 ml)",
+        "presentation": "Frascos conta-gotas de 10 ml e 4 ml",
+        "concentration": "Suspensão celular a 0,8% em meio estabilizante",
+        "methodology": [
+          "Gel-centrifugação (colunas de Coombs / LISS)"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120003"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCELL PAI/IAI",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCELL_PAI_IAI.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCYTE-REVERSE",
+      "name": "INVITROCYTE Reverse ABO & Reverse/PK ABO (3% e Microplaca)",
+      "family": "INVITROCYTE",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Prova Reversa ABO",
+      "public_content": {
+        "short_description": "Hemácias-teste humanas a 3% para prova reversa ABO em tubo convencional e sistemas em microplaca.",
+        "description": "Suspensões celulares humanas conhecidas a 3% de hematócrito, ideais para prova reversa macroscópica em tubo de ensaio manual ou equipamentos automatizados de microplaca (linha PK). Formulação com preservantes seletivos que mantêm a integridade osmótica e a capacidade aglutinante dos antígenos ao longo de todo o prazo de validade.",
+        "applications": [
+          "Prova reversa de rotina em tubos",
+          "Automação transfusional em microplacas"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.002.10-2 (4x10 ml A1-A2-B-O), IH.002.10-4 (3x10 ml A1-B-O), IH.002.10-6 (2x10 ml A1-B)",
+        "presentation": "2x10 ml, 3x10 ml e 4x10 ml",
+        "concentration": "Suspensão a 3% (tubo) e formulação validada para microplacas",
+        "methodology": [
+          "Tubo convencional manual",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120003"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCYTE Reverse ABO",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCYTE_Reverse.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [
+        {
+          "question": "Confirmar se as referências Reverse Tubo e Reverse/PK Microplaca compartilham os mesmos números de SKU no ERP atual.",
+          "reason": "Nas bulas de 2016, ambos utilizam a raiz IH.002.10-2/-4/-6.",
+          "priority": "low"
+        }
+      ],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCYTE-SCAN-SCREEN-IDENT",
+      "name": "INVITROCYTE Scan, Screen & Ident (3%)",
+      "family": "INVITROCYTE",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Painéis celulares a 3% para triagem e identificação de anticorpos irregulares em tubos e microplacas.",
+        "description": "Painéis de hemácias humanas selecionadas a 3% de hematócrito desenvolvidos para execução do Teste Indireto de Antiglobulina (Coombs indireto) em tubo com ou sem aditivos (LISS/PEG). Painéis calibrados com expressão fenotípica ideal para auxiliar na elucidação de anticorpos.",
+        "applications": [
+          "PAI e IAI na metodologia convencional em tubo",
+          "Ensaios imuno-hematológicos em microplacas"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.002.20-2 (Scan 2x10 ml), IH.002.30-2 (Screen 3x10 ml), IH.002.40-2 (Screen P 3x10 ml), IH.002.60-2 (Ident 11x4 ml), IH.002.70-2 (Ident 11P 11x4 ml)",
+        "presentation": "10 ml (triagens) e 4 ml (identificações)",
+        "concentration": "Suspensão celular a 3% em solução tampão conservante",
+        "methodology": [
+          "Tubo de ensaio",
+          "Microplaca"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120003"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso INVITROCYTE PAI/IAI",
+          "type": "Bula Técnica",
+          "filename": "Bula_INVITROCYTE_PAI_IAI.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-INVITROCYTE-COOMBS-CONTROL",
+      "name": "INVITROCYTE Coombs Control",
+      "family": "INVITROCYTE",
+      "category": "Diagnóstico & Imuno-hematologia > Controles",
+      "public_content": {
+        "short_description": "Hemácias humanas sensibilizadas com IgG para validação de testes de antiglobulina humana negativos.",
+        "description": "Reagente de controle composto por hemácias humanas do grupo O sensibilizadas in vitro com anticorpos IgG humanos em suspensão a 3%. É adicionado obrigatoriamente a todos os tubos que apresentaram resultado negativo no teste de Coombs direto ou indireto; a presença imediata de aglutinação confirma que o reagente de antiglobulina foi adequadamente adicionado, estava funcional e que as lavagens prévias foram eficazes.",
+        "applications": [
+          "Controle de qualidade interno obrigatório de testes em tubo negativos na fase de Coombs"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.002.80-1",
+        "presentation": "1x10 ml",
+        "concentration": "Hemácias O RhD-positivas sensibilizadas com IgG humana a 3%",
+        "methodology": [
+          "Tubo de ensaio convencional"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120003"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso Coombs Control",
+          "type": "Bula Técnica",
+          "filename": "Bula_Coombs_Control.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-IMUNOSCAN-LISS",
+      "name": "ImunoScan LISS",
+      "family": "ImunoScan",
+      "category": "Diagnóstico & Imuno-hematologia > Potencializadores & Soluções",
+      "public_content": {
+        "short_description": "Solução isotônica de baixa força iônica para aceleração e potencialização da captação de anticorpos.",
+        "description": "Solução de Baixa Força Iônica tamponada e ajustada em sua condutividade e osmolalidade. Reduz as forças de repulsão eletrostática entre os glóbulos vermelhos e anticorpos séricos, viabilizando a redução do tempo padrão de incubação do teste indireto de antiglobulina de 60 para 15 minutos, além de otimizar a sensibilidade analítica de detecção de aloanticorpos clinicamente relevantes.",
+        "applications": [
+          "Potencializador do Teste Indireto de Antiglobulina (Coombs indireto)",
+          "Provas de compatibilidade cruzada",
+          "Preparo de hemácias a baixa força iônica"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.003.10 (1x10 ml) e IH.003.10-10 (10x10 ml)",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "Solução aquosa tamponada isotônica de baixa condutividade",
+        "methodology": [
+          "Tubo convencional"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120002"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso ImunoScan LISS",
+          "type": "Bula Técnica",
+          "filename": "Bula_ImunoScan_LISS.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    },
+    {
+      "id": "PROD-IMUNOSCAN-PEG",
+      "name": "ImunoScan PEG",
+      "family": "ImunoScan",
+      "category": "Diagnóstico & Imuno-hematologia > Potencializadores & Soluções",
+      "public_content": {
+        "short_description": "Solução de polietilenoglicol a 20% em base LISS para alta sensibilidade na detecção de anticorpos.",
+        "description": "Solução aditiva de Polietilenoglicol (peso molecular 3350 a 20%) veiculada em matriz de baixa força iônica tamponada. Induz a aproximação molecular pela exclusão de água ao redor dos glóbulos vermelhos, podendo aumentar o título aparente de anticorpos IgG fracos. É utilizado na resolução de casos desafiadores de aloanticorpos com reatividade limítrofe e protocolos de adsorção diferencial.",
+        "applications": [
+          "Pesquisa e identificação de anticorpos IgG fracamente reativos",
+          "Protocolos de adsorção autóloga e alogênica",
+          "Testes de compatibilidade transfusional avançados"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.003.20 (1x10 ml) e IH.003.20-10 (10x10 ml)",
+        "presentation": "1x10 ml e 10x10 ml",
+        "concentration": "PEG 3350 a 20% em solução LISS tamponada",
+        "methodology": [
+          "Tubo convencional (exige lavagem antes da fase AGH)"
+        ],
+        "storage": "2°C a 8°C",
+        "anvisa": "Registro MS nº 80020120002"
+      },
+      "documents": [
+        {
+          "title": "Instrução de Uso ImunoScan PEG",
+          "type": "Bula Técnica",
+          "filename": "Bula_ImunoScan_PEG.pdf"
+        }
+      ],
+      "confidence": "confirmed",
+      "source_ids": [
+        "SRC-BULA-01"
+      ],
+      "pending_imunoscan": [],
+      "evidence_status": "documentação primária histórica (2016)",
+      "current_commercial_status": "pendente de confirmação da ImunoScan"
+    }
+  ],
+  "pending_imunoscan": [
+    {
+      "question": "A linha de fabricação própria INVITROCELL (0,8% para gel) continua sendo ativamente envasada e comercializada?",
+      "reason": "Comprovada plenamente pelas bulas técnicas 2016 e sitemap histórico, necessitando validação de capacidade produtiva e logística de cadeia fria no exercício atual.",
+      "priority": "high"
+    },
+    {
+      "question": "A linha INVITROCYTE (3% para tubo e microplaca) mantém os mesmos SKUs e apresentações comerciais?",
+      "reason": "As bulas comprovam registros vigentes até 2016; necessária conferência com a tabela ativa do ERP/Comercial.",
+      "priority": "high"
+    },
+    {
+      "question": "Quais marcas de Pesquisa & Life Sciences permanecem com contrato de distribuição ativo (ex: STEMCELL Technologies, Salimetrics, Merck, Axxora)?",
+      "reason": "No backup há logos e imagens destas verticais, porém o catálogo de Life Sciences exige confirmação comercial para evitar exposição de marcas sem vínculo contratual formal.",
+      "priority": "high"
+    },
+    {
+      "question": "Os registros ANVISA sob titularidade da Scan Diagnóstica Ltda sofreram revalidação recente com novos números?",
+      "reason": "Os números de processo constantes nas bulas históricas são finais 0002, 0003, 0005 e 0006 de 8002012; conferência regulatória antes da publicação.",
+      "priority": "medium"
+    },
+    {
+      "question": "Há disponibilidade de fotos reais e atualizadas das embalagens e frascos secundários para o catálogo digital?",
+      "reason": "Evitar uso exclusivo de mockups genéricos para os produtos confirmados.",
+      "priority": "medium"
+    },
+    {
+      "question": "Confirmar quais categorias de Life Sciences continuam no escopo comercial atual.",
+      "reason": "O histórico comprova temas, não o portfólio comercial atual.",
+      "priority": "high"
+    }
+  ],
+  "quality_report": {
+    "total_pages": 21,
+    "fully_detailed_pages": 19,
+    "partially_detailed_pages": 0,
+    "total_products_registered": 18,
+    "confirmed_products": 18,
+    "probable_products": 0,
+    "unconfirmed_products_retained": 0,
+    "total_sources_tracked": 5,
+    "total_pending_questions": 5,
+    "critical_pending_issues": [
+      "Validação formal da representação comercial de marcas em Life Sciences (STEMCELL, Salimetrics)",
+      "Confirmação de produção e vigência cadastral dos lotes de hemácias-teste INVITROCELL/INVITROCYTE"
+    ],
+    "pages_blocked_from_immediate_publication": [
+      "Dados regulatórios/comerciais atuais até validação da ImunoScan",
+      "Produtos e marcas de Life Sciences",
+      "Serviço de importação/fomento até confirmação"
+    ],
+    "fields_requiring_imunoscan_signoff": [
+      "Preços e condições de fornecimento B2B",
+      "Lista de marcas internacionais representadas com exclusividade",
+      "Calendário de remessa quinzenal/mensal de hemácias-teste vivas"
+    ],
+    "audit_status": "revisado_com_restricoes",
+    "confirmed_products_historical_evidence": 18,
+    "confirmed_products_current_commercial_status": 0,
+    "note": "18 registros têm evidência histórica primária; disponibilidade e vigência atuais dependem de confirmação."
+  }
+}
