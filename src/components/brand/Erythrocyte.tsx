@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import { LOGO_CELL } from "@/components/brand/LogoMark";
+import { RED_CELLS, type RedCellIndex } from "@/components/brand/AnimatedRedCells";
 
 type Tone = "red" | "blue" | "outline";
 
@@ -10,35 +10,34 @@ type Props = {
   tone?: Tone;
   /** rotação estática, em graus */
   tilt?: number;
-  /** achatamento leve; nunca deforma a hemácia da marca */
-  flatten?: number;
   opacity?: number;
-  /** 1 espelha horizontalmente, para variar a composição sem redesenhar */
-  variant?: 0 | 1 | 2;
+  /** qual dos três glóbulos da marca usar */
+  variant?: RedCellIndex;
+  /** espelha horizontalmente, variando a composição sem novos assets */
+  mirror?: boolean;
   className?: string;
 };
 
-const TONE_OPACITY: Record<Tone, number> = { red: 1, blue: 0.9, outline: 0.28 };
+const TONE_OPACITY: Record<Tone, number> = { red: 1, blue: 0.9, outline: 0.3 };
 
 /**
- * Hemácia ImunoScan — recortada da logo oficial, sem redesenho.
- * Assinatura visual usada em heros, transições e páginas de produto.
+ * Glóbulo vermelho ImunoScan — o mesmo asset usado no símbolo da logo.
+ * Reutilizado no hero, em transições de seção e em detalhes editoriais.
  */
 export function Erythrocyte({
   size = 120,
   tone = "red",
   tilt = 0,
-  flatten = 1,
   opacity = 1,
-  variant = 2,
+  variant = 0,
+  mirror = false,
   className,
 }: Props) {
-  const squash = Math.min(1, Math.max(flatten, 0.88));
-  const mirror = variant === 1 ? -1 : 1;
+  const source = RED_CELLS[variant]!;
 
   return (
     <img
-      src={LOGO_CELL.src}
+      src={source.src}
       alt=""
       aria-hidden="true"
       draggable={false}
@@ -48,10 +47,9 @@ export function Erythrocyte({
       style={
         {
           width: size,
-          height: size / LOGO_CELL.ratio,
+          height: size / source.ratio,
           opacity: opacity * TONE_OPACITY[tone],
-          transform: `rotate(${tilt}deg) scale(${mirror}, ${squash})`,
-          willChange: "transform",
+          transform: `rotate(${tilt}deg)${mirror ? " scaleX(-1)" : ""}`,
         } as CSSProperties
       }
     />

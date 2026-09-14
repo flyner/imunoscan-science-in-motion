@@ -57,7 +57,7 @@ export function Agglutination({ className = "" }: { className?: string }) {
             } as React.CSSProperties
           }
         >
-          <Erythrocyte size={cell.size} tilt={cell.tilt} flatten={0.78} />
+          <Erythrocyte size={cell.size} tilt={cell.tilt} variant={(cell.tilt > 0 ? 1 : 2) as 0 | 1 | 2} />
         </div>
       ))}
     </div>
