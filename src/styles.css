@@ -324,63 +324,71 @@
   }
 }
 
-/* ---------- logo oficial em camadas: "ciência em movimento" ---------- */
+/* ---------- identidade animada: três glóbulos independentes ---------- */
 
 @utility logo-mark {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+}
+
+.rc-field {
   position: relative;
   display: inline-block;
   flex: none;
+  /* fator global de amplitude: reduzido no mobile */
   --amb-k: 1;
 
-  & img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    -webkit-user-drag: none;
-  }
-
   @media (max-width: 767px) {
-    --amb-k: 0.45;
+    --amb-k: 0.4;
   }
 }
 
-.logo-cell,
-.logo-wordmark {
+.rc-cell {
   position: absolute;
-}
-
-.logo-cell {
-  transition: transform 520ms var(--ease-out);
+  transition: transform 620ms var(--ease-out);
   will-change: transform;
 }
 
-.logo-cell-enter,
-.logo-cell-ambient {
+.rc-enter,
+.rc-amb {
   display: block;
-  height: 100%;
 }
 
-.logo-cell-enter[data-entry="true"] {
-  animation-name: logo-cell-in;
+.rc-field img,
+.logo-wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+}
+
+.rc-enter[data-entry="true"] {
+  animation-name: rc-converge;
   animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   animation-fill-mode: both;
 }
 
-.logo-cell-ambient[data-ambient="true"] {
+.rc-amb[data-ambient="true"] {
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1);
   animation-direction: alternate;
 }
 
-.logo-wordmark[data-entry="true"] {
-  animation: logo-wordmark-in 340ms 420ms var(--ease-out) both;
+.logo-wordmark {
+  display: block;
+  flex: none;
 }
 
-@keyframes logo-cell-in {
+.logo-wordmark[data-entry="true"] {
+  animation: rc-wordmark-in 320ms 300ms var(--ease-out) both;
+}
+
+/* entrada: cada glóbulo converge de uma trajetória própria para o símbolo */
+@keyframes rc-converge {
   from {
     opacity: 0;
-    transform: translate3d(var(--fx), var(--fy), 0) rotate(var(--fr)) scale(0.955);
+    transform: translate3d(var(--fx), var(--fy), 0) rotate(var(--fr)) scale(0.94);
   }
   to {
     opacity: 1;
@@ -388,10 +396,10 @@
   }
 }
 
-@keyframes logo-wordmark-in {
+@keyframes rc-wordmark-in {
   from {
     opacity: 0;
-    transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-4px, 0, 0);
   }
   to {
     opacity: 1;
@@ -399,61 +407,61 @@
   }
 }
 
-/* três trajetórias distintas: fases, direções e velocidades diferentes */
-@keyframes logo-amb-1 {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  40% {
-    transform: translate3d(calc(1.1px * var(--amb-k)), calc(-2px * var(--amb-k)), 0)
-      rotate(calc(0.5deg * var(--amb-k)));
-  }
-  100% {
-    transform: translate3d(calc(-1.4px * var(--amb-k)), calc(-0.6px * var(--amb-k)), 0)
-      rotate(calc(-0.45deg * var(--amb-k)));
-  }
-}
-
-@keyframes logo-amb-2 {
-  0% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-  55% {
-    transform: translate3d(calc(-1.6px * var(--amb-k)), calc(1.3px * var(--amb-k)), 0)
-      rotate(calc(-0.6deg * var(--amb-k)));
-  }
-  100% {
-    transform: translate3d(calc(0.9px * var(--amb-k)), calc(1.9px * var(--amb-k)), 0)
-      rotate(calc(0.4deg * var(--amb-k)));
-  }
-}
-
-@keyframes logo-amb-3 {
+/* repouso: três trajetórias com fases, direções e durações distintas */
+@keyframes rc-amb-1 {
   0% {
     transform: translate3d(0, 0, 0) rotate(0deg);
   }
   45% {
-    transform: translate3d(calc(1.8px * var(--amb-k)), calc(1px * var(--amb-k)), 0)
-      rotate(calc(0.35deg * var(--amb-k)));
+    transform: translate3d(calc(0.8px * var(--amb-k)), calc(-2px * var(--amb-k)), 0)
+      rotate(calc(0.8deg * var(--amb-k)));
   }
   100% {
-    transform: translate3d(calc(2.2px * var(--amb-k)), calc(-1.2px * var(--amb-k)), 0)
-      rotate(calc(-0.3deg * var(--amb-k)));
+    transform: translate3d(calc(-1.2px * var(--amb-k)), calc(1.6px * var(--amb-k)), 0)
+      rotate(calc(-0.9deg * var(--amb-k)));
+  }
+}
+
+@keyframes rc-amb-2 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  55% {
+    transform: translate3d(calc(-1.4px * var(--amb-k)), calc(1.4px * var(--amb-k)), 0)
+      rotate(calc(-0.7deg * var(--amb-k)));
+  }
+  100% {
+    transform: translate3d(calc(1.1px * var(--amb-k)), calc(-1.8px * var(--amb-k)), 0)
+      rotate(calc(1deg * var(--amb-k)));
+  }
+}
+
+@keyframes rc-amb-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  40% {
+    transform: translate3d(calc(1.6px * var(--amb-k)), calc(1px * var(--amb-k)), 0)
+      rotate(calc(-0.5deg * var(--amb-k)));
+  }
+  100% {
+    transform: translate3d(calc(-0.9px * var(--amb-k)), calc(-1.5px * var(--amb-k)), 0)
+      rotate(calc(0.9deg * var(--amb-k)));
   }
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .logo-mark[data-interactive="true"]:hover .logo-cell,
-  a:hover .logo-mark[data-interactive="true"] .logo-cell,
-  a:focus-visible .logo-mark[data-interactive="true"] .logo-cell {
+  .rc-field[data-interactive="true"]:hover .rc-cell,
+  a:hover .rc-field[data-interactive="true"] .rc-cell,
+  a:focus-visible .rc-field[data-interactive="true"] .rc-cell {
     transform: translate3d(var(--hx), var(--hy), 0) rotate(var(--hr));
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .logo-cell,
-  .logo-cell-enter[data-entry="true"],
-  .logo-cell-ambient[data-ambient="true"],
+  .rc-cell,
+  .rc-enter[data-entry="true"],
+  .rc-amb[data-ambient="true"],
   .logo-wordmark[data-entry="true"] {
     animation: none;
     transition: none;
@@ -461,7 +469,7 @@
     opacity: 1;
   }
 
-  .logo-mark[data-interactive="true"]:hover .logo-cell {
+  .rc-field[data-interactive="true"]:hover .rc-cell {
     transform: none;
   }
 }
