@@ -18,7 +18,7 @@ export const Route = createFileRoute("/documentacao")({
       { property: "og:description", content: DESCRIPTION },
     ],
   }),
-  component: Documentation;
+  component: Documentation,
 });
 
 function Documentation() {
