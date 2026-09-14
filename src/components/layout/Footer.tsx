@@ -20,7 +20,7 @@ export function Footer() {
         className="pointer-events-none absolute -bottom-32 -right-16 hidden md:block"
         style={{ filter: "blur(1px)" }}
       >
-        <Erythrocyte size={340} tilt={-16} flatten={0.72} opacity={0.14} />
+        <Erythrocyte size={340} tilt={-16} variant={2} opacity={0.14} />
       </div>
 
       <div className="shell relative section-y-sm">

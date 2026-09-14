@@ -84,7 +84,7 @@ export function QuoteBand({
         className="pointer-events-none absolute -bottom-24 left-[8%] hidden md:block"
       >
         <div className="rbc-motion" style={{ "--rbc-duration": "13s" } as React.CSSProperties}>
-          <Erythrocyte size={260} tilt={12} flatten={0.68} opacity={0.16} />
+          <Erythrocyte size={260} tilt={12} variant={1} opacity={0.16} />
         </div>
       </div>
 

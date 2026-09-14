@@ -128,13 +128,13 @@ function ProductRoute() {
                     className="rbc-motion"
                     style={{ "--rbc-duration": "12s" } as React.CSSProperties}
                   >
-                    <Erythrocyte size={176} tilt={-10} flatten={0.84} />
+                    <Erythrocyte size={176} tilt={-10} />
                   </div>
                   <div className="rbc-motion-alt absolute right-2 top-2" style={{ "--rbc-duration": "14s" } as React.CSSProperties}>
-                    <Erythrocyte size={64} tilt={22} flatten={0.6} opacity={0.7} />
+                    <Erythrocyte size={64} tilt={22} opacity={0.7} variant={1} />
                   </div>
                   <div className="rbc-motion absolute bottom-1 left-3" style={{ "--rbc-duration": "13s", "--rbc-delay": "-4s" } as React.CSSProperties}>
-                    <Erythrocyte size={44} tilt={-24} flatten={0.55} opacity={0.55} />
+                    <Erythrocyte size={44} tilt={-24} opacity={0.55} variant={2} />
                   </div>
                 </div>
                 <figcaption className="mt-6 border-t pt-4 text-xs leading-relaxed text-ink-600">
