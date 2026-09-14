@@ -104,11 +104,16 @@ function ApplicationRoute() {
               além do que consta na base editorial.
             </EvidenceNote>
           </Reveal>
-          <div className="mt-6 text-sm">
-            <AppLink to={pagePath(app.pages[0])} className="link-underline font-semibold text-blue-700">
-              Ir para {app.pages[0].title}
-            </AppLink>
-          </div>
+          {app.pages[0] && (
+            <div className="mt-6 text-sm">
+              <AppLink
+                to={pagePath(app.pages[0])}
+                className="link-underline font-semibold text-blue-700"
+              >
+                Ir para {app.pages[0].title}
+              </AppLink>
+            </div>
+          )}
         </div>
       </section>
 
