@@ -34,6 +34,8 @@ export function Erythrocyte({
   className,
 }: Props) {
   const cell = LOGO_CELLS[variant] ?? LOGO_CELLS[2];
+  // a hemácia da logo já é fotográfica: achatamentos fortes deformariam a marca
+  const squash = Math.min(1, Math.max(flatten, 0.85));
 
   return (
     <img
@@ -49,7 +51,7 @@ export function Erythrocyte({
           width: size,
           height: size / cell.ratio,
           opacity: opacity * TONE_OPACITY[tone],
-          transform: `rotate(${tilt}deg) scaleY(${flatten})`,
+          transform: `rotate(${tilt}deg) scaleY(${squash})`,
           willChange: "transform",
         } as CSSProperties
       }

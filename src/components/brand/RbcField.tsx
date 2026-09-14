@@ -71,6 +71,7 @@ export function RbcField({
               flatten={cell.flatten}
               opacity={cell.opacity ?? 1}
               tone={cell.tone ?? "red"}
+              variant={(index % 3) as 0 | 1 | 2}
             />
           </div>
         </div>
