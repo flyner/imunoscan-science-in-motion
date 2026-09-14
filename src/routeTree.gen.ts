@@ -10,33 +10,194 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AImunoscanRouteImport } from './routes/a-imunoscan'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as CotacaoRouteImport } from './routes/cotacao'
+import { Route as DiagnosticoImunoHematologiaRouteImport } from './routes/diagnostico-imuno-hematologia'
+import { Route as DocumentacaoRouteImport } from './routes/documentacao'
+import { Route as AplicacoesIndexRouteImport } from './routes/aplicacoes.index'
+import { Route as AplicacoesSlugRouteImport } from './routes/aplicacoes.$slug'
+import { Route as LifeSciencesIndexRouteImport } from './routes/life-sciences.index'
+import { Route as LifeSciencesSlugRouteImport } from './routes/life-sciences.$slug'
+import { Route as ProdutoSlugRouteImport } from './routes/produto.$slug'
+import { Route as ProdutosIndexRouteImport } from './routes/produtos.index'
+import { Route as ProdutosSlugRouteImport } from './routes/produtos.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AImunoscanRoute = AImunoscanRouteImport.update({
+  id: '/a-imunoscan',
+  path: '/a-imunoscan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CotacaoRoute = CotacaoRouteImport.update({
+  id: '/cotacao',
+  path: '/cotacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiagnosticoImunoHematologiaRoute =
+  DiagnosticoImunoHematologiaRouteImport.update({
+    id: '/diagnostico-imuno-hematologia',
+    path: '/diagnostico-imuno-hematologia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DocumentacaoRoute = DocumentacaoRouteImport.update({
+  id: '/documentacao',
+  path: '/documentacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AplicacoesIndexRoute = AplicacoesIndexRouteImport.update({
+  id: '/aplicacoes/',
+  path: '/aplicacoes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AplicacoesSlugRoute = AplicacoesSlugRouteImport.update({
+  id: '/aplicacoes/$slug',
+  path: '/aplicacoes/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LifeSciencesIndexRoute = LifeSciencesIndexRouteImport.update({
+  id: '/life-sciences/',
+  path: '/life-sciences/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LifeSciencesSlugRoute = LifeSciencesSlugRouteImport.update({
+  id: '/life-sciences/$slug',
+  path: '/life-sciences/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProdutoSlugRoute = ProdutoSlugRouteImport.update({
+  id: '/produto/$slug',
+  path: '/produto/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProdutosIndexRoute = ProdutosIndexRouteImport.update({
+  id: '/produtos/',
+  path: '/produtos/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProdutosSlugRoute = ProdutosSlugRouteImport.update({
+  id: '/produtos/$slug',
+  path: '/produtos/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
+  '/aplicacoes/$slug': typeof AplicacoesSlugRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produto/$slug': typeof ProdutoSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/aplicacoes/': typeof AplicacoesIndexRoute
+  '/life-sciences/': typeof LifeSciencesIndexRoute
+  '/produtos/': typeof ProdutosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
+  '/aplicacoes/$slug': typeof AplicacoesSlugRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produto/$slug': typeof ProdutoSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/aplicacoes': typeof AplicacoesIndexRoute
+  '/life-sciences': typeof LifeSciencesIndexRoute
+  '/produtos': typeof ProdutosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
+  '/aplicacoes/$slug': typeof AplicacoesSlugRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produto/$slug': typeof ProdutoSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/aplicacoes/': typeof AplicacoesIndexRoute
+  '/life-sciences/': typeof LifeSciencesIndexRoute
+  '/produtos/': typeof ProdutosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
+    | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
+    | '/aplicacoes/$slug'
+    | '/life-sciences/$slug'
+    | '/produto/$slug'
+    | '/produtos/$slug'
+    | '/aplicacoes/'
+    | '/life-sciences/'
+    | '/produtos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
+    | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
+    | '/aplicacoes/$slug'
+    | '/life-sciences/$slug'
+    | '/produto/$slug'
+    | '/produtos/$slug'
+    | '/aplicacoes'
+    | '/life-sciences'
+    | '/produtos'
+  id:
+    | '__root__'
+    | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
+    | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
+    | '/aplicacoes/$slug'
+    | '/life-sciences/$slug'
+    | '/produto/$slug'
+    | '/produtos/$slug'
+    | '/aplicacoes/'
+    | '/life-sciences/'
+    | '/produtos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AImunoscanRoute: typeof AImunoscanRoute
+  ContatoRoute: typeof ContatoRoute
+  CotacaoRoute: typeof CotacaoRoute
+  DiagnosticoImunoHematologiaRoute: typeof DiagnosticoImunoHematologiaRoute
+  DocumentacaoRoute: typeof DocumentacaoRoute
+  AplicacoesSlugRoute: typeof AplicacoesSlugRoute
+  LifeSciencesSlugRoute: typeof LifeSciencesSlugRoute
+  ProdutoSlugRoute: typeof ProdutoSlugRoute
+  ProdutosSlugRoute: typeof ProdutosSlugRoute
+  AplicacoesIndexRoute: typeof AplicacoesIndexRoute
+  LifeSciencesIndexRoute: typeof LifeSciencesIndexRoute
+  ProdutosIndexRoute: typeof ProdutosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +209,107 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/a-imunoscan': {
+      id: '/a-imunoscan'
+      path: '/a-imunoscan'
+      fullPath: '/a-imunoscan'
+      preLoaderRoute: typeof AImunoscanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cotacao': {
+      id: '/cotacao'
+      path: '/cotacao'
+      fullPath: '/cotacao'
+      preLoaderRoute: typeof CotacaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diagnostico-imuno-hematologia': {
+      id: '/diagnostico-imuno-hematologia'
+      path: '/diagnostico-imuno-hematologia'
+      fullPath: '/diagnostico-imuno-hematologia'
+      preLoaderRoute: typeof DiagnosticoImunoHematologiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/documentacao': {
+      id: '/documentacao'
+      path: '/documentacao'
+      fullPath: '/documentacao'
+      preLoaderRoute: typeof DocumentacaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aplicacoes/': {
+      id: '/aplicacoes/'
+      path: '/aplicacoes'
+      fullPath: '/aplicacoes/'
+      preLoaderRoute: typeof AplicacoesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/aplicacoes/$slug': {
+      id: '/aplicacoes/$slug'
+      path: '/aplicacoes/$slug'
+      fullPath: '/aplicacoes/$slug'
+      preLoaderRoute: typeof AplicacoesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/life-sciences/': {
+      id: '/life-sciences/'
+      path: '/life-sciences'
+      fullPath: '/life-sciences/'
+      preLoaderRoute: typeof LifeSciencesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/life-sciences/$slug': {
+      id: '/life-sciences/$slug'
+      path: '/life-sciences/$slug'
+      fullPath: '/life-sciences/$slug'
+      preLoaderRoute: typeof LifeSciencesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/produto/$slug': {
+      id: '/produto/$slug'
+      path: '/produto/$slug'
+      fullPath: '/produto/$slug'
+      preLoaderRoute: typeof ProdutoSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/produtos/': {
+      id: '/produtos/'
+      path: '/produtos'
+      fullPath: '/produtos/'
+      preLoaderRoute: typeof ProdutosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/produtos/$slug': {
+      id: '/produtos/$slug'
+      path: '/produtos/$slug'
+      fullPath: '/produtos/$slug'
+      preLoaderRoute: typeof ProdutosSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AImunoscanRoute: AImunoscanRoute,
+  ContatoRoute: ContatoRoute,
+  CotacaoRoute: CotacaoRoute,
+  DiagnosticoImunoHematologiaRoute: DiagnosticoImunoHematologiaRoute,
+  DocumentacaoRoute: DocumentacaoRoute,
+  AplicacoesSlugRoute: AplicacoesSlugRoute,
+  LifeSciencesSlugRoute: LifeSciencesSlugRoute,
+  ProdutoSlugRoute: ProdutoSlugRoute,
+  ProdutosSlugRoute: ProdutosSlugRoute,
+  AplicacoesIndexRoute: AplicacoesIndexRoute,
+  LifeSciencesIndexRoute: LifeSciencesIndexRoute,
+  ProdutosIndexRoute: ProdutosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
