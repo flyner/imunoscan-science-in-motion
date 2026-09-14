@@ -13,7 +13,7 @@ import {
 import { PageHero } from "@/components/page/PageHero";
 import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
-import { ArrowRight, ButtonLink } from "@/components/ui/Button";
+import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
 import { AppLink } from "@/components/ui/AppLink";
 import { Reveal } from "@/components/motion/Reveal";
 import { RbcMicro } from "@/components/brand/Erythrocyte";

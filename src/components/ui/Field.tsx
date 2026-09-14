@@ -10,8 +10,8 @@ export function Field({
   children,
 }: {
   label: string;
-  hint?: string;
-  required?: boolean;
+  hint?: string | undefined;
+  required?: boolean | undefined;
   children: (props: { className: string; id: string }) => ReactNode;
 }) {
   const id = `f-${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
@@ -31,8 +31,8 @@ export function Field({
 export function TextField(props: {
   label: string;
   type?: string;
-  required?: boolean;
-  hint?: string;
+  required?: boolean | undefined;
+  hint?: string | undefined;
   placeholder?: string;
   value: string;
   onChange: (value: string) => void;
@@ -56,8 +56,8 @@ export function TextField(props: {
 
 export function TextArea(props: {
   label: string;
-  required?: boolean;
-  hint?: string;
+  required?: boolean | undefined;
+  hint?: string | undefined;
   placeholder?: string;
   rows?: number;
   value: string;

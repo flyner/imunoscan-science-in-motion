@@ -3,7 +3,7 @@ import { applications } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
 import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { AppLink } from "@/components/ui/AppLink";
-import { ArrowRight } from "@/components/ui/Button";
+import { ArrowRight } from "@/components/ui/brand-button";
 import { Reveal } from "@/components/motion/Reveal";
 import { RbcMicro } from "@/components/brand/Erythrocyte";
 

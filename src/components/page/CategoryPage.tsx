@@ -13,7 +13,7 @@ import { CategoryCard, ProductGrid } from "@/components/products/Cards";
 import { FaqList } from "@/components/ui/Faq";
 import { RbcList, Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/motion/Reveal";
-import { ArrowRight, ButtonLink } from "@/components/ui/Button";
+import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
 import { AppLink } from "@/components/ui/AppLink";
 
 export function CategoryPage({ page }: { page: PageContent }) {

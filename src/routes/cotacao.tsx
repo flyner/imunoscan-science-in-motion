@@ -3,7 +3,7 @@ import { useState } from "react";
 import { methodologies, products } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
 import { EvidenceNote } from "@/components/page/Blocks";
-import { Button, ArrowRight } from "@/components/ui/Button";
+import { Button, ArrowRight } from "@/components/ui/brand-button";
 import { Field, TextArea, TextField } from "@/components/ui/Field";
 import { Erythrocyte } from "@/components/brand/Erythrocyte";
 import { Reveal } from "@/components/motion/Reveal";
