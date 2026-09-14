@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Erythrocyte } from "@/components/brand/Erythrocyte";
+import { LogoMark } from "@/components/brand/LogoMark";
 import { AppLink } from "@/components/ui/AppLink";
 import {
   diagnosticCategories,
