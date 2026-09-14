@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { Section } from "@/lib/content";
 import { Reveal } from "@/components/motion/Reveal";
-import { ButtonLink, ArrowRight } from "@/components/ui/Button";
+import { ButtonLink, ArrowRight } from "@/components/ui/brand-button";
 import { Erythrocyte } from "@/components/brand/Erythrocyte";
 
 /** Título de seção com sobrescrito editorial. */
@@ -11,9 +11,9 @@ export function SectionHeading({
   description,
   align = "left",
 }: {
-  eyebrow?: string;
+  eyebrow?: string | undefined;
   title: string;
-  description?: string;
+  description?: string | undefined;
   align?: "left" | "center";
 }) {
   return (
@@ -36,7 +36,7 @@ export function SectionHeading({
 }
 
 /** Renderiza as seções editoriais vindas do JSON. */
-export function ContentSections({ sections }: { sections?: Section[] }) {
+export function ContentSections({ sections }: { sections?: Section[] | undefined }) {
   if (!sections?.length) return null;
 
   return (
@@ -73,7 +73,7 @@ export function QuoteBand({
   secondaryLabel = "Falar com a assessoria técnica",
 }: {
   title?: string;
-  description?: string;
+  description?: string | undefined;
   primaryLabel?: string;
   secondaryLabel?: string;
 }) {

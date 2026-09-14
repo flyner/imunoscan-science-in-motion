@@ -6,7 +6,7 @@ import {
   productSlug,
 } from "@/lib/content";
 import { AppLink } from "@/components/ui/AppLink";
-import { ArrowRight } from "@/components/ui/Button";
+import { ArrowRight } from "@/components/ui/brand-button";
 import { Erythrocyte } from "@/components/brand/Erythrocyte";
 import { Reveal } from "@/components/motion/Reveal";
 

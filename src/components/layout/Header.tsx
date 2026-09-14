@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
-import { ButtonLink } from "@/components/ui/Button";
+import { ButtonLink } from "@/components/ui/brand-button";
 import { SearchDialog } from "@/components/search/SearchDialog";
 
 const NAV = [
@@ -77,7 +77,7 @@ export function Header() {
               </svg>
             </button>
 
-            <ButtonLink to="/cotacao" className="hidden sm:inline-flex">
+            <ButtonLink to="/cotacao" className="hidden md:inline-flex">
               Solicitar cotação
             </ButtonLink>
 

@@ -13,14 +13,14 @@ export function PageHero({
   actions,
   aside,
 }: {
-  eyebrow?: string;
+  eyebrow?: string | undefined;
   title: string;
-  subtitle?: string;
-  intro?: string;
-  crumbs?: Crumb[];
+  subtitle?: string | undefined;
+  intro?: string | undefined;
+  crumbs?: Crumb[] | undefined;
   tone?: "red" | "blue";
-  actions?: ReactNode;
-  aside?: ReactNode;
+  actions?: ReactNode | undefined;
+  aside?: ReactNode | undefined;
 }) {
   return (
     <section className="relative overflow-hidden border-b bg-surface">

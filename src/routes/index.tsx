@@ -17,7 +17,7 @@ import { RbcField } from "@/components/brand/RbcField";
 import { Agglutination } from "@/components/brand/Agglutination";
 import { Erythrocyte, RbcMicro } from "@/components/brand/Erythrocyte";
 import { Reveal } from "@/components/motion/Reveal";
-import { ArrowRight, ButtonLink } from "@/components/ui/Button";
+import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
 import { AppLink } from "@/components/ui/AppLink";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
 import { QuoteBand, SectionHeading } from "@/components/page/Blocks";

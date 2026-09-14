@@ -13,7 +13,7 @@ import {
 import { PageHero } from "@/components/page/PageHero";
 import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
-import { ArrowRight, ButtonLink } from "@/components/ui/Button";
+import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
 import { AppLink } from "@/components/ui/AppLink";
 import { Reveal } from "@/components/motion/Reveal";
 import { RbcMicro } from "@/components/brand/Erythrocyte";
@@ -23,9 +23,8 @@ const DESCRIPTION =
   "Catálogo ImunoScan: reagentes de imuno-hematologia, hemácias-teste, antiglobulina humana, potencializadores, controles e insumos para pesquisa.";
 
 export const Route = createFileRoute("/produtos/")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    metodologia: typeof search.metodologia === "string" ? search.metodologia : undefined,
-  }),
+  validateSearch: (search: Record<string, unknown>): { metodologia?: string } =>
+    typeof search["metodologia"] === "string" ? { metodologia: search["metodologia"] } : {},
   head: () => ({
     meta: [
       { title: TITLE },

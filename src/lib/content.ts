@@ -273,7 +273,7 @@ export type DocumentEntry = {
   product: Product;
   category: string;
   family: string;
-  sku?: string;
+  sku?: string | undefined;
 };
 
 export const documents: DocumentEntry[] = products.flatMap((product) =>
