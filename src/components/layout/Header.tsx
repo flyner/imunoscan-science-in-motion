@@ -77,7 +77,7 @@ export function Header() {
               </svg>
             </button>
 
-            <ButtonLink to="/cotacao" className="hidden md:inline-flex">
+            <ButtonLink to="/cotacao" className="max-md:hidden">
               Solicitar cotação
             </ButtonLink>
 
