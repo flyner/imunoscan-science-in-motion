@@ -194,8 +194,12 @@ export function LogoMark({
  * Hemácia isolada da logo oficial — assinatura visual reutilizável.
  * Índice 0/1/2 seleciona qual das três células da marca é usada.
  */
-export const LOGO_CELLS = [
-  { src: cellA.url, ratio: 0.33333 / 0.84235 * LOGO_RATIO },
-  { src: cellB.url, ratio: 0.14896 / 0.45286 * LOGO_RATIO },
-  { src: cellC.url, ratio: 0.20781 / 0.56723 * LOGO_RATIO },
-] as const;
+/**
+ * Para uso isolado fora da logo usamos apenas a hemácia frontal da marca:
+ * é a única cujo contorno está completo no arquivo original (as outras duas
+ * ficam parcialmente cobertas na composição).
+ */
+export const LOGO_CELL = {
+  src: cellC.url,
+  ratio: (0.20781 / 0.56723) * LOGO_RATIO,
+} as const;

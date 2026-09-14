@@ -1,19 +1,19 @@
 import type { CSSProperties } from "react";
-import { LOGO_CELLS } from "@/components/brand/LogoMark";
+import { LOGO_CELL } from "@/components/brand/LogoMark";
 
 type Tone = "red" | "blue" | "outline";
 
 type Props = {
   /** largura de render em px */
   size?: number;
-  /** mantido por compatibilidade: define apenas a intensidade do acento */
+  /** intensidade do acento (a cor da marca não é alterada) */
   tone?: Tone;
   /** rotação estática, em graus */
   tilt?: number;
-  /** achatamento: 1 = disco de frente, 0.35 = quase de perfil */
+  /** achatamento leve; nunca deforma a hemácia da marca */
   flatten?: number;
   opacity?: number;
-  /** qual das três hemácias da logo oficial usar (0, 1 ou 2) */
+  /** 1 espelha horizontalmente, para variar a composição sem redesenhar */
   variant?: 0 | 1 | 2;
   className?: string;
 };
@@ -21,8 +21,8 @@ type Props = {
 const TONE_OPACITY: Record<Tone, number> = { red: 1, blue: 0.9, outline: 0.28 };
 
 /**
- * Hemácia da ImunoScan — recortada diretamente da logo oficial, sem redesenho.
- * Usada como assinatura visual em heros, transições e páginas de produto.
+ * Hemácia ImunoScan — recortada da logo oficial, sem redesenho.
+ * Assinatura visual usada em heros, transições e páginas de produto.
  */
 export function Erythrocyte({
   size = 120,
@@ -33,13 +33,12 @@ export function Erythrocyte({
   variant = 2,
   className,
 }: Props) {
-  const cell = LOGO_CELLS[variant] ?? LOGO_CELLS[2];
-  // a hemácia da logo já é fotográfica: achatamentos fortes deformariam a marca
-  const squash = Math.min(1, Math.max(flatten, 0.85));
+  const squash = Math.min(1, Math.max(flatten, 0.88));
+  const mirror = variant === 1 ? -1 : 1;
 
   return (
     <img
-      src={cell.src}
+      src={LOGO_CELL.src}
       alt=""
       aria-hidden="true"
       draggable={false}
@@ -49,9 +48,9 @@ export function Erythrocyte({
       style={
         {
           width: size,
-          height: size / cell.ratio,
+          height: size / LOGO_CELL.ratio,
           opacity: opacity * TONE_OPACITY[tone],
-          transform: `rotate(${tilt}deg) scaleY(${squash})`,
+          transform: `rotate(${tilt}deg) scale(${mirror}, ${squash})`,
           willChange: "transform",
         } as CSSProperties
       }

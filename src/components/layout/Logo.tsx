@@ -10,7 +10,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
       aria-label="ImunoScan — página inicial"
       title="ImunoScan"
     >
-      <LogoMark height={compact ? 26 : 32} priority />
+      <LogoMark height={compact ? 32 : 40} priority />
     </Link>
   );
 }
