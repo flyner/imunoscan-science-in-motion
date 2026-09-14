@@ -25,11 +25,8 @@ export function Footer() {
       <div className="shell relative section-y-sm">
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-2.5">
-              <Erythrocyte size={26} tilt={-12} />
-              <span className="font-display text-lg font-semibold tracking-[-0.03em] text-white">
-                Imuno<span className="text-red-500">Scan</span>
-              </span>
+            <div className="inline-flex items-center rounded-lg bg-white px-3.5 py-2.5">
+              <LogoMark height={30} entry={false} interactive={false} />
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed">{project.legal_entity}</p>
             <p className="mt-2 max-w-xs text-xs leading-relaxed text-white/55">{project.target_audience}</p>
