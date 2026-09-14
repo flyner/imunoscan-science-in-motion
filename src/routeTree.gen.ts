@@ -10,33 +10,103 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DiagnosticoImunoHematologiaRouteImport } from './routes/diagnostico-imuno-hematologia'
+import { Route as LifeSciencesIndexRouteImport } from './routes/life-sciences.index'
+import { Route as LifeSciencesSlugRouteImport } from './routes/life-sciences.$slug'
+import { Route as ProdutosIndexRouteImport } from './routes/produtos.index'
+import { Route as ProdutosSlugRouteImport } from './routes/produtos.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DiagnosticoImunoHematologiaRoute =
+  DiagnosticoImunoHematologiaRouteImport.update({
+    id: '/diagnostico-imuno-hematologia',
+    path: '/diagnostico-imuno-hematologia',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const LifeSciencesIndexRoute = LifeSciencesIndexRouteImport.update({
+  id: '/life-sciences/',
+  path: '/life-sciences/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LifeSciencesSlugRoute = LifeSciencesSlugRouteImport.update({
+  id: '/life-sciences/$slug',
+  path: '/life-sciences/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProdutosIndexRoute = ProdutosIndexRouteImport.update({
+  id: '/produtos/',
+  path: '/produtos/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProdutosSlugRoute = ProdutosSlugRouteImport.update({
+  id: '/produtos/$slug',
+  path: '/produtos/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/life-sciences/': typeof LifeSciencesIndexRoute
+  '/produtos/': typeof ProdutosIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/life-sciences': typeof LifeSciencesIndexRoute
+  '/produtos': typeof ProdutosIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/life-sciences/$slug': typeof LifeSciencesSlugRoute
+  '/produtos/$slug': typeof ProdutosSlugRoute
+  '/life-sciences/': typeof LifeSciencesIndexRoute
+  '/produtos/': typeof ProdutosIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/diagnostico-imuno-hematologia'
+    | '/life-sciences/$slug'
+    | '/produtos/$slug'
+    | '/life-sciences/'
+    | '/produtos/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/diagnostico-imuno-hematologia'
+    | '/life-sciences/$slug'
+    | '/produtos/$slug'
+    | '/life-sciences'
+    | '/produtos'
+  id:
+    | '__root__'
+    | '/'
+    | '/diagnostico-imuno-hematologia'
+    | '/life-sciences/$slug'
+    | '/produtos/$slug'
+    | '/life-sciences/'
+    | '/produtos/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DiagnosticoImunoHematologiaRoute: typeof DiagnosticoImunoHematologiaRoute
+  LifeSciencesSlugRoute: typeof LifeSciencesSlugRoute
+  ProdutosSlugRoute: typeof ProdutosSlugRoute
+  LifeSciencesIndexRoute: typeof LifeSciencesIndexRoute
+  ProdutosIndexRoute: typeof ProdutosIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +118,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/diagnostico-imuno-hematologia': {
+      id: '/diagnostico-imuno-hematologia'
+      path: '/diagnostico-imuno-hematologia'
+      fullPath: '/diagnostico-imuno-hematologia'
+      preLoaderRoute: typeof DiagnosticoImunoHematologiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/life-sciences/': {
+      id: '/life-sciences/'
+      path: '/life-sciences'
+      fullPath: '/life-sciences/'
+      preLoaderRoute: typeof LifeSciencesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/life-sciences/$slug': {
+      id: '/life-sciences/$slug'
+      path: '/life-sciences/$slug'
+      fullPath: '/life-sciences/$slug'
+      preLoaderRoute: typeof LifeSciencesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/produtos/': {
+      id: '/produtos/'
+      path: '/produtos'
+      fullPath: '/produtos/'
+      preLoaderRoute: typeof ProdutosIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/produtos/$slug': {
+      id: '/produtos/$slug'
+      path: '/produtos/$slug'
+      fullPath: '/produtos/$slug'
+      preLoaderRoute: typeof ProdutosSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DiagnosticoImunoHematologiaRoute: DiagnosticoImunoHematologiaRoute,
+  LifeSciencesSlugRoute: LifeSciencesSlugRoute,
+  ProdutosSlugRoute: ProdutosSlugRoute,
+  LifeSciencesIndexRoute: LifeSciencesIndexRoute,
+  ProdutosIndexRoute: ProdutosIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
