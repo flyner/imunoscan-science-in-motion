@@ -23,9 +23,8 @@ const DESCRIPTION =
   "Catálogo ImunoScan: reagentes de imuno-hematologia, hemácias-teste, antiglobulina humana, potencializadores, controles e insumos para pesquisa.";
 
 export const Route = createFileRoute("/produtos/")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    metodologia: typeof search.metodologia === "string" ? search.metodologia : undefined,
-  }),
+  validateSearch: (search: Record<string, unknown>): { metodologia?: string } =>
+    typeof search["metodologia"] === "string" ? { metodologia: search["metodologia"] } : {},
   head: () => ({
     meta: [
       { title: TITLE },
