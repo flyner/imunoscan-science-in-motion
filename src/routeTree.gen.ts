@@ -10,7 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AImunoscanRouteImport } from './routes/a-imunoscan'
+import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as CotacaoRouteImport } from './routes/cotacao'
 import { Route as DiagnosticoImunoHematologiaRouteImport } from './routes/diagnostico-imuno-hematologia'
+import { Route as DocumentacaoRouteImport } from './routes/documentacao'
 import { Route as AplicacoesIndexRouteImport } from './routes/aplicacoes.index'
 import { Route as AplicacoesSlugRouteImport } from './routes/aplicacoes.$slug'
 import { Route as LifeSciencesIndexRouteImport } from './routes/life-sciences.index'
@@ -24,12 +28,32 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AImunoscanRoute = AImunoscanRouteImport.update({
+  id: '/a-imunoscan',
+  path: '/a-imunoscan',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContatoRoute = ContatoRouteImport.update({
+  id: '/contato',
+  path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CotacaoRoute = CotacaoRouteImport.update({
+  id: '/cotacao',
+  path: '/cotacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DiagnosticoImunoHematologiaRoute =
   DiagnosticoImunoHematologiaRouteImport.update({
     id: '/diagnostico-imuno-hematologia',
     path: '/diagnostico-imuno-hematologia',
     getParentRoute: () => rootRouteImport,
   } as any)
+const DocumentacaoRoute = DocumentacaoRouteImport.update({
+  id: '/documentacao',
+  path: '/documentacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AplicacoesIndexRoute = AplicacoesIndexRouteImport.update({
   id: '/aplicacoes/',
   path: '/aplicacoes/',
@@ -68,7 +92,11 @@ const ProdutosSlugRoute = ProdutosSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -79,7 +107,11 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -91,7 +123,11 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/a-imunoscan': typeof AImunoscanRoute
+  '/contato': typeof ContatoRoute
+  '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
+  '/documentacao': typeof DocumentacaoRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -104,7 +140,11 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
     | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -115,7 +155,11 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
     | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -126,7 +170,11 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/a-imunoscan'
+    | '/contato'
+    | '/cotacao'
     | '/diagnostico-imuno-hematologia'
+    | '/documentacao'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -138,7 +186,11 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AImunoscanRoute: typeof AImunoscanRoute
+  ContatoRoute: typeof ContatoRoute
+  CotacaoRoute: typeof CotacaoRoute
   DiagnosticoImunoHematologiaRoute: typeof DiagnosticoImunoHematologiaRoute
+  DocumentacaoRoute: typeof DocumentacaoRoute
   AplicacoesSlugRoute: typeof AplicacoesSlugRoute
   LifeSciencesSlugRoute: typeof LifeSciencesSlugRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
@@ -157,11 +209,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/a-imunoscan': {
+      id: '/a-imunoscan'
+      path: '/a-imunoscan'
+      fullPath: '/a-imunoscan'
+      preLoaderRoute: typeof AImunoscanRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contato': {
+      id: '/contato'
+      path: '/contato'
+      fullPath: '/contato'
+      preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cotacao': {
+      id: '/cotacao'
+      path: '/cotacao'
+      fullPath: '/cotacao'
+      preLoaderRoute: typeof CotacaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/diagnostico-imuno-hematologia': {
       id: '/diagnostico-imuno-hematologia'
       path: '/diagnostico-imuno-hematologia'
       fullPath: '/diagnostico-imuno-hematologia'
       preLoaderRoute: typeof DiagnosticoImunoHematologiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/documentacao': {
+      id: '/documentacao'
+      path: '/documentacao'
+      fullPath: '/documentacao'
+      preLoaderRoute: typeof DocumentacaoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/aplicacoes/': {
@@ -218,7 +298,11 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AImunoscanRoute: AImunoscanRoute,
+  ContatoRoute: ContatoRoute,
+  CotacaoRoute: CotacaoRoute,
   DiagnosticoImunoHematologiaRoute: DiagnosticoImunoHematologiaRoute,
+  DocumentacaoRoute: DocumentacaoRoute,
   AplicacoesSlugRoute: AplicacoesSlugRoute,
   LifeSciencesSlugRoute: LifeSciencesSlugRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
