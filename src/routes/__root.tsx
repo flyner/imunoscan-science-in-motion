@@ -74,7 +74,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
-const SHARE_IMAGE = "https://imunoscan.lovable.app/share-imunoscan.jpg";
+const SHARE_IMAGE = "https://imunoscan.netlify.app/share-imunoscan.jpg";
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
