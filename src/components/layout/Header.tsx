@@ -83,7 +83,7 @@ export function Header() {
                 to={item.to}
                 className="link-underline text-sm font-medium text-ink-800 transition-colors duration-[var(--duration-fast)] hover:text-blue-700"
                 activeProps={{ className: "text-blue-700" }}
-                activeOptions={item.to === "/" ? { exact: true } : undefined}
+                {...(item.to === "/" ? { activeOptions: { exact: true } } : {})}
               >
                 {item.label}
               </Link>
@@ -136,7 +136,7 @@ export function Header() {
                   onClick={() => setMenuOpen(false)}
                   className="border-b py-3.5 text-[0.95rem] font-medium text-ink-800 last:border-b-0"
                   activeProps={{ className: "text-blue-700" }}
-                  activeOptions={item.to === "/" ? { exact: true } : undefined}
+                  {...(item.to === "/" ? { activeOptions: { exact: true } } : {})}
                 >
                   {item.label}
                 </Link>
