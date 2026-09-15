@@ -1,5 +1,5 @@
 import { AnimatedRedCells, SYMBOL_RATIO } from "@/components/brand/AnimatedRedCells";
-import wordmarkAsset from "@/assets/logo/wordmark.png.asset.json";
+import wordmarkAsset from "@/assets/logo/wordmark.png";
 
 /** proporção largura/altura do wordmark original "ImunoScan" */
 const WORDMARK_RATIO = 1110 / 182;
@@ -60,7 +60,7 @@ export function LogoMark({
           style={{ width: wordHeight * WORDMARK_RATIO, height: wordHeight }}
         >
           <img
-            src={wordmarkAsset.url}
+            src={wordmarkAsset}
             alt=""
             aria-hidden="true"
             draggable={false}

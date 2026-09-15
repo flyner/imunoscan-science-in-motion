@@ -1,7 +1,7 @@
 import type { CSSProperties } from "react";
-import cell01 from "@/assets/logo/red-cell-01.png.asset.json";
-import cell02 from "@/assets/logo/red-cell-02.png.asset.json";
-import cell03 from "@/assets/logo/red-cell-03.png.asset.json";
+import cell01 from "@/assets/logo/red-cell-01.png";
+import cell02 from "@/assets/logo/red-cell-02.png";
+import cell03 from "@/assets/logo/red-cell-03.png";
 
 /**
  * Os três glóbulos vermelhos da ImunoScan como elementos visuais independentes.
@@ -9,9 +9,9 @@ import cell03 from "@/assets/logo/red-cell-03.png.asset.json";
  * povoam o ambiente do site (hero, transições, páginas de produto).
  */
 export const RED_CELLS = [
-  { src: cell01.url, ratio: 424 / 398 },
-  { src: cell02.url, ratio: 449 / 389 },
-  { src: cell03.url, ratio: 397 / 402 },
+  { src: cell01, ratio: 424 / 398 },
+  { src: cell02, ratio: 449 / 389 },
+  { src: cell03, ratio: 397 / 402 },
 ] as const;
 
 export type RedCellIndex = 0 | 1 | 2;
