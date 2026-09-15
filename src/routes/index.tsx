@@ -27,7 +27,7 @@ const TITLE = "ImunoScan — Precisão para diagnosticar. Ciência para avançar
 const DESCRIPTION =
   "Reagentes de imuno-hematologia para bancos de sangue e laboratórios clínicos, e insumos técnicos para pesquisa em ciências da vida.";
 
-const SHARE_IMAGE = "https://imunoscan.lovable.app/share-imunoscan.jpg";
+const SHARE_IMAGE = "https://imunoscan.netlify.app/share-imunoscan.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,11 +36,11 @@ export const Route = createFileRoute("/")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
-      { property: "og:url", content: "https://imunoscan.lovable.app/" },
+      { property: "og:url", content: "https://imunoscan.netlify.app/" },
       { property: "og:image", content: SHARE_IMAGE },
       { name: "twitter:image", content: SHARE_IMAGE },
     ],
-    links: [{ rel: "canonical", href: "https://imunoscan.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://imunoscan.netlify.app/" }],
   }),
   component: Home,
 });
