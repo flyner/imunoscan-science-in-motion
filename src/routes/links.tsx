@@ -69,7 +69,7 @@ function LinksPage() {
   return (
     <main id="conteudo" className="shell py-12 md:py-16">
       <header className="max-w-2xl">
-        <h1 className="text-3xl font-semibold tracking-tight text-ink-900 md:text-4xl">
+        <h1 className="text-3xl font-semibold tracking-tight text-ink-950 md:text-4xl">
           Links
         </h1>
         <p className="mt-3 text-ink-600">
@@ -84,7 +84,7 @@ function LinksPage() {
               to={link.to}
               className="group block h-full rounded-xl border border-[var(--border-subtle)] bg-white p-5 transition-[border-color,box-shadow] duration-[var(--duration-ui)] hover:border-blue-600 hover:shadow-[var(--shadow-sm)]"
             >
-              <h2 className="font-semibold text-ink-900 transition-colors duration-[var(--duration-fast)] group-hover:text-blue-700">
+              <h2 className="font-semibold text-ink-950 transition-colors duration-[var(--duration-fast)] group-hover:text-blue-700">
                 {link.title}
               </h2>
               <p className="mt-1.5 text-sm text-ink-600">{link.description}</p>

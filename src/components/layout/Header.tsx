@@ -45,7 +45,7 @@ export function Header() {
         Ir para o conteúdo
       </a>
 
-      <div className="border-b border-[var(--border-subtle)] bg-ink-900 text-white">
+      <div className="border-b border-[var(--border-subtle)] bg-ink-950 text-white">
         <div className="shell flex items-center justify-between gap-4 py-1.5 text-xs">
           <p className="flex items-center gap-2">
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
