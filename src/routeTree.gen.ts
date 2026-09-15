@@ -15,6 +15,7 @@ import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as CotacaoRouteImport } from './routes/cotacao'
 import { Route as DiagnosticoImunoHematologiaRouteImport } from './routes/diagnostico-imuno-hematologia'
 import { Route as DocumentacaoRouteImport } from './routes/documentacao'
+import { Route as LinksRouteImport } from './routes/links'
 import { Route as AplicacoesIndexRouteImport } from './routes/aplicacoes.index'
 import { Route as AplicacoesSlugRouteImport } from './routes/aplicacoes.$slug'
 import { Route as LifeSciencesIndexRouteImport } from './routes/life-sciences.index'
@@ -52,6 +53,11 @@ const DiagnosticoImunoHematologiaRoute =
 const DocumentacaoRoute = DocumentacaoRouteImport.update({
   id: '/documentacao',
   path: '/documentacao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LinksRoute = LinksRouteImport.update({
+  id: '/links',
+  path: '/links',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AplicacoesIndexRoute = AplicacoesIndexRouteImport.update({
@@ -97,6 +103,7 @@ export interface FileRoutesByFullPath {
   '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
   '/documentacao': typeof DocumentacaoRoute
+  '/links': typeof LinksRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -112,6 +119,7 @@ export interface FileRoutesByTo {
   '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
   '/documentacao': typeof DocumentacaoRoute
+  '/links': typeof LinksRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -128,6 +136,7 @@ export interface FileRoutesById {
   '/cotacao': typeof CotacaoRoute
   '/diagnostico-imuno-hematologia': typeof DiagnosticoImunoHematologiaRoute
   '/documentacao': typeof DocumentacaoRoute
+  '/links': typeof LinksRoute
   '/aplicacoes/$slug': typeof AplicacoesSlugRoute
   '/life-sciences/$slug': typeof LifeSciencesSlugRoute
   '/produto/$slug': typeof ProdutoSlugRoute
@@ -145,6 +154,7 @@ export interface FileRouteTypes {
     | '/cotacao'
     | '/diagnostico-imuno-hematologia'
     | '/documentacao'
+    | '/links'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -160,6 +170,7 @@ export interface FileRouteTypes {
     | '/cotacao'
     | '/diagnostico-imuno-hematologia'
     | '/documentacao'
+    | '/links'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -175,6 +186,7 @@ export interface FileRouteTypes {
     | '/cotacao'
     | '/diagnostico-imuno-hematologia'
     | '/documentacao'
+    | '/links'
     | '/aplicacoes/$slug'
     | '/life-sciences/$slug'
     | '/produto/$slug'
@@ -191,6 +203,7 @@ export interface RootRouteChildren {
   CotacaoRoute: typeof CotacaoRoute
   DiagnosticoImunoHematologiaRoute: typeof DiagnosticoImunoHematologiaRoute
   DocumentacaoRoute: typeof DocumentacaoRoute
+  LinksRoute: typeof LinksRoute
   AplicacoesSlugRoute: typeof AplicacoesSlugRoute
   LifeSciencesSlugRoute: typeof LifeSciencesSlugRoute
   ProdutoSlugRoute: typeof ProdutoSlugRoute
@@ -242,6 +255,13 @@ declare module '@tanstack/react-router' {
       path: '/documentacao'
       fullPath: '/documentacao'
       preLoaderRoute: typeof DocumentacaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/links': {
+      id: '/links'
+      path: '/links'
+      fullPath: '/links'
+      preLoaderRoute: typeof LinksRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/aplicacoes/': {
@@ -303,6 +323,7 @@ const rootRouteChildren: RootRouteChildren = {
   CotacaoRoute: CotacaoRoute,
   DiagnosticoImunoHematologiaRoute: DiagnosticoImunoHematologiaRoute,
   DocumentacaoRoute: DocumentacaoRoute,
+  LinksRoute: LinksRoute,
   AplicacoesSlugRoute: AplicacoesSlugRoute,
   LifeSciencesSlugRoute: LifeSciencesSlugRoute,
   ProdutoSlugRoute: ProdutoSlugRoute,
