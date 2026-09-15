@@ -5,11 +5,12 @@ import { ButtonLink } from "@/components/ui/brand-button";
 import { SearchDialog } from "@/components/search/SearchDialog";
 
 const NAV = [
+  { label: "Home", to: "/" },
+  { label: "Quem somos", to: "/a-imunoscan" },
+  { label: "Informações técnicas", to: "/documentacao" },
   { label: "Produtos", to: "/produtos" },
-  { label: "Aplicações", to: "/aplicacoes" },
-  { label: "Life Sciences", to: "/life-sciences" },
-  { label: "Documentação", to: "/documentacao" },
-  { label: "A ImunoScan", to: "/a-imunoscan" },
+  { label: "Links", to: "/links" },
+  { label: "Contato", to: "/contato" },
 ] as const;
 
 export function Header() {
@@ -44,6 +45,30 @@ export function Header() {
         Ir para o conteúdo
       </a>
 
+      <div className="border-b border-[var(--border-subtle)] bg-ink-950 text-white">
+        <div className="shell flex items-center justify-between gap-4 py-1.5 text-xs">
+          <p className="flex items-center gap-2">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path
+                d="M3 2h3l1.5 3.5-2 1.5a9 9 0 0 0 3.5 3.5l1.5-2L14 10v3a1.5 1.5 0 0 1-1.6 1.5C6.4 14 2 9.6 1.5 3.6A1.5 1.5 0 0 1 3 2Z"
+                stroke="currentColor"
+                strokeWidth="1.4"
+                strokeLinejoin="round"
+              />
+            </svg>
+            <span>
+              Atendimento ao cliente:{" "}
+              <a href="tel:+553133265892" className="font-semibold hover:underline">
+                31 3326 5892
+              </a>
+            </span>
+          </p>
+          <Link to="/contato" className="font-semibold hover:underline">
+            Contato
+          </Link>
+        </div>
+      </div>
+
       <header
         data-scrolled={scrolled ? "true" : "false"}
         className="sticky top-0 z-50 border-b border-transparent bg-white/95 transition-[background-color,border-color,backdrop-filter] duration-[var(--duration-ui)] ease-[var(--ease-out)] data-[scrolled=true]:border-[var(--border-subtle)] data-[scrolled=true]:bg-white/80 data-[scrolled=true]:backdrop-blur-md"
@@ -58,6 +83,7 @@ export function Header() {
                 to={item.to}
                 className="link-underline text-sm font-medium text-ink-800 transition-colors duration-[var(--duration-fast)] hover:text-blue-700"
                 activeProps={{ className: "text-blue-700" }}
+                {...(item.to === "/" ? { activeOptions: { exact: true } } : {})}
               >
                 {item.label}
               </Link>
@@ -110,6 +136,7 @@ export function Header() {
                   onClick={() => setMenuOpen(false)}
                   className="border-b py-3.5 text-[0.95rem] font-medium text-ink-800 last:border-b-0"
                   activeProps={{ className: "text-blue-700" }}
+                  {...(item.to === "/" ? { activeOptions: { exact: true } } : {})}
                 >
                   {item.label}
                 </Link>
