@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Pin Netlify preset so `npm run build` emits Netlify Functions/edge output
+  // when deployed outside the Lovable pipeline.
+  nitro: { preset: "netlify" },
 });
