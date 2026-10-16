@@ -16,7 +16,6 @@ import { DocumentList, TechnicalData } from "@/components/products/TechnicalData
 import { ProductGrid } from "@/components/products/Cards";
 import { RbcList, Tag } from "@/components/ui/Tag";
 import { Reveal } from "@/components/motion/Reveal";
-import { Erythrocyte } from "@/components/brand/Erythrocyte";
 
 export const Route = createFileRoute("/produto/$slug")({
   head: ({ params }) => {
@@ -32,6 +31,8 @@ export const Route = createFileRoute("/produto/$slug")({
         { name: "description", content: description },
         { property: "og:title", content: title },
         { property: "og:description", content: description },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
       ],
       scripts: [
         {
@@ -120,27 +121,21 @@ function ProductRoute() {
               </Reveal>
             </div>
 
-            {/* Composição editorial abstrata — não há foto oficial de embalagem no pacote. */}
             <Reveal delay={120}>
-              <figure className="relative overflow-hidden rounded-2xl border bg-card p-8">
-                <div className="relative grid h-52 place-items-center">
-                  <div
-                    className="rbc-motion"
-                    style={{ "--rbc-duration": "12s" } as React.CSSProperties}
-                  >
-                    <Erythrocyte size={176} tilt={-10} />
-                  </div>
-                  <div className="rbc-motion-alt absolute right-2 top-2" style={{ "--rbc-duration": "14s" } as React.CSSProperties}>
-                    <Erythrocyte size={64} tilt={22} opacity={0.7} variant={1} />
-                  </div>
-                  <div className="rbc-motion absolute bottom-1 left-3" style={{ "--rbc-duration": "13s", "--rbc-delay": "-4s" } as React.CSSProperties}>
-                    <Erythrocyte size={44} tilt={-24} opacity={0.55} variant={2} />
-                  </div>
+              <figure className="overflow-hidden rounded-lg border bg-card p-6 md:p-8">
+                <div className="aspect-square w-full">
+                  <img
+                    src={product.media.primary_image}
+                    alt={product.media.alt}
+                    fetchPriority="high"
+                    className="h-full w-full object-contain"
+                  />
                 </div>
-                <figcaption className="mt-6 border-t pt-4 text-xs leading-relaxed text-ink-600">
-                  Composição editorial ImunoScan. Imagem oficial de embalagem pendente de envio pela
-                  empresa.
-                </figcaption>
+                {product.media.image_status === "fallback" && (
+                  <figcaption className="mt-6 border-t pt-4 text-xs leading-relaxed text-ink-600">
+                    Imagem de apresentação da linha. Foto individual em atualização.
+                  </figcaption>
+                )}
               </figure>
 
               <div className="mt-4 flex flex-wrap gap-2">

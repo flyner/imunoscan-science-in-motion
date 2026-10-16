@@ -17,6 +17,7 @@ import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
 import { AppLink } from "@/components/ui/AppLink";
 import { Reveal } from "@/components/motion/Reveal";
 import { RbcMicro } from "@/components/brand/Erythrocyte";
+import { catalogCover } from "@/data/catalog-media";
 
 const TITLE = "Produtos — ImunoScan";
 const DESCRIPTION =
@@ -31,6 +32,8 @@ export const Route = createFileRoute("/produtos/")({
       { name: "description", content: DESCRIPTION },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: ProductsIndex,
@@ -47,6 +50,18 @@ function ProductsIndex() {
         title="Produtos ImunoScan"
         subtitle={diagnosticHub.public_content.short_description}
         crumbs={[{ label: "Início", to: "/" }, { label: "Produtos" }]}
+        aside={
+          <figure className="bg-card p-4 md:p-6">
+            <div className="aspect-[4/3] w-full">
+              <img
+                src={catalogCover.src}
+                alt={catalogCover.alt}
+                fetchPriority="high"
+                className="h-full w-full object-contain"
+              />
+            </div>
+          </figure>
+        }
         actions={
           <>
             <ButtonLink to={pagePath(diagnosticHub)}>
