@@ -310,7 +310,11 @@
           "PAGE-SUBCAT-RH"
         ]
       },
-      "products": [],
+      "products": [
+        "PROD-INVITROCLONE_ANTI_A",
+        "PROD-INVITROCLONE_ANTI_B",
+        "PROD-INVITROCLONE_ANTI_AB"
+      ],
       "source_ids": [
         "SRC-BULA-01",
         "SRC-TECH-AABB",
@@ -383,11 +387,14 @@
         ]
       },
       "products": [
-        "PROD-INVITROCLONE-ANTI-D",
-        "PROD-INVITROCLONE-ANTI-CCEE",
-        "PROD-INVITROCLONE-ANTI-CDE",
-        "PROD-INVITROCLONE-ANTI-CW",
-        "PROD-INVITROCLONE-RH-HR-CONTROL"
+        "PROD-INVITROCLONE_ANTI_D_RH1",
+        "PROD-INVITROCLONE_ANTI_C_RH2",
+        "PROD-INVITROCLONE_ANTI_C_RH4",
+        "PROD-INVITROCLONE_ANTI_E_RH3",
+        "PROD-INVITROCLONE_ANTI_E_RH5",
+        "PROD-INVITROCLONE_ANTI_CDE",
+        "PROD-INVITROCLONE_ANTI_CW_RH8",
+        "PROD-INVITROCLONE_RH_HR_CONTROL"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -445,11 +452,14 @@
         ]
       },
       "products": [
-        "PROD-INVITROCLONE-ANTI-K",
-        "PROD-INVITROCLONE-ANTI-JK",
-        "PROD-INVITROCLONE-ANTI-S-S",
-        "PROD-INVITROLIQ-ANTI-K",
-        "PROD-INVITROLIQ-ANTI-FYA-FYB"
+        "PROD-INVITROCLONE_ANTI_K_KEL1",
+        "PROD-INVITROCLONE_ANTI_JKA_JK1",
+        "PROD-INVITROCLONE_ANTI_JKB_JK2",
+        "PROD-INVITROCLONE_ANTI_S_MNS3",
+        "PROD-INVITROCLONE_ANTI_S_MNS4",
+        "PROD-INVITROLIQ_ANTI_K_KEL2",
+        "PROD-INVITROLIQ_ANTI_FYA_FY1",
+        "PROD-INVITROLIQ_ANTI_FYB_FY2"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -512,11 +522,15 @@
         ]
       },
       "products": [
-        "PROD-INVITROCELL-REVERSE",
-        "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
-        "PROD-INVITROCYTE-REVERSE",
-        "PROD-INVITROCYTE-SCAN-SCREEN-IDENT",
-        "PROD-INVITROCYTE-COOMBS-CONTROL"
+        "PROD-INVITROCELL_REVERSE_A1_B_08",
+        "PROD-INVITROCYTE_REVERSE_A1_B_30",
+        "PROD-INVITROCYTE_REVERSE_PK_A1_B_15",
+        "PROD-INVITROCELL_SCAN_I_II_08",
+        "PROD-INVITROCYTE_SCAN_I_II_30",
+        "PROD-INVITROCELL_SCAN_I_II_POOL_08",
+        "PROD-INVITROCELL_IDENT_11_08",
+        "PROD-INVITROCYTE_IDENT_11_30",
+        "PROD-INVITROCYTE_COOMBS_CONTROL"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -571,8 +585,9 @@
         ]
       },
       "products": [
-        "PROD-INVITROCELL-REVERSE",
-        "PROD-INVITROCYTE-REVERSE"
+        "PROD-INVITROCELL_REVERSE_A1_B_08",
+        "PROD-INVITROCYTE_REVERSE_A1_B_30",
+        "PROD-INVITROCYTE_REVERSE_PK_A1_B_15"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -635,8 +650,11 @@
         ]
       },
       "products": [
-        "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
-        "PROD-INVITROCYTE-SCAN-SCREEN-IDENT"
+        "PROD-INVITROCELL_SCAN_I_II_08",
+        "PROD-INVITROCYTE_SCAN_I_II_30",
+        "PROD-INVITROCELL_SCAN_I_II_POOL_08",
+        "PROD-INVITROCELL_IDENT_11_08",
+        "PROD-INVITROCYTE_IDENT_11_30"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -696,7 +714,8 @@
         ]
       },
       "products": [
-        "PROD-INVITROCLONE-AGH"
+        "PROD-INVITROCLONE_AGH_SERUM",
+        "PROD-INVITROLIQ_ANTI_IGG"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -760,8 +779,9 @@
         ]
       },
       "products": [
-        "PROD-IMUNOSCAN-LISS",
-        "PROD-IMUNOSCAN-PEG"
+        "PROD-IMUNOSCAN_PEG",
+        "PROD-IMUNOSCAN_LISS",
+        "PROD-IMUNOSCAN_ALBUMINA"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -812,8 +832,9 @@
         ]
       },
       "products": [
-        "PROD-INVITROCYTE-COOMBS-CONTROL",
-        "PROD-INVITROCLONE-RH-HR-CONTROL"
+        "PROD-INVITROCLONE_RH_HR_CONTROL",
+        "PROD-INVITROCYTE_COOMBS_CONTROL",
+        "PROD-IMUNOSCAN_CQI"
       ],
       "source_ids": [
         "SRC-BULA-01",
@@ -1426,8 +1447,129 @@
   ],
   "products": [
     {
-      "id": "PROD-INVITROCLONE-ANTI-D",
-      "name": "INVITROCLONE Anti-D (RH1) IgM+IgG",
+      "id": "PROD-INVITROCLONE_ANTI_A",
+      "slug": "invitroclone-anti-a",
+      "name": "INVITROCLONE Anti-A",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema ABO",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.10.01",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-a.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-a.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-A — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_B",
+      "slug": "invitroclone-anti-b",
+      "name": "INVITROCLONE Anti-B",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema ABO",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.10.02",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-b.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-b.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-B — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_AB",
+      "slug": "invitroclone-anti-ab",
+      "name": "INVITROCLONE Anti-AB",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema ABO",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.10.03",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-ab.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-ab.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-AB — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_D_RH1",
+      "slug": "invitroclone-anti-d-rh1",
+      "name": "INVITROCLONE Anti-D (RH1)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
       "public_content": {
@@ -1441,7 +1583,7 @@
       },
       "technical_data": {
         "sku": "IH.001.20.02",
-        "presentation": "1x10 ml e 10x10 ml",
+        "presentation": "1 × 10 ml",
         "concentration": "Clones monoclonais IgM e IgG purificados em meio proteico tamponado com conservante",
         "methodology": [
           "Aglutinação em tubo",
@@ -1449,67 +1591,191 @@
           "Microplaca",
           "Fase indireta de antiglobulina"
         ],
-        "storage": "2°C a 8°C. Não congelar.",
-        "anvisa": "Registro MS nº 80020120006"
+        "storage": "2°C a 8°C. Não congelar."
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso / Bula Oficial INVITROCLONE Anti-D",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_D.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-d-rh1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-d-rh1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-invitroclone-anti-d-rh1.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-D (RH1) — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-CCEE",
-      "name": "INVITROCLONE Anti-CcEe (RhCE Monoclonais)",
+      "id": "PROD-INVITROCLONE_ANTI_C_RH2",
+      "slug": "invitroclone-anti-c-rh2",
+      "name": "INVITROCLONE Anti-C (RH2)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
       "public_content": {
-        "short_description": "Reagentes monoclonais IgM para fenotipagem estendida dos antígenos Rh (Anti-C, Anti-c, Anti-E, Anti-e).",
-        "description": "Linha de reagentes de base monoclonal de classe IgM para identificação individual dos antígenos C (RH2), c (RH4), E (RH3) e e (RH5). Desenvolvidos para produzir aglutinação direta, límpida e reprodutível em meio salino sem necessidade de macromoléculas adicionais, viabilizando a determinação exata do provável genótipo Rh de doadores e pacientes que necessitam de sangue fenocompatibilizado.",
-        "applications": [
-          "Fenotipagem Rh estendida",
-          "Seleção de hemocomponentes para receptores aloimunizados",
-          "Resolução de fenótipos transfusionais complexos"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.001.20.03 (Anti-C), IH.001.20.04 (Anti-c), IH.001.20.05 (Anti-E), IH.001.20.06 (Anti-e)",
-        "presentation": "1x10 ml e 10x10 ml (por antígeno específico)",
-        "concentration": "Anticorpos monoclonais IgM selecionados",
-        "methodology": [
-          "Aglutinação direta em tubo",
-          "Lâmina",
-          "Microplaca"
-        ],
-        "storage": "2°C a 8°C. Não congelar.",
-        "anvisa": "Registro MS nº 80020120006"
+        "sku": "IH.001.20.03",
+        "presentation": "1 × 5 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso / Bula Oficial INVITROCLONE RhCE",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_RhCE.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-c-rh2.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-c-rh2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-C (RH2) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-CDE",
+      "id": "PROD-INVITROCLONE_ANTI_C_RH4",
+      "slug": "invitroclone-anti-c-rh4",
+      "name": "INVITROCLONE Anti-c (RH4)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.20.04",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-c-minusculo-rh4.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-c-minusculo-rh4.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-c (RH4) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_E_RH3",
+      "slug": "invitroclone-anti-e-rh3",
+      "name": "INVITROCLONE Anti-E (RH3)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.20.05",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-e-rh3.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-e-rh3.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-E (RH3) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_E_RH5",
+      "slug": "invitroclone-anti-e-rh5",
+      "name": "INVITROCLONE Anti-e (RH5)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.20.06",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-e-minusculo-rh5.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-e-minusculo-rh5.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-e (RH5) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_CDE",
+      "slug": "invitroclone-anti-cde",
       "name": "INVITROCLONE Anti-CDE",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
@@ -1522,34 +1788,39 @@
         ]
       },
       "technical_data": {
-        "sku": "IH.001.20.07 (1x10 ml) e IH.001.20.07-10 (10x10 ml)",
-        "presentation": "1x10 ml e 10x10 ml",
+        "sku": "IH.001.20.07",
+        "presentation": "1 × 10 ml",
         "concentration": "Mistura balanceada de clones monoclonais IgM anti-D, anti-C e anti-E",
         "methodology": [
           "Tubo",
           "Lâmina",
           "Microplaca"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120006"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE Anti-CDE",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_CDE.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-cde.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-cde.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-CDE — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-CW",
+      "id": "PROD-INVITROCLONE_ANTI_CW_RH8",
+      "slug": "invitroclone-anti-cw-rh8",
       "name": "INVITROCLONE Anti-Cw (RH8)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Sistema Rh",
@@ -1562,33 +1833,38 @@
         ]
       },
       "technical_data": {
-        "sku": "IH.001.20.08 (1x5 ml) e IH.001.20.08-10 (10x5 ml)",
-        "presentation": "1x5 ml e 10x5 ml",
+        "sku": "IH.001.20.08",
+        "presentation": "1 × 5 ml",
         "concentration": "Clone monoclonal murino IgM Anti-Cw",
         "methodology": [
           "Tubo de ensaio",
           "Microplaca"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120006"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE Anti-Cw",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_Cw.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-cw-rh8.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-cw-rh8.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Cw (RH8) — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-RH-HR-CONTROL",
+      "id": "PROD-INVITROCLONE_RH_HR_CONTROL",
+      "slug": "invitroclone-rh-hr-control",
       "name": "INVITROCLONE Rh-hr Control",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Controles",
@@ -1601,34 +1877,39 @@
         ]
       },
       "technical_data": {
-        "sku": "IH.001.20.10 (1x10 ml) e IH.001.20.10-10 (10x10 ml)",
-        "presentation": "1x10 ml e 10x10 ml",
+        "sku": "IH.001.20.10",
+        "presentation": "1 × 10 ml",
         "concentration": "Matriz proteica equivalente sem anticorpos ativos",
         "methodology": [
           "Tubo",
           "Lâmina",
           "Microplaca"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120002"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso Rh-hr Control",
-          "type": "Bula Técnica",
-          "filename": "Bula_Rh_hr_Control.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-rh-hr-control.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-rh-hr-control.jpg",
+        "fallback_image": "/images/produtos/apresentacao-invitroclone-rh-hr-control.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Rh-hr Control — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-K",
+      "id": "PROD-INVITROCLONE_ANTI_K_KEL1",
+      "slug": "invitroclone-anti-k-kel1",
       "name": "INVITROCLONE Anti-K (KEL1)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
@@ -1642,108 +1923,198 @@
       },
       "technical_data": {
         "sku": "IH.001.30.01",
-        "presentation": "1x5 ml",
+        "presentation": "1 × 2 ml",
         "concentration": "Clone monoclonal IgM murino anti-K",
         "methodology": [
           "Aglutinação direta em tubo",
           "Microplaca"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120005"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE Anti-K",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_K.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-k-kel1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-k-kel1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-K (KEL1) — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-JK",
-      "name": "INVITROCLONE Anti-Jka & Anti-Jkb (Sistema Kidd)",
+      "id": "PROD-INVITROCLONE_ANTI_JKA_JK1",
+      "slug": "invitroclone-anti-jka-jk1",
+      "name": "INVITROCLONE Anti-Jka (JK1)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
       "public_content": {
-        "short_description": "Reagentes monoclonais IgM para fenotipagem dos antígenos Kidd (Jk1 e Jk2).",
-        "description": "Reagentes específicos monoclonais de classe IgM destinados à detecção direta em tubo dos antígenos codominantes Jka (JK1) e Jkb (JK2). Permitem a identificação de fenótipos homozigotos e heterozigotos, cruciais na condução clínica de pacientes com histórico transfusional prévio.",
-        "applications": [
-          "Tipagem de antígenos do sistema Kidd",
-          "Seleção de sangue compatível em pacientes aloimunizados"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.001.30.02 (Anti-Jka) e IH.001.30.03 (Anti-Jkb)",
-        "presentation": "1x2 ml (cada apresentação)",
-        "concentration": "Anticorpos monoclonais IgM específicos",
-        "methodology": [
-          "Aglutinação em tubo"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120005"
+        "sku": "IH.001.30.02",
+        "presentation": "1 × 2 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE Anti-Jka/Jkb",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_Jk.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-jka-jk1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-jka-jk1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Jka (JK1) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-ANTI-S-S",
-      "name": "INVITROCLONE Anti-S & Anti-s (Sistema MNS)",
+      "id": "PROD-INVITROCLONE_ANTI_JKB_JK2",
+      "slug": "invitroclone-anti-jkb-jk2",
+      "name": "INVITROCLONE Anti-Jkb (JK2)",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
       "public_content": {
-        "short_description": "Reagentes monoclonais para pesquisa dos antígenos S (MNS3) e s (MNS4).",
-        "description": "Anticorpos monoclonais formulados para a detecção fenotípica dos antígenos de alta e moderada frequência S e s do sistema MNS. Auxiliam na elucidação diagnóstica de anticorpos complexos e no fornecimento de bolsas fenocompatibilizadas.",
-        "applications": [
-          "Fenotipagem eritrocitária estendida do sistema MNS"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.001.30.09 (Anti-S) e IH.001.30.10 (Anti-s)",
-        "presentation": "1x2 ml (cada apresentação)",
-        "concentration": "Clones monoclonais específicos",
-        "methodology": [
-          "Tubo de ensaio"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120005"
+        "sku": "IH.001.30.03",
+        "presentation": "1 × 2 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE Anti-S/s",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_Anti_S_s.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-jkb-jk2.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-jkb-jk2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Jkb (JK2) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROLIQ-ANTI-K",
-      "name": "INVITROLIQ Anti-k (KEL2 / Cellano)",
+      "id": "PROD-INVITROCLONE_ANTI_S_MNS3",
+      "slug": "invitroclone-anti-s-mns3",
+      "name": "INVITROCLONE Anti-S (MNS3)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.30.09",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-s-mns3.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-s-mns3.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-S (MNS3) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_S_MNS4",
+      "slug": "invitroclone-anti-s-mns4",
+      "name": "INVITROCLONE Anti-s (MNS4)",
+      "family": "INVITROCLONE",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.30.10",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-s-minusculo-mns4.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-s-minusculo-mns4.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-s (MNS4) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROLIQ_ANTI_K_KEL2",
+      "slug": "invitroliq-anti-k-kel2",
+      "name": "INVITROLIQ Anti-k (KEL2)",
       "family": "INVITROLIQ",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
       "public_content": {
@@ -1756,76 +2127,117 @@
       },
       "technical_data": {
         "sku": "IH.001.40.01",
-        "presentation": "1x5 ml",
+        "presentation": "1 × 2 ml",
         "concentration": "Soro policlonal humano IgG selecionado e purificado",
         "methodology": [
           "Teste Indireto de Antiglobulina (tubo)"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120005"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROLIQ Anti-k",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROLIQ_Anti_k.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-k-kel2.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-k-kel2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-k (KEL2) — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROLIQ-ANTI-FYA-FYB",
-      "name": "INVITROLIQ Anti-Fya & Anti-Fyb (Sistema Duffy)",
+      "id": "PROD-INVITROLIQ_ANTI_FYA_FY1",
+      "slug": "invitroliq-anti-fya-fy1",
+      "name": "INVITROLIQ Anti-Fya (FY1)",
       "family": "INVITROLIQ",
       "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
       "public_content": {
-        "short_description": "Soros policlonais humanos IgG para fenotipagem dos antígenos Duffy (FY1 e FY2).",
-        "description": "Reagentes policlonais humanos da classe IgG rigorosamente controlados para tipagem dos antígenos eritrocitários Fya (FY1) e Fyb (FY2). Requerem a utilização da técnica indireta de antiglobulina humana para a revelação precisa de aglutinação, fundamentais para triagem e compatibilização em pacientes transfundidos crônicos.",
-        "applications": [
-          "Fenotipagem de rotina e confirmatória do sistema Duffy",
-          "Investigação diagnóstica de aloanticorpos Anti-Fya/Anti-Fyb"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.001.40.04 (Anti-Fya) e IH.001.40.05 (Anti-Fyb)",
-        "presentation": "1x2 ml (cada apresentação)",
-        "concentration": "Soro policlonal humano IgG específico com conservante",
-        "methodology": [
-          "Teste Indireto de Antiglobulina (tubo)"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120005"
+        "sku": "IH.001.40.04",
+        "presentation": "1 × 2 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROLIQ Duffy",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROLIQ_Duffy.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-fya-fy1.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-fya-fy1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-Fya (FY1) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [
-        {
-          "question": "Correção de grafia da bula histórica: o rótulo do Anti-Fyb consta como FY1 na bula 2016. Deve ser retificado para FY2 na nova documentação?",
-          "reason": "Erro tipográfico na bula histórica de 2016.",
-          "priority": "medium"
-        }
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
       ],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCLONE-AGH",
-      "name": "INVITROCLONE AGH-Serum (Poliespecífico)",
+      "id": "PROD-INVITROLIQ_ANTI_FYB_FY2",
+      "slug": "invitroliq-anti-fyb-fy2",
+      "name": "INVITROLIQ Anti-Fyb (FY2)",
+      "family": "INVITROLIQ",
+      "category": "Diagnóstico & Imuno-hematologia > Tipagem Sanguínea > Outros Sistemas",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.40.05",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-fyb-fy2.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-fyb-fy2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-Fyb (FY2) — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCLONE_AGH_SERUM",
+      "slug": "invitroclone-agh-serum",
+      "name": "INVITROCLONE AGH-Serum",
       "family": "INVITROCLONE",
       "category": "Diagnóstico & Imuno-hematologia > Antiglobulina Humana",
       "public_content": {
@@ -1839,193 +2251,397 @@
         ]
       },
       "technical_data": {
-        "sku": "IH.001.50.01 (1x10 ml) e IH.001.50.01-10 (10x10 ml)",
-        "presentation": "1x10 ml e 10x10 ml",
+        "sku": "IH.001.50.01",
+        "presentation": "1 × 10 ml",
         "concentration": "Mistura calibrada de Anti-IgG de coelho e clone monoclonal murino Anti-C3d BRIC-8 em meio verde para identificação visual",
         "methodology": [
           "Tubo de ensaio convencional"
         ],
-        "storage": "2°C a 8°C. Manter ao abrigo da luz.",
-        "anvisa": "Registro MS nº 80020120002"
+        "storage": "2°C a 8°C. Manter ao abrigo da luz."
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCLONE AGH-Serum",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCLONE_AGH.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-agh-serum.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-agh-serum.jpg",
+        "fallback_image": "/images/produtos/apresentacao-agh-serum-e-anti-igg.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE AGH-Serum — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCELL-REVERSE",
-      "name": "INVITROCELL Reverse ABO (0,8%)",
+      "id": "PROD-INVITROLIQ_ANTI_IGG",
+      "slug": "invitroliq-anti-igg",
+      "name": "INVITROLIQ Anti-IgG",
+      "family": "INVITROLIQ",
+      "category": "Diagnóstico & Imuno-hematologia > Antiglobulina Humana",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.001.50.02",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-igg.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-igg.jpg",
+        "fallback_image": "/images/produtos/apresentacao-agh-serum-e-anti-igg.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-IgG — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCELL_REVERSE_A1_B_08",
+      "slug": "invitrocell-reverse-a1-b-08",
+      "name": "INVITROCELL Reverse A1-B 0,8%",
       "family": "INVITROCELL",
       "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Prova Reversa ABO",
       "public_content": {
-        "short_description": "Hemácias-teste humanas a 0,8% para realização de prova reversa ABO em gel-centrifugação.",
-        "description": "Suspensões padronizadas a 0,8% de hemácias humanas do grupo A1, A2, B e O conservadas em meio nutritivo estabilizante de formulação tamponada. Especialmente calibradas para a dispensação direta sem diluição prévia em cartões de gel-centrifugação em colunas neutras para a confirmação das isoaglutininas naturais plasmáticas.",
-        "applications": [
-          "Prova reversa ABO de rotina em cartões de gel",
-          "Resolução de discrepâncias sorológicas ABO"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.002.10-1 (4x10 ml A1-A2-B-O), IH.002.10-3 (3x10 ml A1-B-O), IH.002.10-5 (2x10 ml A1-B)",
-        "presentation": "Kits com 2x10 ml, 3x10 ml ou 4x10 ml",
-        "concentration": "Suspensão celular tamponada a 0,8% ± 0,1% de hematócrito",
-        "methodology": [
-          "Gel-centrifugação (colunas neutras)"
-        ],
-        "storage": "2°C a 8°C. Uso restrito até a data de expiração do lote celular.",
-        "anvisa": "Registro MS nº 80020120003"
+        "sku": "IH.002.10-5",
+        "presentation": "2 × 10 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCELL Reverse ABO",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCELL_Reverse.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-reverse-a1-b-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-reverse-a1-b-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Reverse A1-B 0,8% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCELL-SCAN-SCREEN-IDENT",
-      "name": "INVITROCELL Scan, Screen & Ident (0,8%)",
-      "family": "INVITROCELL",
-      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
-      "public_content": {
-        "short_description": "Painéis celulares a 0,8% para pesquisa (PAI) e identificação (IAI) de anticorpos em gel-centrifugação.",
-        "description": "Painéis estendidos de hemácias humanas a 0,8% fenotipadas para os principais antígenos clinicamente significativos (sistemas Rh, Kell, Kidd, Duffy, MNS, P, Lewis, Lutheran). Disponíveis em configurações de 2 células (Scan), 3 células (Screen), Pool de triagem e painéis de identificação completa de 11 células convencionais e tratadas por papaína (Ident 11 e Ident 11P). Acompanham mapa antigênico lote-específico detalhando o perfil fenotípico de cada doador.",
-        "applications": [
-          "Pesquisa de anticorpos irregulares (PAI)",
-          "Identificação de aloanticorpos e misturas imunes (IAI)",
-          "Controle pré-transfusional em gel"
-        ]
-      },
-      "technical_data": {
-        "sku": "IH.002.20-1 (Scan 2x10 ml), IH.002.30-1 (Screen 3x10 ml), IH.002.40-1 (Screen P 3x10 ml), IH.002.50-1 (Pool 1x10 ml), IH.002.60-1 (Ident 11x4 ml), IH.002.70-1 (Ident 11P 11x4 ml)",
-        "presentation": "Frascos conta-gotas de 10 ml e 4 ml",
-        "concentration": "Suspensão celular a 0,8% em meio estabilizante",
-        "methodology": [
-          "Gel-centrifugação (colunas de Coombs / LISS)"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120003"
-      },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCELL PAI/IAI",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCELL_PAI_IAI.pdf"
-        }
-      ],
-      "confidence": "confirmed",
-      "source_ids": [
-        "SRC-BULA-01"
-      ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
-    },
-    {
-      "id": "PROD-INVITROCYTE-REVERSE",
-      "name": "INVITROCYTE Reverse ABO & Reverse/PK ABO (3% e Microplaca)",
+      "id": "PROD-INVITROCYTE_REVERSE_A1_B_30",
+      "slug": "invitrocyte-reverse-a1-b-30",
+      "name": "INVITROCYTE Reverse A1-B 3,0%",
       "family": "INVITROCYTE",
       "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Prova Reversa ABO",
       "public_content": {
-        "short_description": "Hemácias-teste humanas a 3% para prova reversa ABO em tubo convencional e sistemas em microplaca.",
-        "description": "Suspensões celulares humanas conhecidas a 3% de hematócrito, ideais para prova reversa macroscópica em tubo de ensaio manual ou equipamentos automatizados de microplaca (linha PK). Formulação com preservantes seletivos que mantêm a integridade osmótica e a capacidade aglutinante dos antígenos ao longo de todo o prazo de validade.",
-        "applications": [
-          "Prova reversa de rotina em tubos",
-          "Automação transfusional em microplacas"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.002.10-2 (4x10 ml A1-A2-B-O), IH.002.10-4 (3x10 ml A1-B-O), IH.002.10-6 (2x10 ml A1-B)",
-        "presentation": "2x10 ml, 3x10 ml e 4x10 ml",
-        "concentration": "Suspensão a 3% (tubo) e formulação validada para microplacas",
-        "methodology": [
-          "Tubo convencional manual",
-          "Microplaca"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120003"
+        "sku": "IH.002.10-6",
+        "presentation": "2 × 10 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCYTE Reverse ABO",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCYTE_Reverse.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-reverse-a1-b-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-reverse-a1-b-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Reverse A1-B 3,0% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [
-        {
-          "question": "Confirmar se as referências Reverse Tubo e Reverse/PK Microplaca compartilham os mesmos números de SKU no ERP atual.",
-          "reason": "Nas bulas de 2016, ambos utilizam a raiz IH.002.10-2/-4/-6.",
-          "priority": "low"
-        }
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
       ],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCYTE-SCAN-SCREEN-IDENT",
-      "name": "INVITROCYTE Scan, Screen & Ident (3%)",
+      "id": "PROD-INVITROCYTE_REVERSE_PK_A1_B_15",
+      "slug": "invitrocyte-reverse-pk-a1-b-15",
+      "name": "INVITROCYTE Reverse/PK A1-B 1,5%",
+      "family": "INVITROCYTE",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Prova Reversa ABO",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.002.10-6",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCYTE Reverse/PK A1-B 1,5% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCELL_SCAN_I_II_08",
+      "slug": "invitrocell-scan-i-ii-08",
+      "name": "INVITROCELL Scan I-II 0,8%",
+      "family": "INVITROCELL",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.002.20-1",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-scan-i-ii-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-scan-i-ii-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Scan I-II 0,8% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCYTE_SCAN_I_II_30",
+      "slug": "invitrocyte-scan-i-ii-30",
+      "name": "INVITROCYTE Scan I-II 3,0%",
       "family": "INVITROCYTE",
       "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
       "public_content": {
-        "short_description": "Painéis celulares a 3% para triagem e identificação de anticorpos irregulares em tubos e microplacas.",
-        "description": "Painéis de hemácias humanas selecionadas a 3% de hematócrito desenvolvidos para execução do Teste Indireto de Antiglobulina (Coombs indireto) em tubo com ou sem aditivos (LISS/PEG). Painéis calibrados com expressão fenotípica ideal para auxiliar na elucidação de anticorpos.",
-        "applications": [
-          "PAI e IAI na metodologia convencional em tubo",
-          "Ensaios imuno-hematológicos em microplacas"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.002.20-2 (Scan 2x10 ml), IH.002.30-2 (Screen 3x10 ml), IH.002.40-2 (Screen P 3x10 ml), IH.002.60-2 (Ident 11x4 ml), IH.002.70-2 (Ident 11P 11x4 ml)",
-        "presentation": "10 ml (triagens) e 4 ml (identificações)",
-        "concentration": "Suspensão celular a 3% em solução tampão conservante",
-        "methodology": [
-          "Tubo de ensaio",
-          "Microplaca"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120003"
+        "sku": "IH.002.20-2",
+        "presentation": "2 × 10 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso INVITROCYTE PAI/IAI",
-          "type": "Bula Técnica",
-          "filename": "Bula_INVITROCYTE_PAI_IAI.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-scan-i-ii-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-scan-i-ii-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Scan I-II 3,0% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-INVITROCYTE-COOMBS-CONTROL",
+      "id": "PROD-INVITROCELL_SCAN_I_II_POOL_08",
+      "slug": "invitrocell-scan-i-ii-pool-08",
+      "name": "INVITROCELL Scan I-II Pool 0,8%",
+      "family": "INVITROCELL",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.002.50-1",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCELL Scan I-II Pool 0,8% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCELL_IDENT_11_08",
+      "slug": "invitrocell-ident-11-08",
+      "name": "INVITROCELL Ident 11 0,8%",
+      "family": "INVITROCELL",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.002.60-1",
+        "presentation": "11 × 4 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-ident-11-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-ident-11-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-identificacao-anticorpos-ident-11.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Ident 11 0,8% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCYTE_IDENT_11_30",
+      "slug": "invitrocyte-ident-11-30",
+      "name": "INVITROCYTE Ident 11 3,0%",
+      "family": "INVITROCYTE",
+      "category": "Diagnóstico & Imuno-hematologia > Hemácias-Teste > Triagem e Identificação",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.002.60-2",
+        "presentation": "11 × 4 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-ident-11-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-ident-11-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-identificacao-anticorpos-ident-11.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Ident 11 3,0% — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-INVITROCYTE_COOMBS_CONTROL",
+      "slug": "invitrocyte-coombs-control",
       "name": "INVITROCYTE Coombs Control",
       "family": "INVITROCYTE",
       "category": "Diagnóstico & Imuno-hematologia > Controles",
@@ -2038,73 +2654,79 @@
       },
       "technical_data": {
         "sku": "IH.002.80-1",
-        "presentation": "1x10 ml",
+        "presentation": "1 × 10 ml",
         "concentration": "Hemácias O RhD-positivas sensibilizadas com IgG humana a 3%",
         "methodology": [
           "Tubo de ensaio convencional"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120003"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso Coombs Control",
-          "type": "Bula Técnica",
-          "filename": "Bula_Coombs_Control.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-invitrocyte-coombs-control.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-invitrocyte-coombs-control.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCYTE Coombs Control — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-IMUNOSCAN-LISS",
-      "name": "ImunoScan LISS",
+      "id": "PROD-IMUNOSCAN_CQI",
+      "slug": "imunoscan-cqi",
+      "name": "ImunoScan CQI",
       "family": "ImunoScan",
-      "category": "Diagnóstico & Imuno-hematologia > Potencializadores & Soluções",
+      "category": "Diagnóstico & Imuno-hematologia > Controles",
       "public_content": {
-        "short_description": "Solução isotônica de baixa força iônica para aceleração e potencialização da captação de anticorpos.",
-        "description": "Solução de Baixa Força Iônica tamponada e ajustada em sua condutividade e osmolalidade. Reduz as forças de repulsão eletrostática entre os glóbulos vermelhos e anticorpos séricos, viabilizando a redução do tempo padrão de incubação do teste indireto de antiglobulina de 60 para 15 minutos, além de otimizar a sensibilidade analítica de detecção de aloanticorpos clinicamente relevantes.",
-        "applications": [
-          "Potencializador do Teste Indireto de Antiglobulina (Coombs indireto)",
-          "Provas de compatibilidade cruzada",
-          "Preparo de hemácias a baixa força iônica"
-        ]
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
       },
       "technical_data": {
-        "sku": "IH.003.10 (1x10 ml) e IH.003.10-10 (10x10 ml)",
-        "presentation": "1x10 ml e 10x10 ml",
-        "concentration": "Solução aquosa tamponada isotônica de baixa condutividade",
-        "methodology": [
-          "Tubo convencional"
-        ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120002"
+        "sku": "IH.004.10",
+        "presentation": "6 × 5 ml"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso ImunoScan LISS",
-          "type": "Bula Técnica",
-          "filename": "Bula_ImunoScan_LISS.pdf"
-        }
-      ],
-      "confidence": "confirmed",
+      "media": {
+        "primary_image": "/images/produtos/produto-imunoscan-cqi.jpg",
+        "product_image": "/images/produtos/produto-imunoscan-cqi.jpg",
+        "fallback_image": "/images/produtos/apresentacao-imunoscan-cqi.jpg",
+        "image_status": "individual",
+        "alt": "ImunoScan CQI — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
       "source_ids": [
-        "SRC-BULA-01"
+        "CATALOGO-V3"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     },
     {
-      "id": "PROD-IMUNOSCAN-PEG",
+      "id": "PROD-IMUNOSCAN_PEG",
+      "slug": "imunoscan-peg",
       "name": "ImunoScan PEG",
       "family": "ImunoScan",
-      "category": "Diagnóstico & Imuno-hematologia > Potencializadores & Soluções",
+      "category": "Diagnóstico & Imuno-hematologia > Potencializadores e Soluções",
       "public_content": {
         "short_description": "Solução de polietilenoglicol a 20% em base LISS para alta sensibilidade na detecção de anticorpos.",
         "description": "Solução aditiva de Polietilenoglicol (peso molecular 3350 a 20%) veiculada em matriz de baixa força iônica tamponada. Induz a aproximação molecular pela exclusão de água ao redor dos glóbulos vermelhos, podendo aumentar o título aparente de anticorpos IgG fracos. É utilizado na resolução de casos desafiadores de aloanticorpos com reatividade limítrofe e protocolos de adsorção diferencial.",
@@ -2115,29 +2737,117 @@
         ]
       },
       "technical_data": {
-        "sku": "IH.003.20 (1x10 ml) e IH.003.20-10 (10x10 ml)",
-        "presentation": "1x10 ml e 10x10 ml",
+        "sku": "IH.003.20",
+        "presentation": "1 × 10 ml",
         "concentration": "PEG 3350 a 20% em solução LISS tamponada",
         "methodology": [
           "Tubo convencional (exige lavagem antes da fase AGH)"
         ],
-        "storage": "2°C a 8°C",
-        "anvisa": "Registro MS nº 80020120002"
+        "storage": "2°C a 8°C"
       },
-      "documents": [
-        {
-          "title": "Instrução de Uso ImunoScan PEG",
-          "type": "Bula Técnica",
-          "filename": "Bula_ImunoScan_PEG.pdf"
-        }
-      ],
+      "media": {
+        "primary_image": "/images/produtos/produto-imunoscan-peg.jpg",
+        "product_image": "/images/produtos/produto-imunoscan-peg.jpg",
+        "fallback_image": "/images/produtos/apresentacao-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "individual",
+        "alt": "ImunoScan PEG — produto ImunoScan"
+      },
+      "documents": [],
       "confidence": "confirmed",
       "source_ids": [
+        "CATALOGO-V3",
         "SRC-BULA-01"
       ],
-      "pending_imunoscan": [],
-      "evidence_status": "documentação primária histórica (2016)",
-      "current_commercial_status": "pendente de confirmação da ImunoScan"
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-IMUNOSCAN_LISS",
+      "slug": "imunoscan-liss",
+      "name": "ImunoScan LISS",
+      "family": "ImunoScan",
+      "category": "Diagnóstico & Imuno-hematologia > Potencializadores e Soluções",
+      "public_content": {
+        "short_description": "Solução isotônica de baixa força iônica para aceleração e potencialização da captação de anticorpos.",
+        "description": "Solução de Baixa Força Iônica tamponada e ajustada em sua condutividade e osmolalidade. Reduz as forças de repulsão eletrostática entre os glóbulos vermelhos e anticorpos séricos, viabilizando a redução do tempo padrão de incubação do teste indireto de antiglobulina de 60 para 15 minutos, além de otimizar a sensibilidade analítica de detecção de aloanticorpos clinicamente relevantes.",
+        "applications": [
+          "Potencializador do Teste Indireto de Antiglobulina (Coombs indireto)",
+          "Provas de compatibilidade cruzada",
+          "Preparo de hemácias a baixa força iônica"
+        ]
+      },
+      "technical_data": {
+        "sku": "IH.003.10",
+        "presentation": "1 × 10 ml",
+        "concentration": "Solução aquosa tamponada isotônica de baixa condutividade",
+        "methodology": [
+          "Tubo convencional"
+        ],
+        "storage": "2°C a 8°C"
+      },
+      "media": {
+        "primary_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "fallback",
+        "alt": "ImunoScan LISS — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "confirmed",
+      "source_ids": [
+        "CATALOGO-V3",
+        "SRC-BULA-01"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents"
+      ],
+      "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
+    },
+    {
+      "id": "PROD-IMUNOSCAN_ALBUMINA",
+      "slug": "imunoscan-albumina",
+      "name": "ImunoScan Albumina",
+      "family": "ImunoScan",
+      "category": "Diagnóstico & Imuno-hematologia > Potencializadores e Soluções",
+      "public_content": {
+        "short_description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "description": "Informações técnicas detalhadas em atualização pela ImunoScan",
+        "applications": []
+      },
+      "technical_data": {
+        "sku": "IH.003.30",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "fallback",
+        "alt": "ImunoScan Albumina — produto ImunoScan"
+      },
+      "documents": [],
+      "confidence": "pending",
+      "source_ids": [
+        "CATALOGO-V3"
+      ],
+      "pending_fields": [
+        "anvisa",
+        "documents",
+        "short_description",
+        "description",
+        "applications",
+        "concentration",
+        "methodology",
+        "storage"
+      ],
+      "evidence_status": "catálogo ImunoScan V3",
+      "current_commercial_status": "portfólio ativo (catálogo V3)"
     }
   ],
   "pending_imunoscan": [
