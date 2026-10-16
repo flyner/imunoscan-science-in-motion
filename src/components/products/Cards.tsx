@@ -53,6 +53,19 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
         to={`/produto/${productSlug(product)}`}
         className="card-lift group flex h-full flex-col rounded-xl border bg-card p-5"
       >
+        <div className="relative mb-5 aspect-[4/3] w-full overflow-hidden rounded-lg bg-card">
+          <img
+            src={product.media.primary_image}
+            alt={product.media.alt}
+            loading="lazy"
+            className="h-full w-full object-contain p-5"
+          />
+          {product.media.image_status === "fallback" && (
+            <span className="absolute bottom-2 left-2 rounded-sm border bg-card px-2 py-1 text-xs text-ink-600">
+              Imagem da linha
+            </span>
+          )}
+        </div>
         <div className="flex items-start justify-between gap-4">
           <span className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-red-600">
             {product.family}
