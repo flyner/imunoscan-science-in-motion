@@ -41,8 +41,17 @@ export type PageContent = {
 
 export type ProductDoc = { title: string; type: string; filename: string };
 
+export type ProductMedia = {
+  primary_image: string;
+  product_image: string | null;
+  fallback_image: string;
+  image_status: "individual" | "fallback";
+  alt: string;
+};
+
 export type Product = {
   id: string;
+  slug: string;
   name: string;
   family: string;
   category: string;
@@ -59,7 +68,10 @@ export type Product = {
     storage?: string;
     anvisa?: string;
   };
+  media: ProductMedia;
   documents: ProductDoc[];
+  /** Campos sem conteúdo atual confirmado pela ImunoScan. */
+  pending_fields: string[];
   confidence: string;
   source_ids: string[];
   evidence_status?: string;
@@ -117,7 +129,7 @@ const HUB_IDS = {
 } as const;
 
 export function productSlug(product: Product): string {
-  return product.id.replace(/^PROD-/, "").toLowerCase().replace(/_/g, "-");
+  return product.slug;
 }
 
 const productBySlug = new Map(products.map((p) => [productSlug(p), p]));
