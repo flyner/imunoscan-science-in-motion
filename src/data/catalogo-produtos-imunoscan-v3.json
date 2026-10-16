@@ -1,0 +1,595 @@
+{
+  "schema_version": "3.0",
+  "status": "base individualizada para validação antes da integração",
+  "generated_from": [
+    "conteudo-produtos-imunoscan-v2-validado.json",
+    "Produtos ImunoScan — apresentação comercial",
+    "inventário de 42 imagens publicado em public/images/produtos"
+  ],
+  "rules": {
+    "total_products": 34,
+    "do_not_invent_missing_data": true,
+    "primary_image_is_always_renderable": true,
+    "product_image_null_means_no_individual_photo": true
+  },
+  "products": [
+    {
+      "id": "PROD-INVITROCLONE_ANTI_A",
+      "slug": "invitroclone-anti-a",
+      "name": "INVITROCLONE Anti-A",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.10.01",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-a.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-a.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-A — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_B",
+      "slug": "invitroclone-anti-b",
+      "name": "INVITROCLONE Anti-B",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.10.02",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-b.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-b.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-B — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_AB",
+      "slug": "invitroclone-anti-ab",
+      "name": "INVITROCLONE Anti-AB",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.10.03",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-ab.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-ab.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-fenotipagem-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-AB — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_D_RH1",
+      "slug": "invitroclone-anti-d-rh1",
+      "name": "INVITROCLONE Anti-D (RH1)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.02",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-d-rh1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-d-rh1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-invitroclone-anti-d-rh1.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-D (RH1) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_C_RH2",
+      "slug": "invitroclone-anti-c-rh2",
+      "name": "INVITROCLONE Anti-C (RH2)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.03",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-c-rh2.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-c-rh2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-C (RH2) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_C_RH4",
+      "slug": "invitroclone-anti-c-rh4",
+      "name": "INVITROCLONE Anti-c (RH4)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.04",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-c-minusculo-rh4.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-c-minusculo-rh4.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-c (RH4) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_E_RH3",
+      "slug": "invitroclone-anti-e-rh3",
+      "name": "INVITROCLONE Anti-E (RH3)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.05",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-e-rh3.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-e-rh3.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-E (RH3) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_E_RH5",
+      "slug": "invitroclone-anti-e-rh5",
+      "name": "INVITROCLONE Anti-e (RH5)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.06",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-e-minusculo-rh5.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-e-minusculo-rh5.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-e (RH5) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_CDE",
+      "slug": "invitroclone-anti-cde",
+      "name": "INVITROCLONE Anti-CDE",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.07",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-cde.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-cde.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-CDE — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_CW_RH8",
+      "slug": "invitroclone-anti-cw-rh8",
+      "name": "INVITROCLONE Anti-Cw (RH8)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.08",
+        "presentation": "1 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-cw-rh8.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-cw-rh8.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Cw (RH8) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_RH_HR_CONTROL",
+      "slug": "invitroclone-rh-hr-control",
+      "name": "INVITROCLONE Rh-hr Control",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.20.10",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-rh-hr-control.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-rh-hr-control.jpg",
+        "fallback_image": "/images/produtos/apresentacao-invitroclone-rh-hr-control.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Rh-hr Control — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_K_KEL1",
+      "slug": "invitroclone-anti-k-kel1",
+      "name": "INVITROCLONE Anti-K (KEL1)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.30.01",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-k-kel1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-k-kel1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-K (KEL1) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_JKA_JK1",
+      "slug": "invitroclone-anti-jka-jk1",
+      "name": "INVITROCLONE Anti-Jka (JK1)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.30.02",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-jka-jk1.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-jka-jk1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Jka (JK1) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_JKB_JK2",
+      "slug": "invitroclone-anti-jkb-jk2",
+      "name": "INVITROCLONE Anti-Jkb (JK2)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.30.03",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-jkb-jk2.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-jkb-jk2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-Jkb (JK2) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_S_MNS3",
+      "slug": "invitroclone-anti-s-mns3",
+      "name": "INVITROCLONE Anti-S (MNS3)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.30.09",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-s-mns3.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-s-mns3.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-S (MNS3) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_ANTI_S_MNS4",
+      "slug": "invitroclone-anti-s-mns4",
+      "name": "INVITROCLONE Anti-s (MNS4)",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.30.10",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-anti-s-minusculo-mns4.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-anti-s-minusculo-mns4.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE Anti-s (MNS4) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROLIQ_ANTI_K_KEL2",
+      "slug": "invitroliq-anti-k-kel2",
+      "name": "INVITROLIQ Anti-k (KEL2)",
+      "family": "INVITROLIQ",
+      "technical_data": {
+        "sku": "IH.001.40.01",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-k-kel2.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-k-kel2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-k (KEL2) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROLIQ_ANTI_FYA_FY1",
+      "slug": "invitroliq-anti-fya-fy1",
+      "name": "INVITROLIQ Anti-Fya (FY1)",
+      "family": "INVITROLIQ",
+      "technical_data": {
+        "sku": "IH.001.40.04",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-fya-fy1.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-fya-fy1.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-Fya (FY1) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROLIQ_ANTI_FYB_FY2",
+      "slug": "invitroliq-anti-fyb-fy2",
+      "name": "INVITROLIQ Anti-Fyb (FY2)",
+      "family": "INVITROLIQ",
+      "technical_data": {
+        "sku": "IH.001.40.05",
+        "presentation": "1 × 2 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-fyb-fy2.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-fyb-fy2.jpg",
+        "fallback_image": "/images/produtos/apresentacao-soros-teste-por-programacao.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-Fyb (FY2) — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCLONE_AGH_SERUM",
+      "slug": "invitroclone-agh-serum",
+      "name": "INVITROCLONE AGH-Serum",
+      "family": "INVITROCLONE",
+      "technical_data": {
+        "sku": "IH.001.50.01",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroclone-agh-serum.jpg",
+        "product_image": "/images/produtos/produto-invitroclone-agh-serum.jpg",
+        "fallback_image": "/images/produtos/apresentacao-agh-serum-e-anti-igg.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCLONE AGH-Serum — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROLIQ_ANTI_IGG",
+      "slug": "invitroliq-anti-igg",
+      "name": "INVITROLIQ Anti-IgG",
+      "family": "INVITROLIQ",
+      "technical_data": {
+        "sku": "IH.001.50.02",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitroliq-anti-igg.jpg",
+        "product_image": "/images/produtos/produto-invitroliq-anti-igg.jpg",
+        "fallback_image": "/images/produtos/apresentacao-agh-serum-e-anti-igg.jpg",
+        "image_status": "individual",
+        "alt": "INVITROLIQ Anti-IgG — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCELL_REVERSE_A1_B_08",
+      "slug": "invitrocell-reverse-a1-b-08",
+      "name": "INVITROCELL Reverse A1-B 0,8%",
+      "family": "INVITROCELL",
+      "technical_data": {
+        "sku": "IH.002.10-5",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-reverse-a1-b-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-reverse-a1-b-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Reverse A1-B 0,8% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCYTE_REVERSE_A1_B_30",
+      "slug": "invitrocyte-reverse-a1-b-30",
+      "name": "INVITROCYTE Reverse A1-B 3,0%",
+      "family": "INVITROCYTE",
+      "technical_data": {
+        "sku": "IH.002.10-6",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-reverse-a1-b-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-reverse-a1-b-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Reverse A1-B 3,0% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCYTE_REVERSE_PK_A1_B_15",
+      "slug": "invitrocyte-reverse-pk-a1-b-15",
+      "name": "INVITROCYTE Reverse/PK A1-B 1,5%",
+      "family": "INVITROCYTE",
+      "technical_data": {
+        "sku": "IH.002.10-6",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-hemacias-prova-reversa-abo.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCYTE Reverse/PK A1-B 1,5% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCELL_SCAN_I_II_08",
+      "slug": "invitrocell-scan-i-ii-08",
+      "name": "INVITROCELL Scan I-II 0,8%",
+      "family": "INVITROCELL",
+      "technical_data": {
+        "sku": "IH.002.20-1",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-scan-i-ii-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-scan-i-ii-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Scan I-II 0,8% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCYTE_SCAN_I_II_30",
+      "slug": "invitrocyte-scan-i-ii-30",
+      "name": "INVITROCYTE Scan I-II 3,0%",
+      "family": "INVITROCYTE",
+      "technical_data": {
+        "sku": "IH.002.20-2",
+        "presentation": "2 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-scan-i-ii-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-scan-i-ii-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Scan I-II 3,0% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCELL_SCAN_I_II_POOL_08",
+      "slug": "invitrocell-scan-i-ii-pool-08",
+      "name": "INVITROCELL Scan I-II Pool 0,8%",
+      "family": "INVITROCELL",
+      "technical_data": {
+        "sku": "IH.002.50-1",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-hemacias-pesquisa-anticorpos-scan.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCELL Scan I-II Pool 0,8% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCELL_IDENT_11_08",
+      "slug": "invitrocell-ident-11-08",
+      "name": "INVITROCELL Ident 11 0,8%",
+      "family": "INVITROCELL",
+      "technical_data": {
+        "sku": "IH.002.60-1",
+        "presentation": "11 × 4 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocell-ident-11-08.jpg",
+        "product_image": "/images/produtos/produto-invitrocell-ident-11-08.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-identificacao-anticorpos-ident-11.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCELL Ident 11 0,8% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCYTE_IDENT_11_30",
+      "slug": "invitrocyte-ident-11-30",
+      "name": "INVITROCYTE Ident 11 3,0%",
+      "family": "INVITROCYTE",
+      "technical_data": {
+        "sku": "IH.002.60-2",
+        "presentation": "11 × 4 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-invitrocyte-ident-11-30.jpg",
+        "product_image": "/images/produtos/produto-invitrocyte-ident-11-30.jpg",
+        "fallback_image": "/images/produtos/apresentacao-hemacias-identificacao-anticorpos-ident-11.jpg",
+        "image_status": "individual",
+        "alt": "INVITROCYTE Ident 11 3,0% — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-INVITROCYTE_COOMBS_CONTROL",
+      "slug": "invitrocyte-coombs-control",
+      "name": "INVITROCYTE Coombs Control",
+      "family": "INVITROCYTE",
+      "technical_data": {
+        "sku": "IH.002.80-1",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/apresentacao-invitrocyte-coombs-control.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/apresentacao-invitrocyte-coombs-control.jpg",
+        "image_status": "fallback",
+        "alt": "INVITROCYTE Coombs Control — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-IMUNOSCAN_CQI",
+      "slug": "imunoscan-cqi",
+      "name": "ImunoScan CQI",
+      "family": "ImunoScan",
+      "technical_data": {
+        "sku": "IH.004.10",
+        "presentation": "6 × 5 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-imunoscan-cqi.jpg",
+        "product_image": "/images/produtos/produto-imunoscan-cqi.jpg",
+        "fallback_image": "/images/produtos/apresentacao-imunoscan-cqi.jpg",
+        "image_status": "individual",
+        "alt": "ImunoScan CQI — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-IMUNOSCAN_PEG",
+      "slug": "imunoscan-peg",
+      "name": "ImunoScan PEG",
+      "family": "ImunoScan",
+      "technical_data": {
+        "sku": "IH.003.20",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/produto-imunoscan-peg.jpg",
+        "product_image": "/images/produtos/produto-imunoscan-peg.jpg",
+        "fallback_image": "/images/produtos/apresentacao-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "individual",
+        "alt": "ImunoScan PEG — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-IMUNOSCAN_LISS",
+      "slug": "imunoscan-liss",
+      "name": "ImunoScan LISS",
+      "family": "ImunoScan",
+      "technical_data": {
+        "sku": "IH.003.10",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "fallback",
+        "alt": "ImunoScan LISS — produto ImunoScan"
+      }
+    },
+    {
+      "id": "PROD-IMUNOSCAN_ALBUMINA",
+      "slug": "imunoscan-albumina",
+      "name": "ImunoScan Albumina",
+      "family": "ImunoScan",
+      "technical_data": {
+        "sku": "IH.003.30",
+        "presentation": "1 × 10 ml"
+      },
+      "media": {
+        "primary_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "product_image": null,
+        "fallback_image": "/images/produtos/grupo-potencializadores-peg-liss-albumina.jpg",
+        "image_status": "fallback",
+        "alt": "ImunoScan Albumina — produto ImunoScan"
+      }
+    }
+  ]
+}
