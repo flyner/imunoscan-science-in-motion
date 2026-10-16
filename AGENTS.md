@@ -8,4 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
-- Product catalog: src/data/catalogo-produtos-imunoscan-v3.json is authoritative; content.json products are generated from it via scripts/migrate-catalogo-v3.py (historic 2016 data never overrides V3).
+- `src/data/catalogo-produtos-imunoscan-v3.json` is the authoritative source for the current portfolio. Historic 2016 data must never override names, codes, presentations, slugs, images or products defined in the V3 catalog.
