@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { project } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
-import { EvidenceNote } from "@/components/page/Blocks";
 import { ArrowRight, Button, ButtonLink } from "@/components/ui/brand-button";
 import { Field, TextArea, TextField } from "@/components/ui/Field";
 import { Reveal } from "@/components/motion/Reveal";

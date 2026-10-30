@@ -8,7 +8,7 @@ import {
   getPageById,
 } from "@/lib/content";
 import { PageHero } from "./PageHero";
-import { ContentSections, EvidenceNote, QuoteBand, SectionHeading } from "./Blocks";
+import { ContentSections, QuoteBand, SectionHeading } from "./Blocks";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
 import { FaqList } from "@/components/ui/Faq";
 import { RbcList, Tag } from "@/components/ui/Tag";

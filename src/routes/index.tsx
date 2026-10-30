@@ -9,7 +9,6 @@ import {
   productFamilies,
   products,
   project,
-  research,
 } from "@/lib/content";
 import { RbcField } from "@/components/brand/RbcField";
 import { Agglutination } from "@/components/brand/Agglutination";

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { getApplication, pagePath } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
-import { EvidenceNote, QuoteBand, SectionHeading } from "@/components/page/Blocks";
+import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { PageNotFound } from "@/components/page/CategoryPage";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
 import { Tag } from "@/components/ui/Tag";
@@ -97,15 +97,8 @@ function ApplicationRoute() {
 
       <section className="border-t section-y-sm">
         <div className="shell">
-          <Reveal>
-            <EvidenceNote>
-              Esta página é uma visão derivada das aplicações declaradas nas categorias{" "}
-              {app.pages.map((page) => page.title).join(", ")}. Nenhum dado técnico foi acrescentado
-              além do que consta na base editorial.
-            </EvidenceNote>
-          </Reveal>
           {app.pages[0] && (
-            <div className="mt-6 text-sm">
+            <div className="text-sm">
               <AppLink
                 to={pagePath(app.pages[0])}
                 className="link-underline font-semibold text-blue-700"

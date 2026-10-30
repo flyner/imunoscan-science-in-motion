@@ -10,7 +10,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ArrowRight, ButtonLink } from "@/components/ui/brand-button";
-import { EvidenceNote, QuoteBand, SectionHeading } from "@/components/page/Blocks";
+import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { PageNotFound } from "@/components/page/CategoryPage";
 import { DocumentList, TechnicalData } from "@/components/products/TechnicalData";
 import { ProductGrid } from "@/components/products/Cards";
