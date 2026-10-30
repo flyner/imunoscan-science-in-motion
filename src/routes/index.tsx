@@ -1,12 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  applications,
   diagnosticCategories,
   diagnosticHub,
   documents,
   lifeSciencesCategories,
   lifeSciencesHub,
-  methodologies,
   pagePath,
   productFamilies,
   products,
@@ -47,7 +45,7 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   const featured = products.slice(0, 6);
-  const diagApplications = applications.filter((app) => app.area === "diagnostico");
+
 
   return (
     <>
@@ -93,7 +91,7 @@ function Home() {
       </section>
 
       {/* Bloco editorial científico + aglutinação */}
-      <section className="border-y bg-surface section-y">
+      <section className="border-t bg-surface section-y">
         <div className="shell grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <SectionHeading
@@ -115,65 +113,6 @@ function Home() {
               resultado diagnóstico.
             </p>
           </Reveal>
-        </div>
-      </section>
-
-      {/* Aplicações */}
-      <section className="section-y">
-        <div className="shell">
-          <SectionHeading
-            eyebrow="Caminhos de navegação"
-            title="Encontre por aplicação ou por metodologia"
-            description="O mesmo produto pode ser alcançado pela categoria, pela aplicação clínica ou pela metodologia de bancada."
-          />
-
-          <div className="mt-10 grid gap-10 md:grid-cols-2">
-            <Reveal>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-ink-600">
-                Aplicações
-              </h3>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {diagApplications.map((app) => (
-                  <li key={app.slug}>
-                    <AppLink
-                      to={`/aplicacoes/${app.slug}`}
-                      className="press inline-flex items-center gap-2 rounded-full border bg-card px-3.5 py-2 text-sm text-ink-800 hover:border-blue-600 hover:text-blue-700"
-                    >
-                      {app.name}
-                    </AppLink>
-                  </li>
-                ))}
-              </ul>
-              <AppLink
-                to="/aplicacoes"
-                className="link-underline mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700"
-              >
-                Ver todas as aplicações
-              </AppLink>
-            </Reveal>
-
-            <Reveal delay={70}>
-              <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-ink-600">
-                Metodologias
-              </h3>
-              <ul className="mt-4 divide-y border-y">
-                {methodologies.map((method) => (
-                  <li key={method}>
-                    <AppLink
-                      to={`/produtos?metodologia=${encodeURIComponent(method)}`}
-                      className="group flex items-center justify-between gap-4 py-3.5 text-sm text-ink-800 hover:text-blue-700"
-                    >
-                      <span className="flex items-center gap-3">
-                        <RbcMicro size={8} tone="blue" />
-                        {method}
-                      </span>
-                      <ArrowRight />
-                    </AppLink>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          </div>
         </div>
       </section>
 
