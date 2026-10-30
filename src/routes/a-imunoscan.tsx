@@ -5,10 +5,9 @@ import {
   pages,
   products,
   project,
-  research,
 } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
-import { EvidenceNote, QuoteBand, SectionHeading } from "@/components/page/Blocks";
+import { QuoteBand, SectionHeading } from "@/components/page/Blocks";
 import { Reveal } from "@/components/motion/Reveal";
 import { RbcList } from "@/components/ui/Tag";
 import { Agglutination } from "@/components/brand/Agglutination";
@@ -45,7 +44,6 @@ function About() {
   const figures = [
     { value: String(products.length), label: "produtos registrados na base técnica" },
     { value: String(pages.length), label: "áreas e categorias documentadas" },
-    { value: String(research.sources.length), label: "fontes rastreadas na auditoria" },
   ];
 
   return (
@@ -77,7 +75,7 @@ function About() {
       </section>
 
       <section className="border-y bg-surface section-y-sm">
-        <div className="shell grid gap-8 sm:grid-cols-3">
+        <div className="shell grid gap-8 sm:grid-cols-2">
           {figures.map((figure, index) => (
             <Reveal key={figure.label} delay={index * 60}>
               <p className="font-display text-[length:var(--text-title)] font-semibold leading-none text-ink-950">
@@ -89,36 +87,9 @@ function About() {
         </div>
       </section>
 
-      <section className="section-y">
-        <div className="shell grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
-          <div>
-            <SectionHeading
-              eyebrow="Base editorial"
-              title="Como este conteúdo técnico foi construído"
-              description={research.methodology}
-            />
-          </div>
-          <div>
-            <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink-600">
-              Fontes rastreadas
-            </h2>
-            <ul className="mt-4 divide-y border-y">
-              {research.sources.map((source) => (
-                <li key={source.source_id} className="py-4">
-                  <p className="font-mono text-[0.7rem] text-blue-600">{source.source_id}</p>
-                  <p className="mt-1.5 text-sm font-medium text-ink-950">{source.title}</p>
-                  <p className="mt-1 text-xs text-ink-600">
-                    {source.organization} · {source.source_type.replace(/_/g, " ")}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
 
       <section className="border-t bg-surface-warm section-y-sm">
-        <div className="shell grid gap-10 lg:grid-cols-[1fr_1fr]">
+        <div className="shell">
           <div>
             <SectionHeading eyebrow="Público atendido" title="Para quem trabalhamos" />
             <div className="mt-6">
@@ -130,12 +101,6 @@ function About() {
                   .filter(Boolean)}
               />
             </div>
-          </div>
-          <div className="self-end">
-            <EvidenceNote>
-              {project.validation_note} Versão da base editorial: {project.version} ·{" "}
-              {project.validation_status}.
-            </EvidenceNote>
           </div>
         </div>
       </section>

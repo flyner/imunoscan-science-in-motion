@@ -97,9 +97,11 @@ function ProductRoute() {
               >
                 {product.name}
               </Reveal>
-              <Reveal as="p" delay={100} className="measure mt-5 text-lg leading-relaxed text-ink-800">
-                {product.public_content.short_description}
-              </Reveal>
+              {product.public_content.short_description && (
+                <Reveal as="p" delay={100} className="measure mt-5 text-lg leading-relaxed text-ink-800">
+                  {product.public_content.short_description}
+                </Reveal>
+              )}
 
               <Reveal delay={150} className="mt-7">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink-600">
@@ -131,11 +133,6 @@ function ProductRoute() {
                     className="h-full w-full object-contain"
                   />
                 </div>
-                {product.media.image_status === "fallback" && (
-                  <figcaption className="mt-6 border-t pt-4 text-xs leading-relaxed text-ink-600">
-                    Imagem de apresentação da linha. Foto individual em atualização.
-                  </figcaption>
-                )}
               </figure>
 
               <div className="mt-4 flex flex-wrap gap-2">
@@ -153,10 +150,16 @@ function ProductRoute() {
 
       <section className="section-y">
         <div className="shell grid gap-12 lg:grid-cols-[1fr_0.85fr] lg:gap-16">
-          <div>
-            <SectionHeading eyebrow="Descrição técnica" title="Sobre o reagente" />
-            <p className="prose-tech measure mt-6 text-sm">{product.public_content.description}</p>
-          </div>
+          {product.public_content.description ? (
+            <div>
+              <SectionHeading eyebrow="Descrição técnica" title="Sobre o reagente" />
+              <p className="prose-tech measure mt-6 text-sm">{product.public_content.description}</p>
+            </div>
+          ) : (
+            <div>
+              <SectionHeading eyebrow="Ficha do produto" title={product.name} />
+            </div>
+          )}
           <div>
             <h2 className="text-xs font-semibold uppercase tracking-[0.12em] text-ink-600">
               Dados técnicos
@@ -190,15 +193,6 @@ function ProductRoute() {
         </section>
       )}
 
-      <section className="border-t section-y-sm">
-        <div className="shell">
-          <EvidenceNote>
-            Evidência: {product.evidence_status}. Situação comercial atual:{" "}
-            {product.current_commercial_status}. Fontes: {product.source_ids.join(", ")}. Registro
-            declarado na documentação histórica: {product.technical_data.anvisa ?? "não informado"}.
-          </EvidenceNote>
-        </div>
-      </section>
 
       <QuoteBand
         title={`Cotação — ${product.name}`}

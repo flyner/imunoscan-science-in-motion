@@ -156,14 +156,6 @@ export function CategoryPage({ page }: { page: PageContent }) {
               </ul>
             </div>
           )}
-
-          <EvidenceNote>
-            {page.publication_scope
-              ? `Escopo de publicação: ${page.publication_scope}. `
-              : ""}
-            Fontes desta página: {page.source_ids.join(", ")}. A disponibilidade comercial atual dos
-            itens depende de confirmação junto à ImunoScan.
-          </EvidenceNote>
         </div>
       </section>
 

@@ -173,8 +173,8 @@ function Quote() {
               </ol>
             </div>
             <EvidenceNote>
-              Preços, prazos e disponibilidade atual não constam da base técnica e serão informados
-              pela ImunoScan após a validação comercial e regulatória dos itens.
+              Preços, prazos e condições comerciais serão informados pela equipe da ImunoScan após o
+              recebimento da solicitação.
             </EvidenceNote>
           </aside>
         </div>
