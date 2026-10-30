@@ -91,7 +91,7 @@ function Home() {
       </section>
 
       {/* Bloco editorial científico + aglutinação */}
-      <section className="border-y bg-surface section-y">
+      <section className="border-t bg-surface section-y">
         <div className="shell grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <SectionHeading
