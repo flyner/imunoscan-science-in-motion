@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { AppLink } from "./AppLink";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "on-dark" | "ghost";
 type Size = "md" | "lg";
 
 const base =
