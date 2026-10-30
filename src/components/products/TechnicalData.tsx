@@ -45,7 +45,7 @@ export function DocumentList({ product }: { product: Product }) {
               href={doc.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex h-9 w-fit items-center rounded-lg border border-blue-600 px-3.5 text-xs font-semibold text-blue-700 transition-colors duration-[var(--duration-fast)] hover:bg-blue-600 hover:text-primary-foreground"
+              className="mt-4 inline-flex h-9 w-fit items-center rounded-lg border border-blue-600 px-3.5 text-xs font-semibold text-blue-700 transition-colors duration-[var(--duration-fast)] hover:bg-blue-600 hover:text-white"
             >
               Abrir PDF<span className="sr-only"> (abre em nova aba)</span>
             </a>
