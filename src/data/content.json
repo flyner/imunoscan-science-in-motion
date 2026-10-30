@@ -1468,14 +1468,26 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-A — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-A, ANTI-B, ANTI-AB",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-A, ANTI-B, ANTI-AB.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-A,%20ANTI-B,%20ANTI-AB.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — ANTI-A",
+          "type": "FDS",
+          "filename": "FDS ANTI-A.pdf",
+          "url": "/documentos/fds/FDS%20ANTI-A.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1508,14 +1520,26 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-B — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-A, ANTI-B, ANTI-AB",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-A, ANTI-B, ANTI-AB.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-A,%20ANTI-B,%20ANTI-AB.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — ANTI-B",
+          "type": "FDS",
+          "filename": "FDS ANTI-B.pdf",
+          "url": "/documentos/fds/FDS%20ANTI-B.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1548,14 +1572,26 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-AB — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-A, ANTI-B, ANTI-AB",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-A, ANTI-B, ANTI-AB.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-A,%20ANTI-B,%20ANTI-AB.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — ANTI-AB",
+          "type": "FDS",
+          "filename": "FDS ANTI-AB.pdf",
+          "url": "/documentos/fds/FDS%20ANTI-AB.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1600,15 +1636,27 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-D (RH1) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-D (RH1)- v6",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-D (RH1)- v6.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-D%20(RH1)-%20v6.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — ANTI-D",
+          "type": "FDS",
+          "filename": "FDS ANTI-D.pdf",
+          "url": "/documentos/fds/FDS%20ANTI-D.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -1635,14 +1683,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-C (RH2) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-C,c,E,e-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-C,c,E,e-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-C,c,E,e-v4.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1675,14 +1729,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-c (RH4) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-C,c,E,e-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-C,c,E,e-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-C,c,E,e-v4.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1715,14 +1775,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-E (RH3) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-C,c,E,e-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-C,c,E,e-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-C,c,E,e-v4.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1755,14 +1821,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-e (RH5) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-C,c,E,e-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-C,c,E,e-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-C,c,E,e-v4.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -1805,15 +1877,21 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-CDE — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE ANTI-CDE-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE ANTI-CDE-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20ANTI-CDE-v4.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -1849,15 +1927,21 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-Cw (RH8) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-Cw (RH8)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE Anti-Cw (RH8).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20Anti-Cw%20(RH8).pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -1894,15 +1978,27 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Rh-hr Control — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Rh-hr Control - v3",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE Rh-hr Control - v3.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20Rh-hr%20Control%20-%20v3.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — Rh-Control",
+          "type": "FDS",
+          "filename": "FDS Rh-Control.pdf",
+          "url": "/documentos/fds/FDS%20Rh-Control.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -1938,15 +2034,21 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-K (KEL1) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-K (KEL1)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE Anti-K (KEL1).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20Anti-K%20(KEL1).pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -1973,14 +2075,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-Jka (JK1) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-Jka (JK1) e Anti-Jkb (JK2)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE  Anti-Jka (JK1) e Anti-Jkb (JK2).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20%20Anti-Jka%20(JK1)%20e%20Anti-Jkb%20(JK2).pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2013,14 +2121,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-Jkb (JK2) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-Jka (JK1) e Anti-Jkb (JK2)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE  Anti-Jka (JK1) e Anti-Jkb (JK2).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20%20Anti-Jka%20(JK1)%20e%20Anti-Jkb%20(JK2).pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2053,14 +2167,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-S (MNS3) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-S (MNS3) e Anti-s (MNS4)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE Anti-S (MNS3) e Anti-s (MNS4).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20Anti-S%20(MNS3)%20e%20Anti-s%20(MNS4).pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2093,14 +2213,20 @@
         "image_status": "individual",
         "alt": "INVITROCLONE Anti-s (MNS4) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE Anti-S (MNS3) e Anti-s (MNS4)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE Anti-S (MNS3) e Anti-s (MNS4).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20Anti-S%20(MNS3)%20e%20Anti-s%20(MNS4).pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2141,15 +2267,21 @@
         "image_status": "individual",
         "alt": "INVITROLIQ Anti-k (KEL2) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROLIQ Anti-k (KEL2)",
+          "type": "Instrução de uso",
+          "filename": "INVITROLIQ  Anti-k (KEL2).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROLIQ%20%20Anti-k%20(KEL2).pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -2176,14 +2308,20 @@
         "image_status": "individual",
         "alt": "INVITROLIQ Anti-Fya (FY1) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROLIQ Anti-Fya e Anti-Fyb",
+          "type": "Instrução de uso",
+          "filename": "INVITROLIQ  Anti-Fya e Anti-Fyb.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROLIQ%20%20Anti-Fya%20e%20Anti-Fyb.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2216,14 +2354,20 @@
         "image_status": "individual",
         "alt": "INVITROLIQ Anti-Fyb (FY2) — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROLIQ Anti-Fya e Anti-Fyb",
+          "type": "Instrução de uso",
+          "filename": "INVITROLIQ  Anti-Fya e Anti-Fyb.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROLIQ%20%20Anti-Fya%20e%20Anti-Fyb.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2266,15 +2410,27 @@
         "image_status": "individual",
         "alt": "INVITROCLONE AGH-Serum — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCLONE AGH-Serum (poliespecífico)",
+          "type": "Instrução de uso",
+          "filename": "INVITROCLONE  AGH-Serum (poliespecífico).pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCLONE%20%20AGH-Serum%20(poliespec%C3%ADfico).pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — AGH SERUM",
+          "type": "FDS",
+          "filename": "FDS AGH SERUM.pdf",
+          "url": "/documentos/fds/FDS%20AGH%20SERUM.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -2301,14 +2457,26 @@
         "image_status": "individual",
         "alt": "INVITROLIQ Anti-IgG — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROLIQ Anti-IgG",
+          "type": "Instrução de uso",
+          "filename": "INVITROLIQ  Anti-IgG.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROLIQ%20%20Anti-IgG.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — ANTI-IgG",
+          "type": "FDS",
+          "filename": "FDS ANTI-IgG.pdf",
+          "url": "/documentos/fds/FDS%20ANTI-IgG.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2341,14 +2509,26 @@
         "image_status": "individual",
         "alt": "INVITROCELL Reverse A1-B 0,8% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCELL Reverse ABO-v2",
+          "type": "Instrução de uso",
+          "filename": "INVITROCELL Reverse ABO-v2.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCELL%20Reverse%20ABO-v2.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2381,14 +2561,26 @@
         "image_status": "individual",
         "alt": "INVITROCYTE Reverse A1-B 3,0% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCYTE Reverse ABO-v3",
+          "type": "Instrução de uso",
+          "filename": "INVITROCYTE Reverse ABO-v3.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCYTE%20Reverse%20ABO-v3.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2421,14 +2613,26 @@
         "image_status": "fallback",
         "alt": "INVITROCYTE Reverse/PK A1-B 1,5% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCYTE Reverse PK ABO-v3",
+          "type": "Instrução de uso",
+          "filename": "INVITROCYTE Reverse PK ABO-v3.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCYTE%20Reverse%20PK%20ABO-v3.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2461,14 +2665,33 @@
         "image_status": "individual",
         "alt": "INVITROCELL Scan I-II 0,8% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCELL Scan-Screen-Ident-v2",
+          "type": "Instrução de uso",
+          "filename": "INVITROCELL Scan-Screen-Ident-v2.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCELL%20Scan-Screen-Ident-v2.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 121126",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCELL Scan I-II 121126.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCELL%20Scan%20I-II%20121126.pdf",
+          "valid_until": "2026-11-23"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2501,14 +2724,40 @@
         "image_status": "individual",
         "alt": "INVITROCYTE Scan I-II 3,0% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCYTE Scan-Screen-Ident-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCYTE Scan-Screen-Ident-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCYTE%20Scan-Screen-Ident-v4.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 111126",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCYTE Scan I-II 111126.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCYTE%20Scan%20I-II%20111126.pdf",
+          "valid_until": "2026-11-23"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 161126",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCYTE Scan I-II 161126.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCYTE%20Scan%20I-II%20161126.pdf",
+          "valid_until": "2026-11-23"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2541,14 +2790,33 @@
         "image_status": "fallback",
         "alt": "INVITROCELL Scan I-II Pool 0,8% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCELL Scan-Screen-Ident-v2",
+          "type": "Instrução de uso",
+          "filename": "INVITROCELL Scan-Screen-Ident-v2.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCELL%20Scan-Screen-Ident-v2.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 151126P",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCELL Scan I-II Pool 151126P.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCELL%20Scan%20I-II%20Pool%20151126P.pdf",
+          "valid_until": "2026-11-23"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2581,14 +2849,33 @@
         "image_status": "individual",
         "alt": "INVITROCELL Ident 11 0,8% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCELL Scan-Screen-Ident-v2",
+          "type": "Instrução de uso",
+          "filename": "INVITROCELL Scan-Screen-Ident-v2.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCELL%20Scan-Screen-Ident-v2.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 141126",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCELL Ident 11 141126.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCELL%20Ident%2011%20141126.pdf",
+          "valid_until": "2026-11-23"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2621,14 +2908,33 @@
         "image_status": "individual",
         "alt": "INVITROCYTE Ident 11 3,0% — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCYTE Scan-Screen-Ident-v4",
+          "type": "Instrução de uso",
+          "filename": "INVITROCYTE Scan-Screen-Ident-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCYTE%20Scan-Screen-Ident-v4.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        },
+        {
+          "title": "Diagrama de hemácias — lote 131126",
+          "type": "Diagrama de hemácias",
+          "filename": "IVCYTE Ident 11 131126.pdf",
+          "url": "/documentos/diagramas-vigentes/IVCYTE%20Ident%2011%20131126.pdf",
+          "valid_until": "2026-11-23"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2668,15 +2974,27 @@
         "image_status": "fallback",
         "alt": "INVITROCYTE Coombs Control — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — INVITROCYTE Coombs Control",
+          "type": "Instrução de uso",
+          "filename": "INVITROCYTE Coombs Control.pdf",
+          "url": "/documentos/instrucoes-de-uso/INVITROCYTE%20Coombs%20Control.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — REAGENTES DE HEMÁCIAS",
+          "type": "FDS",
+          "filename": "FDS REAGENTES DE HEMÁCIAS.pdf",
+          "url": "/documentos/fds/FDS%20REAGENTES%20DE%20HEM%C3%81CIAS.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -2703,14 +3021,26 @@
         "image_status": "individual",
         "alt": "ImunoScan CQI — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — Imunoscan CQI_Inst. de uso",
+          "type": "Instrução de uso",
+          "filename": "Imunoscan CQI_Inst. de uso.pdf",
+          "url": "/documentos/instrucoes-de-uso/Imunoscan%20CQI_Inst.%20de%20uso.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — IMUNOSCAN CQI",
+          "type": "FDS",
+          "filename": "FDS IMUNOSCAN CQI.pdf",
+          "url": "/documentos/fds/FDS%20IMUNOSCAN%20CQI.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",
@@ -2752,15 +3082,27 @@
         "image_status": "individual",
         "alt": "ImunoScan PEG — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — ImunoScan PEG-v4",
+          "type": "Instrução de uso",
+          "filename": "ImunoScan PEG-v4.pdf",
+          "url": "/documentos/instrucoes-de-uso/ImunoScan%20PEG-v4.pdf"
+        },
+        {
+          "title": "Ficha de dados de segurança — IMUNOSCAN PEG",
+          "type": "FDS",
+          "filename": "FDS IMUNOSCAN PEG.pdf",
+          "url": "/documentos/fds/FDS%20IMUNOSCAN%20PEG.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -2796,15 +3138,21 @@
         "image_status": "fallback",
         "alt": "ImunoScan LISS — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — ImunoScan LISS-v3",
+          "type": "Instrução de uso",
+          "filename": "ImunoScan LISS-v3.pdf",
+          "url": "/documentos/instrucoes-de-uso/ImunoScan%20LISS-v3.pdf"
+        }
+      ],
       "confidence": "confirmed",
       "source_ids": [
         "CATALOGO-V3",
         "SRC-BULA-01"
       ],
       "pending_fields": [
-        "anvisa",
-        "documents"
+        "anvisa"
       ],
       "evidence_status": "catálogo ImunoScan V3 + texto técnico genérico reaproveitado",
       "current_commercial_status": "portfólio ativo (catálogo V3)"
@@ -2831,14 +3179,20 @@
         "image_status": "fallback",
         "alt": "ImunoScan Albumina — produto ImunoScan"
       },
-      "documents": [],
+      "documents": [
+        {
+          "title": "Instrução de uso — ImunoScan Albumina - v2",
+          "type": "Instrução de uso",
+          "filename": "ImunoScan Albumina - v2.pdf",
+          "url": "/documentos/instrucoes-de-uso/ImunoScan%20Albumina%20-%20v2.pdf"
+        }
+      ],
       "confidence": "pending",
       "source_ids": [
         "CATALOGO-V3"
       ],
       "pending_fields": [
         "anvisa",
-        "documents",
         "short_description",
         "description",
         "applications",

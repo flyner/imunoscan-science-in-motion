@@ -171,7 +171,7 @@ function ProductRoute() {
       {product.documents.length > 0 && (
         <section className="border-y bg-surface section-y-sm">
           <div className="shell">
-            <SectionHeading eyebrow="Documentação" title="Instruções de uso e bulas" />
+            <SectionHeading eyebrow="Documentação" title="Documentação técnica" />
             <div className="mt-8">
               <DocumentList product={product} />
             </div>

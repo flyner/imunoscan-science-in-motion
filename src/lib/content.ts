@@ -39,7 +39,20 @@ export type PageContent = {
   source_ids: string[];
 };
 
-export type ProductDoc = { title: string; type: string; filename: string };
+export type ProductDoc = {
+  title: string;
+  type: string;
+  filename: string;
+  url: string;
+  valid_until?: string;
+};
+
+/** "2026-11-23" -> "23/11/2026" */
+export function formatValidity(date?: string): string | undefined {
+  if (!date) return undefined;
+  const [y, m, d] = date.split("-");
+  return `Válido até ${d}/${m}/${y}`;
+}
 
 export type ProductMedia = {
   primary_image: string;
@@ -282,6 +295,8 @@ export type DocumentEntry = {
   title: string;
   type: string;
   filename: string;
+  url: string;
+  valid_until?: string | undefined;
   product: Product;
   category: string;
   family: string;
@@ -294,6 +309,8 @@ export const documents: DocumentEntry[] = products.flatMap((product) =>
     title: doc.title,
     type: doc.type,
     filename: doc.filename,
+    url: doc.url,
+    valid_until: doc.valid_until,
     product,
     category: product.category,
     family: product.family,
@@ -331,6 +348,7 @@ const searchIndex: (SearchResult & { haystack: string })[] = [
         product.technical_data.sku,
         product.public_content.short_description,
         ...(product.technical_data.methodology ?? []),
+        ...product.documents.flatMap((doc) => [doc.title, doc.type]),
       ]
         .join(" ")
         .toLowerCase(),
@@ -367,7 +385,7 @@ const searchIndex: (SearchResult & { haystack: string })[] = [
     kind: "Documento" as const,
     title: doc.title,
     meta: doc.type,
-    path: `/documentacao`,
+    path: `/produto/${productSlug(doc.product)}`,
     trail: doc.product.name,
     haystack: [doc.title, doc.type, doc.filename, doc.product.name, doc.sku ?? ""]
       .join(" ")
