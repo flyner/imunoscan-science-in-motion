@@ -5,7 +5,6 @@ import {
   documents,
   lifeSciencesCategories,
   lifeSciencesHub,
-  methodologies,
   pagePath,
   productFamilies,
   products,
@@ -45,6 +44,8 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
+  const featured = products.slice(0, 6);
+
 
   return (
     <>
