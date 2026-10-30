@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { documentTypes, documents, formatValidity, productFamilies, productSlug, products } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
-import { EvidenceNote, QuoteBand } from "@/components/page/Blocks";
+import { QuoteBand } from "@/components/page/Blocks";
 import { AppLink } from "@/components/ui/AppLink";
 
 const TITLE = "Documentação técnica — ImunoScan";
