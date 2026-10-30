@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  applications,
   diagnosticCategories,
   diagnosticHub,
   documents,
@@ -46,8 +45,6 @@ export const Route = createFileRoute("/")({
 });
 
 function Home() {
-  const featured = products.slice(0, 6);
-  const diagApplications = applications.filter((app) => app.area === "diagnostico");
 
   return (
     <>
