@@ -106,8 +106,7 @@ export function QuoteBand({
             <ButtonLink
               to="/contato"
               size="lg"
-              variant="secondary"
-              className="border-white/25 bg-transparent text-white hover:border-white/60"
+              variant="on-dark"
             >
               {secondaryLabel}
             </ButtonLink>
