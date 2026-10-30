@@ -7,7 +7,6 @@ import {
   lifeSciencesCategories,
   pagePath,
   project,
-  validationNote,
 } from "@/lib/content";
 
 export function Footer() {
@@ -61,8 +60,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed text-white/45">
-          <p className="max-w-3xl">{validationNote}</p>
-          <p className="mt-3">
+          <p>
             © {year} {project.legal_entity}. Conteúdo técnico destinado a profissionais de saúde e pesquisa.
           </p>
         </div>

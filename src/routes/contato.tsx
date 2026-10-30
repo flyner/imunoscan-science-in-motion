@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { project } from "@/lib/content";
 import { PageHero } from "@/components/page/PageHero";
-import { EvidenceNote } from "@/components/page/Blocks";
 import { ArrowRight, Button, ButtonLink } from "@/components/ui/brand-button";
 import { Field, TextArea, TextField } from "@/components/ui/Field";
 import { Reveal } from "@/components/motion/Reveal";
@@ -110,10 +109,6 @@ function Contact() {
               <h2 className="text-sm font-semibold text-ink-950">{project.legal_entity}</h2>
               <p className="mt-3 text-sm leading-relaxed text-ink-600">{project.target_audience}</p>
             </div>
-            <EvidenceNote>
-              Endereço, telefone e e-mail institucionais não constam da base editorial fornecida e
-              serão publicados após confirmação da ImunoScan.
-            </EvidenceNote>
             <div className="rounded-xl border bg-card p-6">
               <h2 className="text-sm font-semibold text-ink-950">Precisa de preços?</h2>
               <p className="mt-2 text-sm text-ink-600">

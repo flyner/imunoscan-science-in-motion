@@ -9,7 +9,6 @@ import {
   productFamilies,
   products,
   project,
-  research,
 } from "@/lib/content";
 import { RbcField } from "@/components/brand/RbcField";
 import { Agglutination } from "@/components/brand/Agglutination";
@@ -150,12 +149,6 @@ function Home() {
               title={project.legal_entity}
               description={project.target_audience}
             />
-            <Reveal delay={120} className="mt-6 space-y-2 text-sm text-ink-600">
-              <p>
-                Base editorial: {research.sources.length} fontes rastreadas · versão {project.version}
-              </p>
-              <p>{project.validation_status}</p>
-            </Reveal>
             <Reveal delay={160} className="mt-8 flex flex-wrap gap-3">
               <ButtonLink to="/a-imunoscan" variant="secondary">
                 A ImunoScan

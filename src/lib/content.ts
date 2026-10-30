@@ -126,7 +126,21 @@ const db = raw as unknown as Db;
 export const project = db.project;
 export const research = db.research;
 export const pages = db.pages;
-export const products = db.products;
+/** Placeholder text from the migration is internal; never shown to visitors. */
+const isPlaceholder = (text?: string) => !text || /em atualiza[çc][ãa]o/i.test(text);
+
+export const products: Product[] = db.products.map((product) => ({
+  ...product,
+  public_content: {
+    ...product.public_content,
+    short_description: isPlaceholder(product.public_content.short_description)
+      ? ""
+      : product.public_content.short_description,
+    description: isPlaceholder(product.public_content.description)
+      ? ""
+      : product.public_content.description,
+  },
+}));
 export const pendingQuestions = db.pending_imunoscan;
 
 /* ------------------------------------------------------------------ */

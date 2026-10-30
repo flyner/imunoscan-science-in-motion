@@ -8,7 +8,7 @@ import {
   getPageById,
 } from "@/lib/content";
 import { PageHero } from "./PageHero";
-import { ContentSections, EvidenceNote, QuoteBand, SectionHeading } from "./Blocks";
+import { ContentSections, QuoteBand, SectionHeading } from "./Blocks";
 import { CategoryCard, ProductGrid } from "@/components/products/Cards";
 import { FaqList } from "@/components/ui/Faq";
 import { RbcList, Tag } from "@/components/ui/Tag";
@@ -156,14 +156,6 @@ export function CategoryPage({ page }: { page: PageContent }) {
               </ul>
             </div>
           )}
-
-          <EvidenceNote>
-            {page.publication_scope
-              ? `Escopo de publicação: ${page.publication_scope}. `
-              : ""}
-            Fontes desta página: {page.source_ids.join(", ")}. A disponibilidade comercial atual dos
-            itens depende de confirmação junto à ImunoScan.
-          </EvidenceNote>
         </div>
       </section>
 
